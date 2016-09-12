@@ -122,27 +122,27 @@ wfscr.src = url + '&r=' + Math.random();
 </div>
 
  <p>工作期间的一台无线路由器罢工了，导致所有连接该路由器上网的同事都在相互询问抱怨……</p>
-<p>而我却无济于事，因为我早已经《<a href="http://www.cbmland.com/post/812/connection-via-gigabit-ethernet.html" target="_blank">千兆网卡直连</a>》了，不受该事件影响……</p>
+<p>而我却无济于事，因为我早已经《<a href="http://cbmland.com/post/812/connection-via-gigabit-ethernet.html" target="_blank">千兆网卡直连</a>》了，不受该事件影响……</p>
 <p>不过，却想到了笔记本之间是否可以通过无线网卡相互连接呢？</p>
 <p>为了解惑，谷歌一下。发现很多结果都是用笔记本通过WIFI连接手机、PSP来分享网络的文章，这时已经眼前一亮了，基本可以确定无线网卡应该是可以相互连接的。</p>
-<p>有了之前的《<a title="Permanent Link to 用1394火线上网" rel="bookmark" href="../post/402/lan-over-1394.html">用1394火线上网</a>》和《<a href="http://www.cbmland.com/post/812/connection-via-gigabit-ethernet.html" target="_blank">千兆网卡直连</a>》之类的经验，设置Windows的共享网络已经驾轻就熟了，</p>
+<p>有了之前的《<a title="Permanent Link to 用1394火线上网" rel="bookmark" href="../post/402/lan-over-1394.html">用1394火线上网</a>》和《<a href="http://cbmland.com/post/812/connection-via-gigabit-ethernet.html" target="_blank">千兆网卡直连</a>》之类的经验，设置Windows的共享网络已经驾轻就熟了，</p>
 <p>结合文章中的一些要点，迅速的实现的用自己的笔记本做路由，同时让多台电脑和手机实现共享上网。</p>
 <p>下面就来归总一下配置的方法：</p>
-<p>原文出处：<a href="http://www.cbmland.com/post/848/internet-shared-via-wireless-card-router.html" target="_blank">http://www.cbmland.com/post/848/internet-shared-via-wireless-card-router.html</a></p>
+<p>原文出处：<a href="http://cbmland.com/post/848/internet-shared-via-wireless-card-router.html" target="_blank">http://cbmland.com/post/848/internet-shared-via-wireless-card-router.html</a></p>
 <p>1.首先打开无线连接的属性设置，切换到无线配置选项卡，点击“添加”按钮</p>
-<p><img class="alignnone" src="http://www.cbmland.com/uploads/2009/04/2009-04-09_235827.png" alt="" width="367" height="419" /></p>
+<p><img class="alignnone" src="http://cbmland.com/uploads/2009/04/2009-04-09_235827.png" alt="" width="367" height="419" /></p>
 <p>2.设定网络名称，自己设置一个喜欢的名称，这个名称将提供其他的PC或手机寻找并连接。为保证第一次连接时不出现多余的麻烦，先建议禁用数据加密，同时一定记得选上下面的“特殊”连接模式。设置完毕点击“确定”。</p>
-<p><img class="alignnone" src="http://www.cbmland.com/uploads/2009/04/2009-04-09_235701.png" alt="" width="392" height="443" /></p>
+<p><img class="alignnone" src="http://cbmland.com/uploads/2009/04/2009-04-09_235701.png" alt="" width="392" height="443" /></p>
 <p>3.提示网络连接未加密的风险提示，原因不再赘述，点击“仍然继续”。</p>
-<p><img class="alignnone" src="http://www.cbmland.com/uploads/2009/04/2009-04-09_235714.png" alt="" width="422" height="142" /></p>
+<p><img class="alignnone" src="http://cbmland.com/uploads/2009/04/2009-04-09_235714.png" alt="" width="422" height="142" /></p>
 <p>4.下面来设置Windows连接共享，确定你是通过那块网卡上网，打开其网卡属性窗口，在高级选项卡中如图设置，确定之后，这时“无线网络连接”的IP会被设置成192.168.0.1，就算是一个路由器的网关了，连接上的其他设备就能通过这个IP做网关来上网了。</p>
-<p><img class="alignnone" src="http://www.cbmland.com/uploads/2009/04/2009-04-10_000715.png" alt="" width="367" height="419" /></p>
+<p><img class="alignnone" src="http://cbmland.com/uploads/2009/04/2009-04-10_000715.png" alt="" width="367" height="419" /></p>
 <p>5.打开“可用的无线网络连接”，发现刚才添加的CBM-NB网络已经可以看到了。注意与通常的路由器图标有点不同。选中并点击下面的“连接”按钮。</p>
-<p><img class="alignnone" src="http://www.cbmland.com/uploads/2009/04/2009-04-10_004602.png" alt="" width="660" height="467" /></p>
+<p><img class="alignnone" src="http://cbmland.com/uploads/2009/04/2009-04-10_004602.png" alt="" width="660" height="467" /></p>
 <p>6.打开其他的WiFi连接设备，笔记本、手机、均可，遗憾的是PSP没能找到网络，我这里是用SmartPhone来做演示，进入设置-&gt;连接-&gt;WiFi设置-&gt;WiFi，打开WiFi，找到了CBM-NB这个接入点，连很快就已经接上去。</p>
-<p><img class="alignnone" src="http://www.cbmland.com/uploads/2009/04/2009-04-10_002912.png" alt="" width="240" height="320" /></p>
+<p><img class="alignnone" src="http://cbmland.com/uploads/2009/04/2009-04-10_002912.png" alt="" width="240" height="320" /></p>
 <p>7.检查网络是否工作正常，转到WiFi设置-&gt;连接状态，如果看到IP是192.168.0.x，那么恭喜你，已经成功了。打开浏览器，激动的时刻马上到来了。</p>
-<p><img class="alignnone" src="http://www.cbmland.com/uploads/2009/04/2009-04-10_001635.png" alt="" width="240" height="320" /></p>
+<p><img class="alignnone" src="http://cbmland.com/uploads/2009/04/2009-04-10_001635.png" alt="" width="240" height="320" /></p>
 <p>最后：要注意的一点是如果需要换回通过无线上网，记得要将无线网卡的改为自动获取IP。还有就是记得加密网络，没加密的WiFi实在是太不安全了。通常选择WEP模式，密码均使用手动指定。</p>
 <p>如今WiFi设备越来越多，摆脱了有线的困扰，鄙文也算是抛砖引玉一下。</p>
 <!-- google_ad_section_end -->
@@ -183,7 +183,7 @@ wfscr.src = url + '&r=' + Math.random();
 	<ol id="ComListOl" class="commentlist">
 		<li class="comment even thread-even depth-1" id="li-comment-5596">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/9162ea503ec5e94d2c838752b7a54da6' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/9162ea503ec5e94d2c838752b7a54da6' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.asflex.cn' rel='external nofollow' class='url'>达达</a></span><br />
 			<span class="comment-meta">
@@ -201,7 +201,7 @@ wfscr.src = url + '&r=' + Math.random();
 		
 		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
 		<div class="comment-author vcard">
-			<span class="comment-author"><a href='http://www.cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
 			<span class="comment-meta">
             <a href="http://cbmland.com/post/848/internet-shared-via-wireless-card-router.html/comment-page-1#comment-5600">2009-04-10  09:04</a>
 			            </span>
@@ -218,7 +218,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-5601">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/74b0307d81a9b942a5ab508c5083cdb5' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/74b0307d81a9b942a5ab508c5083cdb5' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.riahome.cn' rel='external nofollow' class='url'>Y.Boy</a></span><br />
 			<span class="comment-meta">
@@ -236,7 +236,7 @@ wfscr.src = url + '&r=' + Math.random();
 		
 		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
 		<div class="comment-author vcard">
-			<span class="comment-author"><a href='http://www.cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
 			<span class="comment-meta">
             <a href="http://cbmland.com/post/848/internet-shared-via-wireless-card-router.html/comment-page-1#comment-5623">2009-04-10  19:04</a>
 			            </span>
@@ -253,7 +253,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment even thread-even depth-1" id="li-comment-5607">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.jobsphere.cn' rel='external nofollow' class='url'>面经</a></span><br />
 			<span class="comment-meta">
@@ -271,7 +271,7 @@ wfscr.src = url + '&r=' + Math.random();
 		
 		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
 		<div class="comment-author vcard">
-			<span class="comment-author"><a href='http://www.cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
 			<span class="comment-meta">
             <a href="http://cbmland.com/post/848/internet-shared-via-wireless-card-router.html/comment-page-1#comment-5621">2009-04-10  19:04</a>
 			            </span>
@@ -288,7 +288,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-5614">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.flash3v.com' rel='external nofollow' class='url'>vibo</a></span><br />
 			<span class="comment-meta">
@@ -306,7 +306,7 @@ wfscr.src = url + '&r=' + Math.random();
 		
 		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
 		<div class="comment-author vcard">
-			<span class="comment-author"><a href='http://www.cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
 			<span class="comment-meta">
             <a href="http://cbmland.com/post/848/internet-shared-via-wireless-card-router.html/comment-page-1#comment-5622">2009-04-10  19:04</a>
 			            </span>
@@ -323,7 +323,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment even thread-even depth-1" id="li-comment-5664">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.snowkit.cn/eBlog' rel='external nofollow' class='url'>Element</a></span><br />
 			<span class="comment-meta">
@@ -340,7 +340,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-10168">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">KINGFSB</span><br />
 			<span class="comment-meta">
@@ -357,7 +357,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment even thread-even depth-1" id="li-comment-54932">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">supergirl</span><br />
 			<span class="comment-meta">
@@ -374,7 +374,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-72216">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">winse</span><br />
 			<span class="comment-meta">
@@ -396,7 +396,7 @@ wfscr.src = url + '&r=' + Math.random();
 		
 		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
 		<div class="comment-author vcard">
-			<span class="comment-author"><a href='http://www.cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
 			<span class="comment-meta">
             <a href="http://cbmland.com/post/848/internet-shared-via-wireless-card-router.html/comment-page-1#comment-72223">2010-07-08  23:07</a>
 			            </span>
@@ -413,7 +413,7 @@ wfscr.src = url + '&r=' + Math.random();
 		
 		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
 		<div class="comment-author vcard">
-			<span class="comment-author"><a href='http://www.cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
 			<span class="comment-meta">
             <a href="http://cbmland.com/post/848/internet-shared-via-wireless-card-router.html/comment-page-1#comment-72224">2010-07-08  23:07</a>
 			            </span>
@@ -430,7 +430,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment even thread-even depth-1" id="li-comment-72217">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">winse</span><br />
 			<span class="comment-meta">
@@ -448,7 +448,7 @@ wfscr.src = url + '&r=' + Math.random();
 		
 		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
 		<div class="comment-author vcard">
-			<span class="comment-author"><a href='http://www.cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
 			<span class="comment-meta">
             <a href="http://cbmland.com/post/848/internet-shared-via-wireless-card-router.html/comment-page-1#comment-72225">2010-07-08  23:07</a>
 			            </span>
@@ -465,7 +465,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-87020">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">Leon</span><br />
 			<span class="comment-meta">
@@ -483,7 +483,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment odd alt thread-even depth-1" id="li-comment-89045">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">万子风声</span><br />
 			<span class="comment-meta">
@@ -591,7 +591,7 @@ wfscr.src = url + '&r=' + Math.random();
  <!-- start Search -->
  	<div id="search_container">
     	<div id="search">
-    		<form id="searchForm" action="http://www.cbmland.com/search" method="get">
+    		<form id="searchForm" action="http://cbmland.com/search" method="get">
     		<input type="hidden" name="cx" value="016044298682048239728:bqaqmsndssu" />
     		<input type="hidden" name="cof" value="FORID:11" />
     		<input type="hidden" name="ie" value="UTF-8" />
@@ -856,7 +856,7 @@ wfscr.src = url + '&r=' + Math.random();
 <div id="footer">
 	<div id="copying">
 		<p><strong>Copyright &copy; 2008 - cbm&#039;s land - is proudly powered by <a rel="external nofollow" href="http://www.wordpress.com/">WordPress</a></strong>.<br />
-		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://www.cbmland.com">cbm</a>.</p>
+		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://cbmland.com">cbm</a>.</p>
 	</div>
 	<div id="logos">
 	</div>

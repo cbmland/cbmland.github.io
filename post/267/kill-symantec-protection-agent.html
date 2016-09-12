@@ -170,20 +170,20 @@ wfscr.src = url + '&r=' + Math.random();
 </div>
 
  <p>公司为了加强安全，强制在员工机器上安装了所谓的“安全客户端”。我不知道管理员那边能看到什么。我猜测应该能看到我的屏幕在做什么，能够复制我的文件。我机器安装了什么软件。反正管理员觉得安全了我却觉得更不安全了。需要尽快解决他。</p>
-<p><a href="http://www.cbmland.com/uploads/2007/08/sy.jpg" title="sy.jpg"><img src="http://www.cbmland.com/uploads/2007/08/sy.jpg" alt="sy.jpg" /></a></p>
+<p><a href="http://cbmland.com/uploads/2007/08/sy.jpg" title="sy.jpg"><img src="http://cbmland.com/uploads/2007/08/sy.jpg" alt="sy.jpg" /></a></p>
 <p>这个就是他的图标。说起安装了这个就很郁闷的事情。这个软件不能卸载，需要密码，密码是在服务器上验证，还有有个完整性效验。必须安装管理员指定的软件。晕死，必须安装诺顿杀毒。安装上去后再好的机器都是老牛破车了。</p>
 <p>补充一下，Symantec Protection Agent  有个服务进程，在服务管理器里面是无法设置启动模式为禁用和手动的。注册表也不能改写start值。</p>
 <p> 解决方法一：写软件策略</p>
 <p>在“运行”窗口输入 secpol.msc ，确定。打开“本地安全设置”管理工具，展开“软件限制策略”，没有的话新建就是了。然后再右键菜单中新建一个路径规则，添加到Symantec Protection Agent  的安装目录，安全级别选“不允许的”。重启机器。你就发现他再也起不来了。:)</p>
-<p><a href="http://www.cbmland.com/uploads/2007/08/soft1.jpg" title="soft1.jpg"></a><a href="http://www.cbmland.com/uploads/2007/08/soft1.jpg" title="soft1.jpg"><img src="http://www.cbmland.com/uploads/2007/08/soft1.jpg" alt="soft1.jpg" /></a></p>
+<p><a href="http://cbmland.com/uploads/2007/08/soft1.jpg" title="soft1.jpg"></a><a href="http://cbmland.com/uploads/2007/08/soft1.jpg" title="soft1.jpg"><img src="http://cbmland.com/uploads/2007/08/soft1.jpg" alt="soft1.jpg" /></a></p>
 <p>当有需要开启的时候。可以把策略的安全级别改成“不受限的”，然后手动启动他。不需要重启。可以应付检查。</p>
 <p>解决方法二:强制关闭</p>
 <p>管理员可能调整策略。必须启动Symantec Protection Agent才能通过网络验证，获取IP上网。所以电脑启动的时候必须启动。不能关闭。当启动之后系统的“任务管理器”是无法结束C:\Program Files\Symantec\SPA\smc.exe这个服务进程的。其实是“任务管理器”会保护一些关键的进程，并不是结束不了。在“运行”敲入 ntsd -c q -p PID</p>
 <p>确定。就会出来一个结束进程的cmd窗口，稍等一下系统栏的Symantec Protection Agent图标就消失了。关闭了Symantec Protection Agent 照样能上网。应付检查时自己手动启动就可以了。</p>
-<p> <a href="http://www.cbmland.com/uploads/2007/08/smc.jpg" title="smc.jpg"><img src="http://www.cbmland.com/uploads/2007/08/smc.jpg" alt="smc.jpg" /></a></p>
+<p> <a href="http://cbmland.com/uploads/2007/08/smc.jpg" title="smc.jpg"><img src="http://cbmland.com/uploads/2007/08/smc.jpg" alt="smc.jpg" /></a></p>
 <p>如图，ntsd -c q -p 5668 就会结束掉smc.exe这个进程，5668为smc.exe的PID，PID在任务管理器能找到。如果没有PID列，请在任务管理器的“查看”中“选择列”中勾选PID。</p>
 <p>我的地盘我做主，我的电脑还怕管理员按监控软件吗？如有其他方法日后补充。</p>
-<p>带上<a target="_blank" href="http://www.pjhome.net/">zishun</a>写的自动关闭smc.exe的小工具。<a href="http://www.cbmland.com/uploads/2007/08/smckiller.zip" title="smckiller.zip">smckiller.zip</a></p>
+<p>带上<a target="_blank" href="http://www.pjhome.net/">zishun</a>写的自动关闭smc.exe的小工具。<a href="http://cbmland.com/uploads/2007/08/smckiller.zip" title="smckiller.zip">smckiller.zip</a></p>
 <p> PS:有朋友使用第一种方法禁用，但后来发现启用不了。这个一般是本地策略没有将之前添加的路径清除。<br />
 你可一手动打开注册表。<br />
 在HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers中的path目录中寻找你添加过的路径，删除path下的对应目录即可。</p>
@@ -277,7 +277,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-49574">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">fireman1234</span><br />
 			<span class="comment-meta">
@@ -295,7 +295,7 @@ wfscr.src = url + '&r=' + Math.random();
 		
 		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
 		<div class="comment-author vcard">
-			<span class="comment-author"><a href='http://www.cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
 			<span class="comment-meta">
             <a href="http://cbmland.com/post/267/kill-symantec-protection-agent.html/comment-page-3#comment-49603">2010-01-25  17:01</a>
 			            </span>
@@ -330,7 +330,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment even thread-even depth-1" id="li-comment-89732">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">temp</span><br />
 			<span class="comment-meta">
@@ -347,7 +347,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-92711">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">KKK</span><br />
 			<span class="comment-meta">
@@ -364,7 +364,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment even thread-even depth-1" id="li-comment-111088">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">isyzzdmkss</span><br />
 			<span class="comment-meta">
@@ -455,7 +455,7 @@ wfscr.src = url + '&r=' + Math.random();
  <!-- start Search -->
  	<div id="search_container">
     	<div id="search">
-    		<form id="searchForm" action="http://www.cbmland.com/search" method="get">
+    		<form id="searchForm" action="http://cbmland.com/search" method="get">
     		<input type="hidden" name="cx" value="016044298682048239728:bqaqmsndssu" />
     		<input type="hidden" name="cof" value="FORID:11" />
     		<input type="hidden" name="ie" value="UTF-8" />
@@ -720,7 +720,7 @@ wfscr.src = url + '&r=' + Math.random();
 <div id="footer">
 	<div id="copying">
 		<p><strong>Copyright &copy; 2008 - cbm&#039;s land - is proudly powered by <a rel="external nofollow" href="http://www.wordpress.com/">WordPress</a></strong>.<br />
-		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://www.cbmland.com">cbm</a>.</p>
+		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://cbmland.com">cbm</a>.</p>
 	</div>
 	<div id="logos">
 	</div>

@@ -137,9 +137,9 @@ wfscr.src = url + '&r=' + Math.random();
 
 </div>
 
- <p>前面有写过一篇如何Gzip压缩CSS和JS文件的<a href="http://www.cbmland.com/post/522/optimized-wordpress-notes-1.html" target="_blank">优化WordPress心得(1)</a>，现在又有时间整理优化心得了。</p>
+ <p>前面有写过一篇如何Gzip压缩CSS和JS文件的<a href="http://cbmland.com/post/522/optimized-wordpress-notes-1.html" target="_blank">优化WordPress心得(1)</a>，现在又有时间整理优化心得了。</p>
 <p>Cache Function As File（缓存函数结果到文件）这句话是学的Flash AS程序中的cacheAsBitmap ，在Wordpress中主要是缓存一个函数的返回结果到一个文件，供下次使用。然而有这个必要吗？</p>
-<p>我使用到的<a href="http://www.cbmland.com/sitemap" target="_blank">站点地图</a>插件<a title="访问插件主页" href="http://www.dagondesign.com/articles/sitemap-generator-plugin-for-wordpress/" target="_blank">Dagon Design Sitemap Generator</a>，每次访问都会查询整个数据库，然后根据一定算法做字符串拼接处理，这样来生成出看到的成站点地图的html代码，但随着文章的增多，现在仅站点地图生成的html字节大小已达120K。</p>
+<p>我使用到的<a href="http://cbmland.com/sitemap" target="_blank">站点地图</a>插件<a title="访问插件主页" href="http://www.dagondesign.com/articles/sitemap-generator-plugin-for-wordpress/" target="_blank">Dagon Design Sitemap Generator</a>，每次访问都会查询整个数据库，然后根据一定算法做字符串拼接处理，这样来生成出看到的成站点地图的html代码，但随着文章的增多，现在仅站点地图生成的html字节大小已达120K。</p>
 <p>同样，通常在主题上存在的档列表，标签云，分类列表，友情链接这样的列表，而这些类容通常更新频率并不高，而默认情况下是每次访问都需要查询数据库再进行字符串拼接来动态生成。数据库、服务器每次都需要进行重复的运算。这样网页打开的速度慢了，服务器的负荷也上去了，性能的瓶颈产生了。</p>
 <p>如果将这些列表函数生成的html内容缓存到文件，下次使用只需要读取输出即可，而不需要进行数据的查询和字符串拼接。web server只管输出内容即可，这样很大程度上减低的服务器负担。</p>
 <p>这样一台服务器上就可以放更多的网站，可以承受更高的突发访问量。还可以xxx，还可以xxx，哈哈，已说得天花乱坠&#8230; 不过话说回来，其实就是静态话的好处。<br />
@@ -206,11 +206,11 @@ function cacheAsFile($function,$cache_file,$args_array = array(),$cache_time = 8
 <p>这里可需要一些代码知识哦。有点门槛。</p>
 <p><strong>开始使用cacheAsFile函数</strong></p>
 <p>使用在Dagon Design Sitemap Generator<br />
- <a href="http://www.cbmland.com/uploads/2008/06/2008-06-26_211417.png"><img title="2008-06-26_211417" src="http://www.cbmland.com/uploads/2008/06/2008-06-26_211417.png" alt="" /></a></p>
+ <a href="http://cbmland.com/uploads/2008/06/2008-06-26_211417.png"><img title="2008-06-26_211417" src="http://cbmland.com/uploads/2008/06/2008-06-26_211417.png" alt="" /></a></p>
 <p>使用在 simple Tags 的标签云<br />
-<a href="http://www.cbmland.com/uploads/2008/06/2008-06-26_195339.png"><img title="2008-06-26_195339" src="http://www.cbmland.com/uploads/2008/06/2008-06-26_195339.png" alt="" /></a></p>
+<a href="http://cbmland.com/uploads/2008/06/2008-06-26_195339.png"><img title="2008-06-26_195339" src="http://cbmland.com/uploads/2008/06/2008-06-26_195339.png" alt="" /></a></p>
 <p>使用在需要附加参数的功能函数中<br />
-<a href="http://www.cbmland.com/uploads/2008/06/2008-06-26_213657.png"><img title="2008-06-26_213657" src="http://www.cbmland.com/uploads/2008/06/2008-06-26_213657.png" alt="" /></a><br />
+<a href="http://cbmland.com/uploads/2008/06/2008-06-26_213657.png"><img title="2008-06-26_213657" src="http://cbmland.com/uploads/2008/06/2008-06-26_213657.png" alt="" /></a><br />
 <strong>检查wp-cache下生成的cache文件</strong><br />
 如果不出意外cache开始生效了，在这个目录下应该能够看到相应的缓存文件。可以清理掉相应缓存文件来达到更新的目的。</p>
 <p><strong>后续</strong></p>
@@ -254,7 +254,7 @@ function cacheAsFile($function,$cache_file,$args_array = array(),$cache_time = 8
 	<ol id="ComListOl" class="commentlist">
 		<li class="comment even thread-even depth-1" id="li-comment-1509">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/576de88be917553742fdba307e11f5b8' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/576de88be917553742fdba307e11f5b8' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://galaxystar.javaeye.com' rel='external nofollow' class='url'>galaxystar</a></span><br />
 			<span class="comment-meta">
@@ -275,7 +275,7 @@ function cacheAsFile($function,$cache_file,$args_array = array(),$cache_time = 8
 		
 		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
 		<div class="comment-author vcard">
-			<span class="comment-author"><a href='http://www.cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
 			<span class="comment-meta">
             <a href="http://cbmland.com/post/538/optimized-wordpress-notes-2-cache-function-as-file.html/comment-page-1#comment-1516">2008-08-25  12:08</a>
 			            </span>
@@ -292,7 +292,7 @@ function cacheAsFile($function,$cache_file,$args_array = array(),$cache_time = 8
 </li>
 	<li class="comment even thread-even depth-1" id="li-comment-1671">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/089e516c2f737f071a5a8b85ea6b17cf' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/089e516c2f737f071a5a8b85ea6b17cf' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://3284265.cn' rel='external nofollow' class='url'>shamas</a></span><br />
 			<span class="comment-meta">
@@ -366,7 +366,7 @@ function cacheAsFile($function,$cache_file,$args_array = array(),$cache_time = 8
  <!-- start Search -->
  	<div id="search_container">
     	<div id="search">
-    		<form id="searchForm" action="http://www.cbmland.com/search" method="get">
+    		<form id="searchForm" action="http://cbmland.com/search" method="get">
     		<input type="hidden" name="cx" value="016044298682048239728:bqaqmsndssu" />
     		<input type="hidden" name="cof" value="FORID:11" />
     		<input type="hidden" name="ie" value="UTF-8" />
@@ -631,7 +631,7 @@ function cacheAsFile($function,$cache_file,$args_array = array(),$cache_time = 8
 <div id="footer">
 	<div id="copying">
 		<p><strong>Copyright &copy; 2008 - cbm&#039;s land - is proudly powered by <a rel="external nofollow" href="http://www.wordpress.com/">WordPress</a></strong>.<br />
-		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://www.cbmland.com">cbm</a>.</p>
+		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://cbmland.com">cbm</a>.</p>
 	</div>
 	<div id="logos">
 	</div>

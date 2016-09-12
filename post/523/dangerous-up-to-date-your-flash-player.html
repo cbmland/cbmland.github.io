@@ -169,11 +169,11 @@ wfscr.src = url + '&r=' + Math.random();
 
  <p>今天取到了一份swf格式的exploits，测试了一下在Flash Player 9 .0.115的结果。</p>
 <p>Adobe Flash Player 9 .0.115 在播放恶意构造的swf时，会自动下载一个可执行文件并执行，而我拿到的这个swf文件会自动下载一个downloader并运行，然后再由这个downloader下载其他预先指定的木马程序，相当的危险。</p>
-<p>这个漏洞出现在Adobe Flash Player 9 .0.115和更早版本，其实早在4月8号，<a href="http://www.cbmland.com/post/463/adobe-flash-player-90124.html" target="_blank">Adobe已经放出了9.0.124的版本更新</a>，也发布了<a href="http://www.adobe.com/support/security/bulletins/apsb08-11.html" target="_blank">安全公告</a>。问题相当严重，所以务必请赶紧<a href="http://www.cbmland.com/flash-player-update" target="_blank">更新</a>到9.0.124版本。</p>
+<p>这个漏洞出现在Adobe Flash Player 9 .0.115和更早版本，其实早在4月8号，<a href="http://cbmland.com/post/463/adobe-flash-player-90124.html" target="_blank">Adobe已经放出了9.0.124的版本更新</a>，也发布了<a href="http://www.adobe.com/support/security/bulletins/apsb08-11.html" target="_blank">安全公告</a>。问题相当严重，所以务必请赶紧<a href="http://cbmland.com/flash-player-update" target="_blank">更新</a>到9.0.124版本。</p>
 <p>下面是我实际运行的截图，执行了downloader后先后下载了0.exe 到 20.exe一共21的木马程序。downloader还会不断的检测taskmgr.exe、procexp.exe等进程管理程序，发现后立即杀掉管理工具。一旦中招相当麻烦。我尝试将procexp.exe改名后可以运行起来。</p>
-<p><a href="http://www.cbmland.com/uploads/2008/05/2008-05-27_181838.png"><img class="alignnone size-medium wp-image-525" title="2008-05-27_181838" src="http://www.cbmland.com/uploads/2008/05/2008-05-27_181838.png" alt="" /></a></p>
+<p><a href="http://cbmland.com/uploads/2008/05/2008-05-27_181838.png"><img class="alignnone size-medium wp-image-525" title="2008-05-27_181838" src="http://cbmland.com/uploads/2008/05/2008-05-27_181838.png" alt="" /></a></p>
 <p>Nod32可以检测到下载的木马程序。</p>
-<p><a href="http://www.cbmland.com/uploads/2008/05/2008-05-27_173214.png"><img class="alignnone size-medium wp-image-524" title="2008-05-27_173214" src="http://www.cbmland.com/uploads/2008/05/2008-05-27_173214.png" alt="" width="300" height="151" /></a></p>
+<p><a href="http://cbmland.com/uploads/2008/05/2008-05-27_173214.png"><img class="alignnone size-medium wp-image-524" title="2008-05-27_173214" src="http://cbmland.com/uploads/2008/05/2008-05-27_173214.png" alt="" width="300" height="151" /></a></p>
 <p>PS：其中使用Flash 8 Professional的开发工具也存相关问题。版本需要升级到8.0.42.0，AIR 的版本需要到1.01</p>
 <p>能做些什么？</p>
 <p>1.请在网页Object标签中的codebase修改需要version=9,0,124,0</p>
@@ -234,7 +234,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1226">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.cnhelpme.cn' rel='external nofollow' class='url'>aspirer</a></span><br />
 			<span class="comment-meta">
@@ -251,7 +251,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment even thread-even depth-1" id="li-comment-1232">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/f22f66a7a701c1e7e5115117926b4414' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/f22f66a7a701c1e7e5115117926b4414' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">fly2never</span><br />
 			<span class="comment-meta">
@@ -268,7 +268,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1621">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/3d2d5ce04e84f1fcaf8db5f9d983ac5b' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/3d2d5ce04e84f1fcaf8db5f9d983ac5b' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.cmykrgb123.com' rel='external nofollow' class='url'>CmYkRgB123</a></span><br />
 			<span class="comment-meta">
@@ -342,7 +342,7 @@ wfscr.src = url + '&r=' + Math.random();
  <!-- start Search -->
  	<div id="search_container">
     	<div id="search">
-    		<form id="searchForm" action="http://www.cbmland.com/search" method="get">
+    		<form id="searchForm" action="http://cbmland.com/search" method="get">
     		<input type="hidden" name="cx" value="016044298682048239728:bqaqmsndssu" />
     		<input type="hidden" name="cof" value="FORID:11" />
     		<input type="hidden" name="ie" value="UTF-8" />
@@ -607,7 +607,7 @@ wfscr.src = url + '&r=' + Math.random();
 <div id="footer">
 	<div id="copying">
 		<p><strong>Copyright &copy; 2008 - cbm&#039;s land - is proudly powered by <a rel="external nofollow" href="http://www.wordpress.com/">WordPress</a></strong>.<br />
-		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://www.cbmland.com">cbm</a>.</p>
+		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://cbmland.com">cbm</a>.</p>
 	</div>
 	<div id="logos">
 	</div>

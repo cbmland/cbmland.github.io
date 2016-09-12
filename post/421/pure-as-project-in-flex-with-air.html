@@ -28,16 +28,16 @@
 
         		<div data-role="content" id="maincontent">
 		    <h2>小技巧:在Flex builder 3 中创作纯AS的AIR项目</h2>
-	    	<div class="content"><p><a title="2008-02-19_143706.png" href="http://www.cbmland.com/uploads/2008/02/2008-02-19_143706.png"></a><a title="2008-02-19_145840.png" href="http://www.cbmland.com/uploads/2008/02/2008-02-19_145840.png"></a><a title="2008-02-19_144326.png" href="http://www.cbmland.com/uploads/2008/02/2008-02-19_144326.png"></a><a title="2008-02-19_161927.png" href="http://www.cbmland.com/uploads/2008/02/2008-02-19_161927.png"></a><a title="2008-02-19_161904.png" href="http://www.cbmland.com/uploads/2008/02/2008-02-19_161904.png"></a>众所周知，Flex builder 3 beta3版本中已经集成了AIR的SDK，可以开发基于Flex框架的AIR应用程序了。但是使用了Flex框架编译出的SWF有点大。个人很喜欢Action Script Project（俗称纯AS项目）编译出的SWF。文件十分小巧。但如果你想在Flex builder 3 beta3中创建纯AS项目来做AIR的话会可能遇到一些困难。</p>
+	    	<div class="content"><p><a title="2008-02-19_143706.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_143706.png"></a><a title="2008-02-19_145840.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_145840.png"></a><a title="2008-02-19_144326.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_144326.png"></a><a title="2008-02-19_161927.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_161927.png"></a><a title="2008-02-19_161904.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_161904.png"></a>众所周知，Flex builder 3 beta3版本中已经集成了AIR的SDK，可以开发基于Flex框架的AIR应用程序了。但是使用了Flex框架编译出的SWF有点大。个人很喜欢Action Script Project（俗称纯AS项目）编译出的SWF。文件十分小巧。但如果你想在Flex builder 3 beta3中创建纯AS项目来做AIR的话会可能遇到一些困难。</p>
 <p>当然在Flash CS3中也可以制作Action Script Project类似的。但是代码提示功能和调试功能贫弱。还是很想在Flex builder开发。发了一番时间折腾后，找到了如何在Flex Builder 3中开发和调试纯粹AS的AIR项目的小技巧。今天抽时间来整理一下。</p>
 <p>如果你对这个感兴趣，请往下看。</p>
 <p>1）新建Flex Preoject，选择AIR类型。直接finish</p>
-<p><a title="2008-02-19_143706.png" href="http://www.cbmland.com/uploads/2008/02/2008-02-19_143706.png"><img src="http://www.cbmland.com/uploads/2008/02/2008-02-19_143706.png" alt="2008-02-19_143706.png" /></a></p>
+<p><a title="2008-02-19_143706.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_143706.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_143706.png" alt="2008-02-19_143706.png" /></a></p>
 <p>2）新建Action Script Class，同样命名为“pureASProject.as”</p>
 <p>3）删除自动创建的pureASProject.mxml</p>
 <p>4）把pureASProject.as项目的默认运行文件</p>
-<p><a title="2008-02-19_144326.png" href="http://www.cbmland.com/uploads/2008/02/2008-02-19_144326.png"><img src="http://www.cbmland.com/uploads/2008/02/2008-02-19_144326.png" alt="2008-02-19_144326.png" /></a></p>
-<p><a title="2008-02-19_145840.png" href="http://www.cbmland.com/uploads/2008/02/2008-02-19_145840.png"><img src="http://www.cbmland.com/uploads/2008/02/2008-02-19_145840.png" alt="2008-02-19_145840.png" /></a></p>
+<p><a title="2008-02-19_144326.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_144326.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_144326.png" alt="2008-02-19_144326.png" /></a></p>
+<p><a title="2008-02-19_145840.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_145840.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_145840.png" alt="2008-02-19_145840.png" /></a></p>
 <p>5）编辑pureASProject-app.xml文件（重点）</p><!-- Crayon Syntax Highlighter v2.5.0 -->
 
 		<div id="crayon-57465f458034b684963705" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" touchscreen minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; float: none; clear: both; font-size: 12px !important; line-height: 15px !important;">
@@ -93,12 +93,12 @@
 		</div>
 <!-- [Format Time: 0.0124 seconds] -->
 <p>6）使用AIR中的API，尽情创作。现在就可以在Flex Builer中运行和调试纯AS项目了。</p>
-<p><a title="2008-02-19_162343.png" href="http://www.cbmland.com/uploads/2008/02/2008-02-19_162343.png"><img src="http://www.cbmland.com/uploads/2008/02/2008-02-19_162343.png" alt="2008-02-19_162343.png" /></a></p>
+<p><a title="2008-02-19_162343.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_162343.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_162343.png" alt="2008-02-19_162343.png" /></a></p>
 <p>7）打包发布</p>
-<p><a title="2008-02-19_161904.png" href="http://www.cbmland.com/uploads/2008/02/2008-02-19_161904.png"><img src="http://www.cbmland.com/uploads/2008/02/2008-02-19_161904.png" alt="2008-02-19_161904.png" /></a></p>
-<p><a title="2008-02-19_161927.png" href="http://www.cbmland.com/uploads/2008/02/2008-02-19_161927.png"><img src="http://www.cbmland.com/uploads/2008/02/2008-02-19_161927.png" alt="2008-02-19_161927.png" /></a></p>
+<p><a title="2008-02-19_161904.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_161904.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_161904.png" alt="2008-02-19_161904.png" /></a></p>
+<p><a title="2008-02-19_161927.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_161927.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_161927.png" alt="2008-02-19_161927.png" /></a></p>
 <p>8）提供demo下载</p>
-<p><img src="http://www.cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/rar.gif" alt="Download: 纯AS的AIR项目Demo" title="Download: 纯AS的AIR项目Demo"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.office.live.com/self.aspx/Downloads/pureASProject.rar" title="Download: 纯AS的AIR项目Demo">纯AS的AIR项目Demo</a></strong> (317.6 KiB, 607 hits)<br />小技巧:在Flex builder 3 中创作纯AS的AIR项目Demo</p>
+<p><img src="http://cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/rar.gif" alt="Download: 纯AS的AIR项目Demo" title="Download: 纯AS的AIR项目Demo"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.office.live.com/self.aspx/Downloads/pureASProject.rar" title="Download: 纯AS的AIR项目Demo">纯AS的AIR项目Demo</a></strong> (317.6 KiB, 607 hits)<br />小技巧:在Flex builder 3 中创作纯AS的AIR项目Demo</p>
 <p>估计下个版本的Flex builder会更新到这一点。</p>
 </div>
 			<p>

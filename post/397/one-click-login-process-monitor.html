@@ -131,9 +131,9 @@ wfscr.src = url + '&r=' + Math.random();
 
 </div>
 
- <p>原创文章 转载时务必注明本站地址<a href="http://cbmland.com/">cbmland.com</a> <a href="http://www.cbmland.com/uploads/2007/11/args.png" title="args.png"></a></p>
+ <p>原创文章 转载时务必注明本站地址<a href="http://cbmland.com/">cbmland.com</a> <a href="http://cbmland.com/uploads/2007/11/args.png" title="args.png"></a></p>
 <p>Process Monitor 是我必备系统工具。他来自微软<a href="http://www.microsoft.com/technet/sysinternals/utilities/sysinternalssuite.mspx" target="_blank">Sysinternals Suite</a>，微软网站上可以下载，他的具体介绍我就不多说了，直奔主题。</p>
-<p>通常我们在互联网上使用各种服务需要帐号和密码，而风险也在这里产生。你永远也不知道木马、键盘记录软件可能早已在幕后恭候您密码多时（不要和我说你有多么强的杀毒软件，不懂事的我以前写过一个<a href="http://www.cbmland.com/post/5/boler.html" target="_blank">工具</a>，来制作免杀木马）。就在那一刹那。你的密码已经记录下来发给了幕后黑手，接着。。。</p>
+<p>通常我们在互联网上使用各种服务需要帐号和密码，而风险也在这里产生。你永远也不知道木马、键盘记录软件可能早已在幕后恭候您密码多时（不要和我说你有多么强的杀毒软件，不懂事的我以前写过一个<a href="http://cbmland.com/post/5/boler.html" target="_blank">工具</a>，来制作免杀木马）。就在那一刹那。你的密码已经记录下来发给了幕后黑手，接着。。。</p>
 <p>接下来有了密码框的保护控件，但木马要是种到了客户端，密码框的保护控件还能不能正常运作这个就只能让木马说了算。</p>
 <p>接下来有了软键盘来反键盘监听软件。虽然使用起来有点别扭，但毕竟能很有效的防止键盘监听，可遗憾的是尽量不要在公众场合下使用。否者会更不安全。偷窥或许还有屏幕监控呢。</p>
 <p>怎么让不用输入帐号密码来登陆呢？有一种就是可以通过启动程序的附加参数来实现。这样就可以把帐号密码作为参数传递给程序启动。实现一键登陆。</p>
@@ -141,14 +141,14 @@ wfscr.src = url + '&r=' + Math.random();
 <p><strong>我就用腾讯QQ来举例</strong></p>
 <p>QQ的盗号者十分猖獗。 号码被盗可能造成严重的损失。</p>
 <p>不知道你有没有发现QQ和TM的一键切换。有没有使用过更新好友更能。这都是能实现自动登陆的2个接口。</p>
-<p><a href="http://www.cbmland.com/uploads/2007/11/qqmenu.png" title="qqmenu.png"><img src="http://www.cbmland.com/uploads/2007/11/qqmenu.png" alt="qqmenu.png" /></a></p>
+<p><a href="http://cbmland.com/uploads/2007/11/qqmenu.png" title="qqmenu.png"><img src="http://cbmland.com/uploads/2007/11/qqmenu.png" alt="qqmenu.png" /></a></p>
 <p>点击“更新好友”，QQ会自动登陆，接下来打开Process Monitor来看。找到QQ.exe，ctrl+p打开属性，转到进程标签。</p>
-<p><a href="http://www.cbmland.com/uploads/2007/11/args.png" title="args.png"><img src="http://www.cbmland.com/uploads/2007/11/args.png" alt="args.png" /></a></p>
+<p><a href="http://cbmland.com/uploads/2007/11/args.png" title="args.png"><img src="http://cbmland.com/uploads/2007/11/args.png" alt="args.png" /></a></p>
 <p>看到Command Line中的数据了吗？QQUIN是QQ号码，PWDHASH是密码密文，参数中还有更新好友的参数。</p>
 <p>拿到了PWDHASH，然后我们去掉部分参数，组成</p>
 <p>&#8220;D:\Program Files\Tencent\QQ\QQ.exe&#8221; /START QQUIN:你的QQ号码 PWDHASH:获取到的密码密文 /STAT:10</p>
 <p>（注意空格和引号）将这段填充到一个快捷方式中，</p>
-<p><a href="http://www.cbmland.com/uploads/2007/11/s1.png" title="s1.png"><img src="http://www.cbmland.com/uploads/2007/11/s1.png" alt="s1.png" /></a></p>
+<p><a href="http://cbmland.com/uploads/2007/11/s1.png" title="s1.png"><img src="http://cbmland.com/uploads/2007/11/s1.png" alt="s1.png" /></a></p>
 <p>这样这个快捷方式你就可以实现“一键登录”QQ (注意关掉同一号码的QQ，否者自动登陆不了)，再也不用危险的敲密码了。;)</p>
 <p>PS：/STAT:40 为隐身登陆。其他的参数自己去发现，偷着乐吧~</p>
 <p><strong>接下来说一键登陆网站</strong></p>
@@ -200,7 +200,7 @@ wfscr.src = url + '&r=' + Math.random();
 	<ol id="ComListOl" class="commentlist">
 		<li class="comment even thread-even depth-1" id="li-comment-730">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author">Hmily</span><br />
 			<span class="comment-meta">
@@ -217,7 +217,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-754">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.cnhelpme.cn' rel='external nofollow' class='url'>aspirer</a></span><br />
 			<span class="comment-meta">
@@ -234,7 +234,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment even thread-even depth-1" id="li-comment-758">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.cnhelpme.cn' rel='external nofollow' class='url'>aspirer</a></span><br />
 			<span class="comment-meta">
@@ -251,7 +251,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-759">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.cnhelpme.cn' rel='external nofollow' class='url'>aspirer</a></span><br />
 			<span class="comment-meta">
@@ -319,7 +319,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1087">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.cnhelpme.cn' rel='external nofollow' class='url'>aspirer</a></span><br />
 			<span class="comment-meta">
@@ -353,7 +353,7 @@ wfscr.src = url + '&r=' + Math.random();
 </li>
 	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1093">
 		
-		<div class="gravatar"><img alt='' src='http://www.cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
 		<div class="comment-author vcard">
 			<span class="comment-author"><a href='http://www.cnhelpme.cn' rel='external nofollow' class='url'>aspirer</a></span><br />
 			<span class="comment-meta">
@@ -427,7 +427,7 @@ wfscr.src = url + '&r=' + Math.random();
  <!-- start Search -->
  	<div id="search_container">
     	<div id="search">
-    		<form id="searchForm" action="http://www.cbmland.com/search" method="get">
+    		<form id="searchForm" action="http://cbmland.com/search" method="get">
     		<input type="hidden" name="cx" value="016044298682048239728:bqaqmsndssu" />
     		<input type="hidden" name="cof" value="FORID:11" />
     		<input type="hidden" name="ie" value="UTF-8" />
@@ -692,7 +692,7 @@ wfscr.src = url + '&r=' + Math.random();
 <div id="footer">
 	<div id="copying">
 		<p><strong>Copyright &copy; 2008 - cbm&#039;s land - is proudly powered by <a rel="external nofollow" href="http://www.wordpress.com/">WordPress</a></strong>.<br />
-		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://www.cbmland.com">cbm</a>.</p>
+		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://cbmland.com">cbm</a>.</p>
 	</div>
 	<div id="logos">
 	</div>
