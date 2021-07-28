@@ -23,7 +23,7 @@
 <body>
 
 <div id="app">
-
+        <h2 >Superf - Screener ({{updated}})</h2>
       <div v-on:click="expland($event)" v-bind:id="'group_'+index" v-for="(groupItem,index) in groups">
         <h3 v-bind:id="'span_'+index">{{groupItem.name}}</h3>
         <transition name="fade">
@@ -43,15 +43,19 @@
 </body>
 <script>
 
+    var json_url = '/backtrader-master/logs/Toolbox_Screener_Data.json';
+    if(window.location.href.indexOf('cbmland.com')>0){
+        json_url = '//cbmland.com/json/Toolbox_Screener_Data.json'
+    }
 
     // Make a request for a user with a given ID
-    axios.get('//cbmland.com/json/Toolbox_Screener_Data.json')
+    axios.get(json_url)
     //axios.get('/backtrader-master/logs/Toolbox_Screener_Data.json')
       .then(function (response) {
         // handle success
         //console.log(response);
 
-        let groups = response.data;
+        let groups = response.data.groups;
 
         for( var i in groups){
             var group = groups[i];
@@ -60,11 +64,12 @@
                 var item = list[j];
                 //console.log(item)
                 item.img_url = 'https://stockcharts.com/c-sc/sc?r=&chart='+item.symbol+',uu[305,a]dacayaci[pb20!b50][dg][ilC20]'
+                item.img_href = 'https://stockcharts.com/h-sc/ui?s='+item.symbol
             }
 
         }
         //console.log(groups)
-        onData(groups)
+        onData(response.data)
 
       })
       .catch(function (error) {
@@ -80,7 +85,8 @@
         const ComponentsApp = {
             data() {
                 return {
-                    groups: value
+                    groups: value.groups,
+                    updated:value.updated
                 }
             },
             methods: {
@@ -114,7 +120,7 @@
 
         app.component('todo-item', {
             props: ['todo'],
-            template: '<span><img width="305" height="225" :src="todo.img_url" /></span>'
+            template: '<span><a :href="todo.img_href"><img width="305" height="225" :src="todo.img_url" /></a></span>'
         });
 
         app.mount('#app')
