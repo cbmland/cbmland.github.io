@@ -137,7 +137,7 @@
 
         app.component('todo-item', {
             props: ['todo'],
-            template: '<span class="tool-panel"><a :href="todo.img_href"><img width="305" height="225" :src="todo.img_url" /></a><div class="info-pannel"><a :href="todo.tiger_href">{{todo.symbol}} ({{todo.name}})</a></div></span>'
+            template: '<span class="tool-panel"><img width="305" height="225" :src="todo.img_url" /><div class="info-pannel"><a :href="todo.img_href">{{todo.symbol}} </a><a :href="todo.tiger_href">({{todo.name}})</a></div></span>'
         });
 
         app.mount('#app')
