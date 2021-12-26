@@ -109,6 +109,7 @@
                     //console.log(response);
 
                     let groups = response.data.groups;
+                    that.updated = response.data.updated;
 
                     for( var i in groups){
                         var group = groups[i];
@@ -174,7 +175,7 @@
 
         app.component('todo-item', {
             props: ['todo'],
-            template: '<span class="tool-panel"><img width="305" height="225" :src="todo.img_url" /><div class="info-pannel"><a :href="todo.img_href">{{todo.symbol}} </a><a :href="todo.tiger_href">({{todo.name}})</a></div></span>'
+            template: '<span class="tool-panel"><img width="305" height="225" :src="todo.img_url" /><div class="info-pannel"><a :href="todo.img_href">{{todo.symbol}} </a></div></span>'
         });
 
         app.mount('#app')
