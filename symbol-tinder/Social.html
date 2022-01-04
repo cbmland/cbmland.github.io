@@ -48,8 +48,10 @@
       <button @click="viewChart">View Chart</button>
       <button @click="addFocus(2)">Like</button>
       <button @click="addFocus(5)">Super</button>
+      <button @click="viewTitter">Twitter</button>
+      <button @click="viewFinviz">Finviz</button>
       <span class="tool-panel">
-        <img width="700" height="530" :src="chart_img_url" />
+        <img width="600" height="460" :src="chart_img_url" />
         <div class="info-pannel">
           <a :href="chart_img_href">{{symbol}} </a>
         </div>
@@ -95,6 +97,22 @@
               viewChart:function(){
 
                 this.prepData()
+              },
+              viewTitter:function(){
+                
+                let symbol = this.symbol.toUpperCase()
+                if(symbol.length>0 && symbol.length<6){
+
+                window.location.href = 'https://twitter.com/search?q=%24'+symbol+'&src=typed_query&f=live'
+                }
+              },
+              viewFinviz:function(){
+                
+                let symbol = this.symbol.toUpperCase()
+                if(symbol.length>0 && symbol.length<6){
+
+                window.location.href = 'https://finviz.com/quote.ashx?t='+symbol+'&p=d&tas=0'
+                }
               },
               addFocus: function(score){
 
