@@ -1,4 +1,4 @@
-#### Superf - Screener (2023-04-24 20:45:25)
+#### Superf - Screener (2023-04-24 20:48:21)
 
 
 AAA => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=INTU,SNAP,DD,GS,ASML,AAL,MRNA,PFE,WMT,MCD,QCOM,SHOP&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=LMT,TSM,SQ,LULU,KO,ABT,NKE,AAPL,AMZN,BA,ADBE,MSFT&ta=0) [[ 3 ]](https://finviz.com/screener.ashx?v=211&t=GOOGL,NVDA,AMD,NFLX,MU,TSLA&ta=0)  - MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?INTU,SNAP,DD,GS,ASML,AAL,MRNA,PFE,WMT,MCD,QCOM,SHOP|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?LMT,TSM,SQ,LULU,KO,ABT,NKE,AAPL,AMZN,BA,ADBE,MSFT|B|C20|) [[ 3 ]](https://stockcharts.com/freecharts/candleglance.html?GOOGL,NVDA,AMD,NFLX,MU,TSLA|B|C20|) 
