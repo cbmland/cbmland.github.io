@@ -1,4 +1,4 @@
-#### Superf - Screener (2023-04-24 19:27:02)
+#### Superf - Screener (2023-04-24 20:45:25)
 
 
 AAA => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=INTU,SNAP,DD,GS,ASML,AAL,MRNA,PFE,WMT,MCD,QCOM,SHOP&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=LMT,TSM,SQ,LULU,KO,ABT,NKE,AAPL,AMZN,BA,ADBE,MSFT&ta=0) [[ 3 ]](https://finviz.com/screener.ashx?v=211&t=GOOGL,NVDA,AMD,NFLX,MU,TSLA&ta=0)  - MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?INTU,SNAP,DD,GS,ASML,AAL,MRNA,PFE,WMT,MCD,QCOM,SHOP|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?LMT,TSM,SQ,LULU,KO,ABT,NKE,AAPL,AMZN,BA,ADBE,MSFT|B|C20|) [[ 3 ]](https://stockcharts.com/freecharts/candleglance.html?GOOGL,NVDA,AMD,NFLX,MU,TSLA|B|C20|) 
@@ -43,7 +43,7 @@ AA => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=PLTR,CCL,FANG,XLE,
 
 期权Paper => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=SE,SPY,AMZN,SQ,ZM,ABNB,BA,TSLA,MRNA,NVDA&ta=0)  - MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?SE,SPY,AMZN,SQ,ZM,ABNB,BA,TSLA,MRNA,NVDA|B|C20|) 
 
-FANG => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=QQQ,MSFT,GOOGL,NVDA,TSLA,AAPL,AMZN&ta=0)  - MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?QQQ,MSFT,GOOGL,NVDA,TSLA,AAPL,AMZN|B|C20|) 
+FANG => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=XLK,QQQ,MSFT,GOOGL,NVDA,TSLA,AAPL,AMZN&ta=0)  - MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?XLK,QQQ,MSFT,GOOGL,NVDA,TSLA,AAPL,AMZN|B|C20|) 
 
 etf => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=SPY,QQQ,IWM,DIA,TQQQ,DDM,UDOW,JETS,SOXL,UWM,,XBI&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=SSO,GDX,AGQ,SLV,SMH,NUGT,UVXY,LABU,XLE,UPRO,QLD,VXX&ta=0) [[ 3 ]](https://finviz.com/screener.ashx?v=211&t=UUP,XLI,XLU,XLK,XLB,XLF&ta=0)  - MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?SPY,QQQ,IWM,DIA,TQQQ,DDM,UDOW,JETS,SOXL,UWM,,XBI|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?SSO,GDX,AGQ,SLV,SMH,NUGT,UVXY,LABU,XLE,UPRO,QLD,VXX|B|C20|) [[ 3 ]](https://stockcharts.com/freecharts/candleglance.html?UUP,XLI,XLU,XLK,XLB,XLF|B|C20|) 
 
