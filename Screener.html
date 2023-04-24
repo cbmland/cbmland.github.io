@@ -12,39 +12,34 @@
 <style>
 
 .fade-enter-active, .fade-leave-active {
-
   transition: opacity .5s ease;
-
 }
 
 .fade-enter-from, .fade-leave-to {
-
   opacity: 0;
-
 }
+    .tool-panel{
 
-.tool-panel{
-    display: inline-block;
-    text-align: center;
-    margin-top: 20px;
-}
+        display: inline-block;
+        text-align: center;
+        margin-top: 20px;
 
-.info-pannel{
-    font-size: 14px;
-    margin-right: 20px;
-}
 
-.info-pannel a{
-    text-decoration: none;
-    color: black;
-}
+    }
+    .info-pannel{
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    .info-pannel a{
+        text-decoration: none;
+        color: black;
+    }
 
 </style>
 <body>
 
 <div id="app">
         <h2 >Superf - Screener ({{updated}})</h2>
-      <span></span>
       <div v-on:click="expland($event)" v-bind:id="'group_'+index" v-for="(groupItem,index) in groups">
         <h3 v-bind:id="'span_'+index">{{groupItem.name}}</h3>
         <transition name="fade">
@@ -142,7 +137,7 @@
 
         app.component('todo-item', {
             props: ['todo'],
-            template: '<span class="tool-panel"><img width="305" height="225" :src="todo.img_url" /><div class="info-pannel"><a :href="todo.img_href">{{todo.symbol}} </a><a :href="todo.tiger_href">({{todo.name}})</a></div></span>'
+            template: '<span class="tool-panel"><a :href="todo.img_href"><img width="305" height="225" :src="todo.img_url" /></a><div class="info-pannel"><a :href="todo.tiger_href">{{todo.symbol}} ({{todo.name}})</a></div></span>'
         });
 
         app.mount('#app')
