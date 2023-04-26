@@ -39,18 +39,13 @@
 <body>
 
 <div id="app">
-        <h2 >Superf - Screener ({{updated}})</h2>
-      <div v-on:click="expland($event)" v-bind:id="'group_'+index" v-for="(groupItem,index) in groups">
-        <h3 v-bind:id="'span_'+index">{{groupItem.name}}</h3>
-        <transition name="fade">
-        <div v-if="groupItem.isOpen">
-          <todo-item
-            v-for="item in groupItem.list"
-            v-bind:todo="item"
-            v-bind:key="item.id"
-          ></todo-item>
-         </div>
-        </transition>
+        <h2>{{period}} Indicator ({{updated}})</h2>
+        <div v-on:click="expland($event)" v-bind:id="'group_'+index" v-for="(item,index) in groups">
+        <h3 v-bind:id="'span_'+index">{{item.symbol}}</h3>
+        <div v-if="item.bDoji">底部Doji</div>
+        <div v-if="item.bGap">底部缺口</div>
+        <div v-if="item.roundB">圆弧底形态</div>
+        <div v-if="item.bLine">底部线出现？</div>
       </div>
 
 
@@ -91,7 +86,8 @@
         const ComponentsApp = {
             data() {
                 return {
-                    groups: value.groups,
+                    groups: value.items,
+                    period: value.period,
                     updated:value.updated
                 }
             },
