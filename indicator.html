@@ -68,18 +68,10 @@
         // handle success
         //console.log(response);
 
-        let groups = response.data.groups;
+        let items = response.data.items;
 
-        for( var i in groups){
-            var group = groups[i];
-            var list = group.list;
-            for(var j in list){
-                var item = list[j];
-                //console.log(item)
-                item.img_url = 'https://stockcharts.com/c-sc/sc?r=&chart='+item.symbol+',uu[305,a]dacayaci[pb20!b50][dg][ilC20]'
-                item.img_href = 'https://stockcharts.com/h-sc/ui?s='+item.symbol
-                item.tiger_href = 'tigerbrokersusstock://com.tigerbrokers.usstock/S/'+item.symbol
-            }
+        for( var i in items){
+            var item = items[i];
 
         }
         //console.log(groups)
