@@ -34,15 +34,15 @@
 
 <body>
 <div id="app">
-        <div class="text-3xl font-bold p-4 text-clifford">{{period}} Indicator</div>
+        <div onclick="switchSource()" class="text-3xl font-bold p-4 text-clifford">{{period}} Indicator</div>
         <div class="p-4">
             <div class="cardview text-md" v-bind:id="'group_'+index" v-for="(item,index) in items">
 
                 <div class="font-bold">{{item.symbol}}</div>
-                <div v-if="item.bDoji">底部Doji <div class="text-sm">{{item.barTime}}</div></div>
-                <div v-if="item.bGap">底部缺口 <div class="text-sm">{{item.barTime}}</div></div>
-                <div v-if="item.roundB">圆弧底形态 <div class="text-sm">{{item.barTime}}</div></div>
-                <div v-if="item.bLine">底部线出现？<div class="text-sm">{{item.barTime}}</div></div>
+                <div v-if="item.bDoji">底部Doji <div class="text-sm text-gray-400">{{item.barTime}}</div></div>
+                <div v-if="item.bGap">底部缺口 <div class="text-sm text-gray-400">{{item.barTime}}</div></div>
+                <div v-if="item.roundB">圆弧底形态 <div class="text-sm text-gray-400">{{item.barTime}}</div></div>
+                <div v-if="item.bLine">底部线出现？<div class="text-sm text-gray-400">{{item.barTime}}</div></div>
             
             </div>
         </div>
@@ -54,33 +54,36 @@
 </body>
 <script>
 
-    var json_url = '//cbmland.com/json/Indicator_day_Data.json'
+    var sourceIndex = 0;
+    var sourceUrls = ['//cbmland.com/json/Indicator_day_Data.json','//cbmland.com/json/Indicator_60min_Data.json']
     
-    // Make a request for a user with a given ID
-    axios.get(json_url)
-    //axios.get('/backtrader-master/logs/Toolbox_Screener_Data.json')
-      .then(function (response) {
-        // handle success
-        //console.log(response);
+    
+    function loadData(json_url){
+        // Make a request for a user with a given ID
+        axios.get(json_url)
+        //axios.get('/backtrader-master/logs/Toolbox_Screener_Data.json')
+        .then(function (response) {
+            // handle success
+            //console.log(response);
 
-        let items = response.data.items;
+            let items = response.data.items;
 
-        for( var i in items){
-            var item = items[i];
+            for( var i in items){
+                var item = items[i];
 
-        }
-        //console.log(groups)
-        onData(response.data)
+            }
+            //console.log(groups)
+            onData(response.data)
 
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .then(function () {
-        // always executed
-      });
-
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+        .then(function () {
+            // always executed
+        });
+    }
     function onData(value) {
 
         const ComponentsApp = {
@@ -92,15 +95,29 @@
                 }
             },
             methods: {
+                
 
             }
         }
 
-
-        const app = Vue.createApp(ComponentsApp)
-
+        app = Vue.createApp(ComponentsApp)
 
         app.mount('#app')
     }
+    var app;
+    function switchSource()
+                {
+                    
+                    sourceIndex+=1
+                    if(sourceIndex>=sourceUrls.length){sourceIndex=0}
+                    json_url = sourceUrls[sourceIndex]
+                    //app.unmount()
+                    //loadData(json_url)
+                }
+
+    var json_url = sourceUrls[sourceIndex]
+
+    loadData(json_url)
+
 </script>
 </html>
