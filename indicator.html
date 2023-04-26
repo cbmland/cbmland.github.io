@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="referrer" content="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.599, user-scalable=no">
-    <title>Screener</title>
+    <title>Indicator</title>
     <script src="//unpkg.com/vue@next"></script>
     <script src="//unpkg.com/axios/dist/axios.min.js"></script>
 
@@ -12,30 +12,50 @@
 <style>
 
 .title{
-    font-size: 24px;
+    
     padding-bottom: 20px;
 }
 .cardview{
-    font-size: 16px;
+    
     display: inline-block;
-    width: 200px;
+    width: 150px;
     height: 100px;
 }
-
+.bd{
+    font-weight: bold;
+}
+.xl{
+    font-size: 28px;
+}
+.lg{
+    font-size: 24px;
+}
+.md {
+    font-size: 16px;
+}
+.sm {
+    font-size: 8px;
+}
+.gray{
+    color: gray;
+}
 
 </style>
 <body>
 
 <div id="app">
-        <div class="title">{{period}} Indicator ({{updated}})</div>
-        <div class="cardview" v-bind:id="'group_'+index" v-for="(item,index) in items">
-        <div>{{item.symbol}}</div>
-        <div v-if="item.bDoji">底部Doji <div>{{item.barTime}}</div></div>
-        <div v-if="item.bGap">底部缺口</div>
-        <div v-if="item.roundB">圆弧底形态</div>
-        <div v-if="item.bLine">底部线出现？</div>
-      </div>
+        <div class="title lg">{{period}} Indicator</div>
 
+        <div class="cardview md" v-bind:id="'group_'+index" v-for="(item,index) in items">
+
+            <div class="bd">{{item.symbol}}</div>
+            <div v-if="item.bDoji">底部Doji <div class="sm">{{item.barTime}}</div></div>
+            <div v-if="item.bGap">底部缺口 <div class="sm">{{item.barTime}}</div></div>
+            <div v-if="item.roundB">圆弧底形态 <div class="sm">{{item.barTime}}</div></div>
+            <div v-if="item.bLine">底部线出现？<div class="sm">{{item.barTime}}</div></div>
+        
+        </div>
+        <div class="gray">updated date: {{updated}}</div>
 
 </div>
 
