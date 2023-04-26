@@ -3,59 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="referrer" content="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.599, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Indicator</title>
+    
     <script src="//unpkg.com/vue@next"></script>
     <script src="//unpkg.com/axios/dist/axios.min.js"></script>
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<style>
-
-.title{
+<style type="text/tailwindcss">
+    @layer utilities {
+        .cardview{
     
-    padding-bottom: 20px;
-}
-.cardview{
-    
-    display: inline-block;
-    width: 150px;
-    height: 100px;
-}
-.bd{
-    font-weight: bold;
-}
-.xl{
-    font-size: 28px;
-}
-.lg{
-    font-size: 24px;
-}
-.md {
-    font-size: 16px;
-}
-.sm {
-    font-size: 8px;
-}
-.gray{
-    color: gray;
-}
-
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+        }
+    }
 </style>
+
 <body>
-
 <div id="app">
-        <div class="title lg">{{period}} Indicator</div>
+        <div class="text-3xl font-bold p-4 text-clifford">{{period}} Indicator</div>
+        <div class="p-4">
+            <div class="cardview text-md" v-bind:id="'group_'+index" v-for="(item,index) in items">
 
-        <div class="cardview md" v-bind:id="'group_'+index" v-for="(item,index) in items">
-
-            <div class="bd">{{item.symbol}}</div>
-            <div v-if="item.bDoji">底部Doji <div class="sm">{{item.barTime}}</div></div>
-            <div v-if="item.bGap">底部缺口 <div class="sm">{{item.barTime}}</div></div>
-            <div v-if="item.roundB">圆弧底形态 <div class="sm">{{item.barTime}}</div></div>
-            <div v-if="item.bLine">底部线出现？<div class="sm">{{item.barTime}}</div></div>
-        
+                <div class="font-bold">{{item.symbol}}</div>
+                <div v-if="item.bDoji">底部Doji <div class="text-sm">{{item.barTime}}</div></div>
+                <div v-if="item.bGap">底部缺口 <div class="text-sm">{{item.barTime}}</div></div>
+                <div v-if="item.roundB">圆弧底形态 <div class="text-sm">{{item.barTime}}</div></div>
+                <div v-if="item.bLine">底部线出现？<div class="text-sm">{{item.barTime}}</div></div>
+            
+            </div>
         </div>
-        <div class="gray">updated date: {{updated}}</div>
+
+        <div class="text-gray-500 pl-4 pb-4">updated date: {{updated}}</div>
 
 </div>
 
