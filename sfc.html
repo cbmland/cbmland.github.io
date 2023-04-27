@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Indicator</title>
+        <script src="//unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- <script src="https://unpkg.com/vue@next"></script> -->
+        <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.prod.js"></script>
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+                }
+            }
+            }
+        </script>
+    </head>
+    <style type="text/tailwindcss">
+            @layer utilities {
+                .cardview{
+
+                    display: inline-block;
+                    width: 150px;
+                    height: 100px;
+                }
+            }
+    </style>
+    <body>
+        <div id="app">
+            <div @click="titleClick" class="text-3xl font-bold p-4 text-clifford">{{period}} Indicator</div>
+            <div class="p-4">
+                <div class="cardview text-md" v-bind:id="'group_'+index" v-for="(item,index) in items">
+
+                    <div class="font-bold">{{item.symbol}}</div>
+                    <div v-if="item.bDoji">底部Doji <div class="text-sm text-gray-400">{{item.barTime}}</div></div>
+                    <div v-if="item.bGap">底部缺口 <div class="text-sm text-gray-400">{{item.barTime}}</div></div>
+                    <div v-if="item.roundB">圆弧底形态 <div class="text-sm text-gray-400">{{item.barTime}}</div></div>
+                    <div v-if="item.bLine">底部线出现？<div class="text-sm text-gray-400">{{item.barTime}}</div></div>
+                
+                </div>
+            </div>
+            <div class="text-gray-500 pl-4 pb-4">updated date: {{updated}}</div>
+
+        </div>
+        
+        <script>
+        const { ref, createApp } = Vue
+        createApp({
+            setup() {
+
+                const period = ref('')
+                const updated = ref('')
+                const items = ref([])
+
+                let sourceIndex = 0
+                let sourceUrls = ['//cbmland.com/json/Indicator_day_Data.json','//cbmland.com/json/Indicator_60min_Data.json']
+
+                const titleClick = () => {
+                
+                    sourceIndex+=1
+                    if(sourceIndex>=sourceUrls.length){sourceIndex=0}
+                    initData()
+                }
+                const loadData = (json_url) =>{
+
+                    axios.get(json_url)
+                    .then(function (response) {
+                        items.value = response.data.items
+                        period.value = response.data.period
+                        updated.value = response.data.updated
+
+                    })
+                    .catch(function (error) {
+                        // handle error
+                        console.log(error);
+                    })
+                    .then(function () {
+                        // always executed
+                    });
+                }
+                const initData = () => {
+
+                    var json_url = sourceUrls[sourceIndex]
+                    loadData(json_url)
+                }
+                return {
+                    items,
+                    period,
+                    updated,
+                    initData,
+                    titleClick,
+                }
+            },
+            mounted(){
+                console.log('mounted')
+                this.initData()
+            }
+        }).mount('#app')
+        </script>  
+    </body>
+</html>
