@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <title>React Data List Example</title>
     <!-- Load React and ReactDOM -->
-    <script src="https://unpkg.com/react@16.14.0/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16.14.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react@16.14.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.14.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body>
-    <button id="switchDataButton">Switch Data</button>
+    <button id="switchDataButton" class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">Switch Data</button>
     <div id="root"></div>
     
     <script>
@@ -29,7 +41,7 @@
         const list = props.data.items;
 
         const listItems = list.map(item =>
-          e("li", {key:item.symbol+item.barTime+item.strategy,title:item.strategy}, `${item.symbol} - ${item.barTime} - ${item.content}`)
+          e("li", { key: item.key, title: item.strategy}, `${item.symbol} - ${item.barTime} - ${item.content}`)
         );
 
         return e("ul", null, listItems);
