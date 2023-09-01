@@ -1,4 +1,4 @@
-#### Superf - Screener (2023-08-31 23:50:58)
+#### Superf - Screener (2023-09-01 16:29:30)
 
 
 AAA => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=INTU,SNAP,DD,GS,ASML,PFE,WMT,MCD,SHOP,LMT,SQ,KO&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=AAPL,AMZN,BA,ADBE,MSFT,GOOGL,NVDA,AMD,NFLX,MU,TSLA&ta=0)  - MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?INTU,SNAP,DD,GS,ASML,PFE,WMT,MCD,SHOP,LMT,SQ,KO|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?AAPL,AMZN,BA,ADBE,MSFT,GOOGL,NVDA,AMD,NFLX,MU,TSLA|B|C20|) 
@@ -23,7 +23,7 @@ AA => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=ETN,FANG,JBL,MELI,
 
 食品饮料 => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=PTLO,DPZ,HSY,SBUX,SHAK,BYND,MNST,BUD,KO,PEP,CELH&ta=0)  - MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?PTLO,DPZ,HSY,SBUX,SHAK,BYND,MNST,BUD,KO,PEP,CELH|B|C20|) 
 
-互联网服务 => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=PLTR,AI,CRM,UPWK,PINS,INTU,ADSK,DBX,NET,FSLY,AKAM,ZM&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=NTGR,SNAP,SHOP,SNOW,ADBE,TWLO,CYBR&ta=0)  - MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?PLTR,AI,CRM,UPWK,PINS,INTU,ADSK,DBX,NET,FSLY,AKAM,ZM|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?NTGR,SNAP,SHOP,SNOW,ADBE,TWLO,CYBR|B|C20|) 
+互联网服务 => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=ZS,PLTR,AI,CRM,UPWK,PINS,INTU,ADSK,DBX,NET,FSLY,AKAM&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=ZM,NTGR,SNAP,SHOP,SNOW,ADBE,TWLO,CYBR&ta=0)  - MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?ZS,PLTR,AI,CRM,UPWK,PINS,INTU,ADSK,DBX,NET,FSLY,AKAM|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?ZM,NTGR,SNAP,SHOP,SNOW,ADBE,TWLO,CYBR|B|C20|) 
 
 电商 => Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=SE,JD,BABA,PDD&ta=0)  - MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?SE,JD,BABA,PDD|B|C20|) 
 
