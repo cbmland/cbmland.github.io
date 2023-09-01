@@ -1,5 +1,4 @@
-# Superf - Screener (2023-09-01 17:53:14)
-
+# Screener - Stock Quick Links
 
 ## AAA
 
@@ -145,12 +144,6 @@ Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=LOGI,URI,SPOT,TWST,ZS,AD
 
 MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?LOGI,URI,SPOT,TWST,ZS,ADSK,INTU,GRWG,DDOG,NET,TTD,SNOW|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?ARLO,DASH,MMM,DKNG,AFRM,OPEN,MSA,CCJ,NU,GRIN,WWE,ISRG|B|C20|) [[ 3 ]](https://stockcharts.com/freecharts/candleglance.html?MDB,ACN,HD|B|C20|) 
 
-## 发现
-
-Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=MDB,ISRG,WWE,GRIN,NU,CCJ,MSA,OPEN,AFRM,DKNG,MMM,DASH&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=ARLO,SNOW,TTD,NET,DDOG,GRWG,INTU,ADSK,ZS,TWST,SPOT,URI&ta=0) [[ 3 ]](https://finviz.com/screener.ashx?v=211&t=LOGI&ta=0)  
-
-MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?MDB,ISRG,WWE,GRIN,NU,CCJ,MSA,OPEN,AFRM,DKNG,MMM,DASH|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?ARLO,SNOW,TTD,NET,DDOG,GRWG,INTU,ADSK,ZS,TWST,SPOT,URI|B|C20|) [[ 3 ]](https://stockcharts.com/freecharts/candleglance.html?LOGI|B|C20|) 
-
 ## 能源
 
 Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=DQ,BP,OXY,FANG,TAN,XLE,SPWR,PLUG&ta=0)  
@@ -163,11 +156,18 @@ Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=DUOL,GOTU,EDU,TAL&ta=0)
 
 MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?DUOL,GOTU,EDU,TAL|B|C20|) 
 
-资金流 [大指数](https://stockcharts.com/freecharts/candleglance.html?SPY,QQQ,IWM,DIA,GLD,USO,UNG,UUP,TLT,VXX,VXZ,FXY|B|C20|)
+## 大指数 
+MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?SPY,QQQ,IWM,DIA,GLD,USO,UNG,UUP,TLT,VXX,VXZ,FXY|B|C20|)
 
-资金流 [大科技](https://stockcharts.com/freecharts/candleglance.html?FB,AMZN,NFLX,GOOGL,AAPL,TSLA,BABA,BIDU,NTES,NVDA,MSFT|B|C20|)
+## 大科技 
+MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?META,AMZN,NFLX,GOOGL,AAPL,TSLA,BABA,BIDU,NTES,NVDA,MSFT|B|C20|)
 
-资金流 [$NYMO](https://stockcharts.com/h-sc/ui?s=%24NYMO&p=D&yr=0&mn=9&dy=0&id=p79316909740)
+## $NYMO 
+MoneyFlow [[ 1 ]](https://stockcharts.com/h-sc/ui?s=%24NYMO&p=D&yr=0&mn=9&dy=0&id=p79316909740)
 
-资金流 [$NAMO](https://stockcharts.com/h-sc/ui?s=%24NAMO&p=D&yr=0&mn=9&dy=0&id=p79316909740)
+## $NAMO 
+MoneyFlow [[ 1 ]](https://stockcharts.com/h-sc/ui?s=%24NAMO&p=D&yr=0&mn=9&dy=0&id=p79316909740)
+
+## 
+> last updated: 2023-09-01 18:20:54
 
