@@ -1,830 +1,142 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head profile="http://gmpg.org/xfn/11">
-<title>VMware 虚拟机硬盘镜像共享 | 西边饿魔</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="pragma" content="no-cache" />
-<meta http-equiv="cache-control" content="no-cache" />
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<meta name = "viewport" content = "width = 1024, initial-scale = 1">
-<link rel="alternate" type="application/rss+xml" title="cbm&#039;s land RSS" href="http://feed.cbmland.com" />
-<link rel="shortcut icon" href="http://cbmland.com/wp-content/themes/illacrimo-plus/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="http://cbmland.com/wp-content/themes/illacrimo-plus/favicon.icon" type="image/gif" />
-<link rel="pingback" href="http://cbmland.com/xmlrpc.php" />
-<link rel="stylesheet" href="/wp-content/themes/illacrimo-plus/style.css" type="text/css" media="screen" />
-<script type="text/javascript" src="/wp-content/themes/illacrimo-plus/script.js"></script>
-<script type="text/javascript" src="/js/show_ads.js"></script><!--  -->
-<style type="text/css">
-
-
-
-</style>
-    <script type="text/javascript">
-
-        /*setTimeout(function(){
-
-            $('sidebarL').style.cssText = '-webkit-transition-duration: 1s;-webkit-transform: translate3d(-200px,0,0);';
-
-        },15000)*/
-
-    </script>
-
-<script type="text/javascript" src="/js/swfobject.js"></script>
-
-<link rel="alternate" type="application/rss+xml" title="cbm&#039;s land &raquo; VMware 虚拟机硬盘镜像共享评论Feed" href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html/feed" />
-<link rel='stylesheet' id='crayon-css'  href='http://cbmland.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.5.0' type='text/css' media='all' />
-<script type='text/javascript' src='http://cbmland.com/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
-<script type='text/javascript' src='http://cbmland.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var CrayonSyntaxSettings = {"version":"2.5.0","is_admin":"0","ajaxurl":"http:\/\/cbmland.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
-var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u7528 %s \u7c98\u8d34\u3002","minimize":"Click To Expand Code"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://cbmland.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.5.0'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://cbmland.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://cbmland.com/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='玩VMware的好去处 共享各种虚拟机镜像' href='http://cbmland.com/post/328/share-vm-images.html' />
-<link rel='next' title='提交你认为最佳的Vmware中文名换三日美国游。' href='http://cbmland.com/post/341/what-is-chinese-name-of-vmware.html' />
-
-<link rel='shortlink' href='http://cbmland.com/?p=329' />
-
-<!-- All in One SEO Pack 2.1 by Michael Torbert of Semper Fi Web Design[206,231] -->
-<link rel="canonical" href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html" />
-<meta property="og:title" content="VMware 虚拟机硬盘镜像共享 | 西边饿魔" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://cbmland.com/post/329/vmware-vmdk-images-shared.html" />
-<meta property="og:image" content="http://cbmland.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
-<meta property="og:site_name" content="cbm&#039;s land" />
-<meta property="og:description" content="现在已经创建了关于VMware技术的QQ群，加入时请注明加入说明，并按要求修改个人群名片。
-超级群：51794477
-高级群：8242512
-温馨提示：下列的磁盘镜像均可以通过QQ群的邮箱文件共享进行下载。
-新增百度网盘下载链接：http://pan.baidu.com/s/1pJBLl4R
-
-™
-VMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。
-曾经一口气做过Window98、me、2000 pro、2000 server、XP Home、XP Pro、英文版各个版本的原始安装版本。并且刻录DVD，供自己下次使用或者供别人拷贝，免去无味的重复安装过程。
-
-一个人的能力是有限的。也希望其他的朋友能够共享出来。
-
-
-本来发布在VCD论坛的，但是无故被删除了。有一些朋友对我的这些vmdk很感兴趣，现转到自己的站点来提供稳定的下载地址。
-™
-共享的镜像都是系统安装完毕的版本。没有做任何的多于操作。对于做软件测试，系统分析，溢出漏洞，黑客学习的朋友再方便不过了。Windows版本的wmdk文件已经体积优化过，已经是最小化文件，尽量减少占用硬盘空间。
-
-下面是每个虚拟机镜像的具体信息和ed2k下载地址。
-
-
-
-.W" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:description" content="现在已经创建了关于VMware技术的QQ群，加入时请注明加入说明，并按要求修改个人群名片。
-超级群：51794477
-高级群：8242512
-温馨提示：下列的磁盘镜像均可以通过QQ群的邮箱文件共享进行下载。
-新增百度网盘下载链接：http://pan.baidu.com/s/1pJBLl4R
-
-™
-VMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。
-曾经一口气做过Window98、me、2000 pro、2000 server、XP Home、XP Pro、英文版各个版本的原始安装版本。并且刻录DVD，供自己下次使用或者供别人拷贝，免去无味的重复安装过程。
-
-一个人的能力是有限的。也希望其他的朋友能够共享出来。
-
-
-本来发布在VCD论坛的，但是无故被删除了。有一些朋友对我的这些vmdk很感兴趣，现转到自己的站点来提供稳定的下载地址。
-™
-共享的镜像都是系统安装完毕的版本。没有做任何的多于操作。对于做软件测试，系统分析，溢出漏洞，黑客学习的朋友再方便不过了。Windows版本的wmdk文件已经体积优化过，已经是最小化文件，尽量减少占用硬盘空间。
-
-下面是每个虚拟机镜像的具体信息和ed2k下载地址。
-
-
-
-.W" />
-<!-- /all in one seo pack -->
-<script type="text/javascript">
-(function(url){
-if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
-var wfscr = document.createElement('script');
-wfscr.type = 'text/javascript';
-wfscr.async = true;
-wfscr.src = url + '&r=' + Math.random();
-(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
-})('//cbmland.com/wp-admin/admin-ajax.php?action=wordfence_logHuman&hid=5B6137BEEE59B202192249DDE5B65553'); 
-</script></head>
-<body>
-<div id="page">
-<!-- start header -->
-<div id="header">
-<div id="tag-cloud"></div>
-<div class="LS"></div>
-
-   <h1><a href="http://cbmland.com/">cbm&#039;s land</a></h1>
-   <p class="Desc">记录我的全新旅程</p>
-   
-<div id="taotao"></div>
-<div id="refer_info">欢迎来自 <strong>https:</strong> 的朋友 :)<br />如果您是第一次来到本站，建议 <strong><a href="http://feed.cbmland.com">立即订阅</a></strong> 本站，不错过任何精彩内容！ </div></div>
-
-<div id="menu"><div id="PageRank"><img id="PageRankImg" alt="PRank" title="PageRank" width="43" height="17" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/ranking.gif" /></div>
-   <ul id="nav">
-   <li class="current_page_item"><a href="http://cbmland.com/">Blog</a></li>
-   
-<li class="page_item page-item-295"><a href="http://cbmland.com/flash-player-update">Flash Player Update</a></li>
-<li class="page_item page-item-474"><a href="http://cbmland.com/download">Downloads</a></li>
-</ul> 
-</div>
- 
- 
-
-<!-- start content items -->
-<div id="content">
-
-<!-- start center -->
-<div id="SC">
-
-
-<div class="Post" id="post-329">
-<div class="PostHead">
-<!-- google_ad_section_start -->
-<div><h1>VMware 虚拟机硬盘镜像共享<span id="scrollto" ></span></h1></div>
-<div class="navigation"> <a href="http://cbmland.com/post/328/share-vm-images.html" rel="prev">玩VMware的好去处 共享各种虚拟机镜像</a> &raquo;</div>
-<small class="PostAuthor">Author: cbm  </small>
-
-<p class="PostDate">
-<small class="day">21</small>
-<small class="month">九</small>
-<small class="year">2007</small>
-</p>
-
-</div>
-
-<div class="PostContent">
-<div id="ads_b1">
-
-</div>
-
- <blockquote style="fontsize: 12px;"><p>
-现在已经创建了关于VMware技术的QQ群，加入时请注明加入说明，并按要求修改个人群名片。<br />
-超级群：<span style="color: #ff0000;"><strong>51794477</strong></span><br />
-高级群：<span style="color: #ff0000;"><strong>8242512</strong></span><br />
-温馨提示：下列的磁盘镜像均可以通过QQ群的邮箱文件共享进行下载。<br />
-<strong>新增百度网盘下载链接</strong>：<a href="http://pan.baidu.com/s/1pJBLl4R">http://pan.baidu.com/s/1pJBLl4R</a>
-</p></blockquote>
-<div id="ads_c2">™</div>
-<p>VMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。<br />
-曾经一口气做过Window98、me、2000 pro、2000 server、XP Home、XP Pro、英文版各个版本的<strong>原始安装版本</strong>。并且刻录DVD，供自己下次使用或者供别人拷贝，免去无味的重复安装过程。</p>
-<p>一个人的能力是有限的。也希望其他的朋友能够共享出来。<br />
-<a title="all.PNG" href="http://cbmland.com/uploads/2007/09/all.PNG"><img src="http://cbmland.com/uploads/2007/09/all.PNG" alt="all.PNG" /></a></p>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/><style>undefined</style><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/><title>VMware 虚拟机硬盘镜像共享</title><meta name="description" content="
+&gt;新增百度网盘下载链接：http://pan.baidu.com/s/1pJBLl4RVMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。
+曾经一口气做过Window"/><meta name="author" content="cbm"/><meta property="og:title" content="VMware 虚拟机硬盘镜像共享"/><meta property="og:description" content="
+&gt;新增百度网盘下载链接：http://pan.baidu.com/s/1pJBLl4RVMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。
+曾经一口气做过Window"/><meta property="og:type" content="website"/><meta property="og:url" content="https://blog.cbmland.com/posts/vmware-vmdk-images-shared"/><meta name="twitter:title" content="VMware 虚拟机硬盘镜像共享"/><meta name="twitter:description" content="
+&gt;新增百度网盘下载链接：http://pan.baidu.com/s/1pJBLl4RVMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。
+曾经一口气做过Window"/><meta property="og:image" content="https://blog.cbmland.com/images/og-image.png"/><meta name="twitter:image" content="https://blog.cbmland.com/images/og-image.png"/><meta name="twitter:card" content="summary_large_image"/><meta name="referrer" content="no-referrer"/><link rel="preload" as="image" href="/images/logo.png"/><meta name="next-head-count" content="18"/><link rel="shortcut icon" href="/images/favicon.png"/><meta name="theme-name" content="geeky-nextjs"/><meta name="msapplication-TileColor" content="#000000"/><meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff"/><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"/><link rel="preload" href="/_next/static/css/6a048242484a62c5.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6a048242484a62c5.css" data-n-g=""/><link rel="preload" href="/_next/static/css/9efd1f6f099e7ebc.css" as="style"/><link rel="stylesheet" href="/_next/static/css/9efd1f6f099e7ebc.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-59c5c889f52620d6.js" defer=""></script><script src="/_next/static/chunks/framework-281bd828f4ecdac7.js" defer=""></script><script src="/_next/static/chunks/main-22ea3ef651d1b15f.js" defer=""></script><script src="/_next/static/chunks/pages/_app-c57bb29dc56c5a17.js" defer=""></script><script src="/_next/static/chunks/4f61b58a-5a0b6ad58d467ae8.js" defer=""></script><script src="/_next/static/chunks/9c9bde03-4f7a75538fbc51de.js" defer=""></script><script src="/_next/static/chunks/267-767dd55a1b01c92b.js" defer=""></script><script src="/_next/static/chunks/986-a87ad4fd99e0b898.js" defer=""></script><script src="/_next/static/chunks/465-917a5d19cd1cc428.js" defer=""></script><script src="/_next/static/chunks/665-dba4605a9e2c9348.js" defer=""></script><script src="/_next/static/chunks/625-f6897447c66fdf35.js" defer=""></script><script src="/_next/static/chunks/pages/posts/%5Bsingle%5D-66c76662789a67d4.js" defer=""></script><script src="/_next/static/_qp1oOeP8ptS4vcNfaSZI/_buildManifest.js" defer=""></script><script src="/_next/static/_qp1oOeP8ptS4vcNfaSZI/_ssgManifest.js" defer=""></script></head><body><div id="__next"><script>!function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e==='light'||e==='dark')d.style.colorScheme=e}catch(e){}}()</script><header class="header"><nav class="navbar container px-1 sm:px-8"><div class="order-0"><a class="navbar-brand" href="https://blog.cbmland.com"><img alt="cbm&#x27;s land" src="/images/logo.png" width="300" height="78" decoding="async" data-nimg="1" class="m-auto" style="color:transparent;height:39px;width:150px"/></a></div><div class="flex items-center space-x-4 xl:space-x-8"><div class="collapse-menu translate-x-full lg:flex lg:translate-x-0"><button class="absolute right-6 top-11 lg:hidden"><svg class="h-4 w-4 fill-current" viewBox="0 0 20 20"><title>Menu Close</title><polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)"></polygon></svg></button><ul id="nav-menu" class="navbar-nav w-full md:w-auto md:space-x-1 lg:flex xl:space-x-2"><li class="nav-item"><a target="" class="nav-link block false" href="https://blog.cbmland.com/">Home</a></li><li class="nav-item"><a target="" class="nav-link block false" href="https://blog.cbmland.com/screener">Screener</a></li><li class="nav-item"><a target="_blank" class="nav-link block false" href="https://chat.cbmland.com/">ChatGPT</a></li><li class="nav-item"><a target="_blank" class="nav-link block false" href="https://indicator.cbmland.com/">Indicator</a></li><li class="nav-item nav-dropdown group relative"><span class="nav-link false inline-flex items-center">More<svg class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></span><ul class="nav-dropdown-list hidden transition-all duration-300 group-hover:top-[46px] group-hover:block md:invisible md:absolute md:top-[60px] md:block md:opacity-0 md:group-hover:visible md:group-hover:opacity-100"><li class="nav-dropdown-item"><a class="nav-dropdown-link block false" href="https://blog.cbmland.com/about">About</a></li><li class="nav-dropdown-item"><a class="nav-dropdown-link block false" href="https://blog.cbmland.com/contact">Contact</a></li><li class="nav-dropdown-item"><a class="nav-dropdown-link block false" href="https://blog.cbmland.com/privacy-policy">Privacy Policy</a></li></ul></li></ul><ul class="socials"><li class="inline-block"><a aria-label="twitter" href="https://twitter.com/cbmland" target="_blank" rel="noopener noreferrer nofollow"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"></path></svg></a></li><li class="inline-block"><a aria-label="instagram" href="https://instagram.com/" target="_blank" rel="noopener noreferrer nofollow"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"></path><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"></path></svg></a></li><li class="inline-block"><a aria-label="github" href="https://github.com/cbmland" target="_blank" rel="noopener noreferrer nofollow"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></a></li></ul></div><button aria-label="Toggle Theme" type="button" class="ml-1 mr-1 h-8 w-8 rounded p-1 sm:ml-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-gray-900 dark:text-gray-100"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg></button><div class="search-icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"></path></svg></div><button class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white lg:hidden"><svg class="h-4 w-4 fill-current" viewBox="0 0 20 20"><title>Menu Open</title><path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path></svg></button></div><div class="search-modal "><button class="search-close"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"></path><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 320L192 192m0 128l128-128"></path></svg></button><input type="text" class="form-input bg-body placeholder:text-base dark:bg-darkmode-body" id="searchModal" placeholder="Type and hit enter..."/></div></nav></header><main><section class="section single-blog"><div class="container"><div class="row"><div class="lg:col-8"><article><div class="relative"><img alt="VMware 虚拟机硬盘镜像共享" src="https://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png" width="1000" height="500" decoding="async" data-nimg="1" class="rounded-lg" loading="lazy" style="color:transparent"/><ul class="absolute top-3 left-2 flex flex-wrap items-center"><li class="mx-2 inline-flex h-7 rounded-[35px] bg-primary px-3 text-white"><a class="capitalize" href="/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90">软件推荐</a></li><li class="mx-2 inline-flex h-7 rounded-[35px] bg-primary px-3 text-white"><a class="capitalize" href="/categories/VMware">VMware</a></li></ul></div><h1 class="lg:text-[42px] mt-4">VMware 虚拟机硬盘镜像共享</h1><ul class="flex items-center space-x-4"><li><a class="inline-flex items-center font-secondary text-xs leading-3" href="/about"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="mr-1.5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"></path></svg>cbm</a></li><li class="inline-flex items-center font-secondary text-xs leading-3"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="mr-1.5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"></path></svg>21 Sep 2007</li></ul><div class="content mb-16"><blockquote>
+<p>新增百度网盘下载链接：<a href="http://pan.baidu.com/s/1pJBLl4R">http://pan.baidu.com/s/1pJBLl4R</a></p>
+</blockquote>
+<p>VMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。
+曾经一口气做过Window98、me、2000 pro、2000 server、XP Home、XP Pro、英文版各个版本的原始安装版本。并且刻录DVD，供自己下次使用或者供别人拷贝，免去无味的重复安装过程。</p>
+<p>一个人的能力是有限的。也希望其他的朋友能够共享出来。
+<img src="https://cbmland.com/uploads/2007/09/all.PNG" alt="alt all.PNG"/></p>
 <p>本来发布在VCD论坛的，但是无故被删除了。有一些朋友对我的这些vmdk很感兴趣，现转到自己的站点来提供稳定的下载地址。</p>
-<div id="ads_c3">™</div>
-<p><span style="color: #ff0000;">共享的镜像都是系统安装完毕的版本。没有做任何的多于操作。对于做软件测试，系统分析，溢出漏洞，黑客学习的朋友再方便不过了。Windows版本的wmdk文件已经体积优化过，已经是最小化文件，尽量减少占用硬盘空间。</span></p>
+<p>共享的镜像都是系统安装完毕的版本。没有做任何的多于操作。对于做软件测试，系统分析，溢出漏洞，黑客学习的朋友再方便不过了。Windows版本的wmdk文件已经体积优化过，已经是最小化文件，尽量减少占用硬盘空间。</p>
 <p>下面是每个虚拟机镜像的具体信息和ed2k下载地址。</p>
-<p><a title="windows-98vmdk.png" href="http://cbmland.com/uploads/2007/09/windows-98vmdk.png"><img src="http://cbmland.com/uploads/2007/09/windows-98vmdk.png" alt="windows-98vmdk.png" /></a></p>
-<p><a href="ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.98.vmdk.rar|94580194|17087290020f0ac4a73aa3389328ab7f|h=26ESU26DWXHPSDQM6SVBTKXZCODZIMIU|/">[VMware.虚拟机硬盘镜像].Windows.98.vmdk.rar</a> 90.2MB<br />
-<p><img src="http://cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/unknown.gif" alt="Download: Windows 98.vmdk" title="Download: Windows 98.vmdk"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.skydrive.live.com/browse.aspx/VMDK/Windows%2098.vmdk" title="Download: Windows 98.vmdk">Windows 98.vmdk</a></strong> (90.2 MiB, 4,378 hits)<br /></p></p>
-<p><span style="color: #ff0000;">（附加说明：vmware workstation 6.x开始vmware tools的显卡驱动和鼠标驱动不能自动在98下安装，需要手动安装，请定位到vmware tools光盘中的相关目录进行驱动更新，声卡驱动在群里面共享有提供。2008-3-7）<br />
-对于6.X 以上版本的虚拟机，声卡驱动请在搜索本站进行<a href="http://cbmland.com/post/803/vmware-6x-es1371-audio-card-drivers-for-windows-98.html">下载</a>。<br />
-</span></p>
-<p>最后更新: 2006-1-31<br />
-操作系统: Windows 98 简体中文第二版<br />
-已安装软件: 默认组件<br />
-已安装 VMware Tools: 无<br />
-VMware 硬盘版本:Workstation 5.x<br />
-帐户信息(如果需要)<br />
-用户名: Administrator<br />
-密码: cbm<br />
+<p><img src="https://cbmland.com/uploads/2007/09/windows-98vmdk.png" alt="alt windows-98vmdk"/></p>
+<p><a href="ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.98.vmdk.rar%7C94580194%7C17087290020f0ac4a73aa3389328ab7f%7Ch=26ESU26DWXHPSDQM6SVBTKXZCODZIMIU%7C/">[VMware.虚拟机硬盘镜像].Windows.98.vmdk.rar</a> 90.2MB</p>
+<p>Download: <a href="https://www.icloud.com/iclouddrive/0e49jQL_SWwkGd_oBRg0lNGyA#Windows_98">Windows 98.vmdk</a> (90.2 MiB, 4,378 hits)</p>
+<p>（附加说明：vmware workstation 6.x开始vmware tools的显卡驱动和鼠标驱动不能自动在98下安装，需要手动安装，请定位到vmware tools光盘中的相关目录进行驱动更新，声卡驱动在群里面共享有提供。2008-3-7）
+对于6.X 以上版本的虚拟机，声卡驱动请在搜索本站进行下载。</p>
+<p>最后更新: 2006-1-31
+操作系统: Windows 98 简体中文第二版
+已安装软件: 默认组件
+已安装 VMware Tools: 无
+VMware 硬盘版本:Workstation 5.x
+帐户信息(如果需要)
+用户名: Administrator
+密码: cbm
 内存分配: 32 MB</p>
-<p><a title="windows-mevmdk.png" href="http://cbmland.com/uploads/2007/09/windows-mevmdk.png"><img src="http://cbmland.com/uploads/2007/09/windows-mevmdk.png" alt="windows-mevmdk.png" /></a></p>
-<p>&nbsp;</p>
-<p><a href="ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Me.vmdk.rar|303603177|4feeac21c29e8de59b998510fd814d94|h=IJKPEWV2FVU35BIZPKYOWUP46ENB6TUL|/">[VMware.虚拟机硬盘镜像].Windows.Me.vmdk.rar</a> 289.5MB</p>
-<p><img src="http://cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/unknown.gif" alt="Download: Windows Me.vmdk" title="Download: Windows Me.vmdk"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.skydrive.live.com/browse.aspx/VMDK/Windows%20Me.vmdk" title="Download: Windows Me.vmdk">Windows Me.vmdk</a></strong> (289.5 MiB, 982 hits)<br /></p>
-<p>最后更新: 2006-1-31<br />
-操作系统: Windows ME 简体中文版<br />
-已安装软件: 默认组件<br />
-已安装 VMware Tools: 无<br />
-VMware 硬盘版本:Workstation 5.x<br />
-帐户信息(如果需要)<br />
-用户名: Administrator<br />
-密码: cbm<br />
+<p><img src="https://cbmland.com/uploads/2007/09/windows-mevmdk.png" alt="alt "/></p>
+<p><a href="ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Me.vmdk.rar%7C303603177%7C4feeac21c29e8de59b998510fd814d94%7Ch=IJKPEWV2FVU35BIZPKYOWUP46ENB6TUL%7C/">[VMware.虚拟机硬盘镜像].Windows.Me.vmdk.rar</a> 289.5MB</p>
+<p>Download: Windows Me.vmdk  Windows Me.vmdk (289.5 MiB, 982 hits)</p>
+<p>最后更新: 2006-1-31
+操作系统: Windows ME 简体中文版
+已安装软件: 默认组件
+已安装 VMware Tools: 无
+VMware 硬盘版本:Workstation 5.x
+帐户信息(如果需要)
+用户名: Administrator
+密码: cbm
 内存分配: 64 MB</p>
-<p><a title="windows-2000-professionalvmdk.png" href="http://cbmland.com/uploads/2007/09/windows-2000-professionalvmdk.png"><img src="http://cbmland.com/uploads/2007/09/windows-2000-professionalvmdk.png" alt="windows-2000-professionalvmdk.png" /></a></p>
-<p><a href="ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Professional.vmdk.rar|204403794|c071ea657b2b7818ef8bbb19d79a8a47|h=KQST3GTFWK6T4CLUP2OOY3IZKDE2FHIC|/">[VMware.虚拟机硬盘镜像].Windows.2000.Professional.vmdk.rar</a> 194.9MB</p>
-<p><img src="http://cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/unknown.gif" alt="Download: Windows 2000 Professional.vmdk" title="Download: Windows 2000 Professional.vmdk"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.skydrive.live.com/browse.aspx/VMDK/Windows%202000%20Professional.vmdk" title="Download: Windows 2000 Professional.vmdk">Windows 2000 Professional.vmdk</a></strong> (194.9 MiB, 1,939 hits)<br /></p>
-<p>最后更新: 2006-1-31<br />
-操作系统: Windows 2000 Professional 简体中文版 SP4<br />
-已安装软件: 默认组件<br />
-已安装 VMware Tools: 无<br />
-VMware 硬盘版本:Workstation 5.x<br />
-帐户信息(如果需要)<br />
-用户名: Administrator<br />
-密码: cbm<br />
+<p><img src="https://cbmland.com/uploads/2007/09/windows-2000-professionalvmdk.png" alt="alt "/></p>
+<p><a href="ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Professional.vmdk.rar%7C204403794%7Cc071ea657b2b7818ef8bbb19d79a8a47%7Ch=KQST3GTFWK6T4CLUP2OOY3IZKDE2FHIC%7C/">[VMware.虚拟机硬盘镜像].Windows.2000.Professional.vmdk.rar</a> 194.9MB</p>
+<p>Download: Windows 2000 Professional.vmdk  Windows 2000 Professional.vmdk (194.9 MiB, 1,939 hits)</p>
+<p>最后更新: 2006-1-31
+操作系统: Windows 2000 Professional 简体中文版 SP4
+已安装软件: 默认组件
+已安装 VMware Tools: 无
+VMware 硬盘版本:Workstation 5.x
+帐户信息(如果需要)
+用户名: Administrator
+密码: cbm
 内存分配: 64 MB</p>
-<p><a title="windows-2000-servervmdk.png" href="http://cbmland.com/uploads/2007/09/windows-2000-servervmdk.png"><img src="http://cbmland.com/uploads/2007/09/windows-2000-servervmdk.png" alt="windows-2000-servervmdk.png" /></a></p>
-<p><a href="ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Server.vmdk.rar|243723018|481804f0253b5cb8fd77224037c6202b|h=G7MHXGY63NENF3BL42X3SKDJLHHAL3VT|/">[VMware.虚拟机硬盘镜像].Windows.2000.Server.vmdk.rar</a> 232.4MB</p>
-<p><img src="http://cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/unknown.gif" alt="Download: Windows 2000 Server.vmdk" title="Download: Windows 2000 Server.vmdk"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.skydrive.live.com/browse.aspx/VMDK/Windows%202000%20Server.vmdk" title="Download: Windows 2000 Server.vmdk">Windows 2000 Server.vmdk</a></strong> (232.4 MiB, 1,499 hits)<br /></p>
-<p>最后更新: 2006-1-31<br />
-操作系统: Windows 2000 Server 简体中文版 SP4<br />
-已安装软件: 默认组件<br />
-已安装 VMware Tools: 无<br />
-VMware 硬盘版本:Workstation 5.x<br />
-帐户信息(如果需要)<br />
-用户名: Administrator<br />
-密码: cbm<br />
+<p><img src="https://cbmland.com/uploads/2007/09/windows-2000-servervmdk.png" alt="alt "/></p>
+<p>[<a href="ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Server.vmdk.rar%7C243723018%7C481804f0253b5cb8fd77224037c6202b%7Ch=G7MHXGY63NENF3BL42X3SKDJLHHAL3VT%7C/">[VMware.虚拟机硬盘镜像].Windows.2000.Server.vmdk.rar</a> 232.4MB</p>
+<p>Download: Windows 2000 Server.vmdk  Windows 2000 Server.vmdk (232.4 MiB, 1,499 hits)</p>
+<p>最后更新: 2006-1-31
+操作系统: Windows 2000 Server 简体中文版 SP4
+已安装软件: 默认组件
+已安装 VMware Tools: 无
+VMware 硬盘版本:Workstation 5.x
+帐户信息(如果需要)
+用户名: Administrator
+密码: cbm
 内存分配: 64 MB</p>
-<p><a title="windows-xp-home-editionvmdk.png" href="http://cbmland.com/uploads/2007/09/windows-xp-home-editionvmdk.png"><img src="http://cbmland.com/uploads/2007/09/windows-xp-home-editionvmdk.png" alt="windows-xp-home-editionvmdk.png" /></a></p>
-<p><a href="ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Home.Edition.vmdk.rar|332244602|fb257ca2f48cafa5102a5e99cd71831e|h=GFMPSVZTGXQZBZKTUFUM7HEVOLWPV46B|/">[VMware.虚拟机硬盘镜像].Windows.XP.Home.Edition.vmdk.rar</a> 316.9MB</p>
-<p><img src="http://cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/unknown.gif" alt="Download: Windows XP Home Edition.vmdk" title="Download: Windows XP Home Edition.vmdk"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.skydrive.live.com/browse.aspx/VMDK/Windows%20XP%20Home%20Edition.vmdk" title="Download: Windows XP Home Edition.vmdk">Windows XP Home Edition.vmdk</a></strong> (316.9 MiB, 3,697 hits)<br /></p>
-<p>最后更新: 2006-1-30<br />
-操作系统: Windows XP Home Edition 简体中文版<br />
-已安装软件: 默认组件<br />
-已安装 VMware Tools: 无<br />
-VMware 硬盘版本:Workstation 5.x<br />
-帐户信息(如果需要)<br />
-用户名: Administrator<br />
-密码: cbm<br />
+<p><img src="https://cbmland.com/uploads/2007/09/windows-xp-home-editionvmdk.png" alt="alt "/></p>
+<p><a href="ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Home.Edition.vmdk.rar%7C332244602%7Cfb257ca2f48cafa5102a5e99cd71831e%7Ch=GFMPSVZTGXQZBZKTUFUM7HEVOLWPV46B%7C/">[VMware.虚拟机硬盘镜像].Windows.XP.Home.Edition.vmdk.rar</a> 316.9MB</p>
+<p>Download: Windows XP Home Edition.vmdk  Windows XP Home Edition.vmdk (316.9 MiB, 3,697 hits)</p>
+<p>最后更新: 2006-1-30
+操作系统: Windows XP Home Edition 简体中文版
+已安装软件: 默认组件
+已安装 VMware Tools: 无
+VMware 硬盘版本:Workstation 5.x
+帐户信息(如果需要)
+用户名: Administrator
+密码: cbm
 内存分配: 96 MB</p>
-<p><a title="windows-xp-professionalvmdk.png" href="http://cbmland.com/uploads/2007/09/windows-xp-professionalvmdk.png"><img src="http://cbmland.com/uploads/2007/09/windows-xp-professionalvmdk.png" alt="windows-xp-professionalvmdk.png" /></a></p>
-<p><a href="ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.vmdk.rar|358301582|9565c7c947d2b0ba37bbf8aab63e663e|h=74XOSM2UZLOGJCZV67GSVDBBNXBVNW2N|/">[VMware.虚拟机硬盘镜像].Windows.XP.Professional.vmdk.rar</a> 341.7MB</p>
-<p><img src="http://cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/unknown.gif" alt="Download: Windows XP Professional.vmdk" title="Download: Windows XP Professional.vmdk"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.skydrive.live.com/browse.aspx/VMDK/Windows%20XP%20Professional.vmdk" title="Download: Windows XP Professional.vmdk">Windows XP Professional.vmdk</a></strong> (341.7 MiB, 10,385 hits)<br /></p>
-<p>最后更新: 2006-1-30<br />
-操作系统: Windows XP Professional 简体中文版 SP2<br />
-已安装软件: 默认组件<br />
-已安装 VMware Tools: 无<br />
-VMware 硬盘版本:Workstation 5.x<br />
-帐户信息(如果需要)<br />
-用户名: Administrator<br />
-密码: cbm<br />
+<p><img src="https://cbmland.com/uploads/2007/09/windows-xp-professionalvmdk.png" alt="alt "/></p>
+<p><a href="ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.vmdk.rar%7C358301582%7C9565c7c947d2b0ba37bbf8aab63e663e%7Ch=74XOSM2UZLOGJCZV67GSVDBBNXBVNW2N%7C/">[VMware.虚拟机硬盘镜像].Windows.XP.Professional.vmdk.rar</a> 341.7MB</p>
+<p>Download: Windows XP Professional.vmdk  Windows XP Professional.vmdk (341.7 MiB, 10,385 hits)</p>
+<p>最后更新: 2006-1-30
+操作系统: Windows XP Professional 简体中文版 SP2
+已安装软件: 默认组件
+已安装 VMware Tools: 无
+VMware 硬盘版本:Workstation 5.x
+帐户信息(如果需要)
+用户名: Administrator
+密码: cbm
 内存分配: 128 MB</p>
-<p><a title="windows-xp-professional-envmdk.png" href="http://cbmland.com/uploads/2007/09/windows-xp-professional-envmdk.png"><img src="http://cbmland.com/uploads/2007/09/windows-xp-professional-envmdk.png" alt="windows-xp-professional-envmdk.png" /></a></p>
-<p><a href="ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.EN.vmdk.rar|323581027|f1957e8fa1ce503471f17587abf2b1b0|h=V7DDUIP2RTKCXOEA6NN5AI7SGA4CPHK7|/">[VMware.虚拟机硬盘镜像].Windows.XP.Professional.EN.vmdk.rar</a> 308.6MB</p>
-<p><img src="http://cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/unknown.gif" alt="Download: Windows XP Professional EN" title="Download: Windows XP Professional EN"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.skydrive.live.com/browse.aspx/VMDK/Windows%20XP%20Professional%20EN.vmdk" title="Download: Windows XP Professional EN">Windows XP Professional EN</a></strong> (308.6 MiB, 2,351 hits)<br /></p>
-<p>最后更新: 2006-1-30<br />
-操作系统: Windows XP Professional 英文版 SP2<br />
-已安装软件: 默认组件<br />
-已安装 VMware Tools: 无<br />
-VMware 硬盘版本:Workstation 5.x<br />
-帐户信息(如果需要)<br />
-用户名: Administrator<br />
-密码: cbm<br />
+<p><img src="https://cbmland.com/uploads/2007/09/windows-xp-professional-envmdk.png" alt="alt "/></p>
+<p><a href="ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.EN.vmdk.rar%7C323581027%7Cf1957e8fa1ce503471f17587abf2b1b0%7Ch=V7DDUIP2RTKCXOEA6NN5AI7SGA4CPHK7%7C/">[VMware.虚拟机硬盘镜像].Windows.XP.Professional.EN.vmdk.rar</a> 308.6MB</p>
+<p>Download: Windows XP Professional EN  Windows XP Professional EN (308.6 MiB, 2,351 hits)</p>
+<p>最后更新: 2006-1-30
+操作系统: Windows XP Professional 英文版 SP2
+已安装软件: 默认组件
+已安装 VMware Tools: 无
+VMware 硬盘版本:Workstation 5.x
+帐户信息(如果需要)
+用户名: Administrator
+密码: cbm
 内存分配: 128 MB</p>
-<p><a title="windows-xp-professional-x64-editionvmdk.png" href="http://cbmland.com/uploads/2007/09/windows-xp-professional-x64-editionvmdk.png"><img src="http://cbmland.com/uploads/2007/09/windows-xp-professional-x64-editionvmdk.png" alt="windows-xp-professional-x64-editionvmdk.png" /></a></p>
-<p><a href="ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.x64.Edition.vmdk.rar|471880862|f025089ad1af2227979a25d093a29c86|h=A63L3NKP66GQBBABDOI7DUV563DWOGRD|/">[VMware.虚拟机硬盘镜像].Windows.XP.Professional.x64.Edition.vmdk.rar</a> 450.0MB</p>
-<p><img src="http://cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/unknown.gif" alt="Download: Windows XP Professional x64 Edition.vmdk" title="Download: Windows XP Professional x64 Edition.vmdk"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.skydrive.live.com/browse.aspx/VMDK/Windows%20XP%20Professional%20x64%20Edition.vmdk" title="Download: Windows XP Professional x64 Edition.vmdk">Windows XP Professional x64 Edition.vmdk</a></strong> (450.0 MiB, 1,518 hits)<br /></p>
-<p>最后更新: 2006-1-30<br />
-操作系统: Windows XP Professional x64 Edition 英文版(首次登录需要30天激活)<br />
-已安装软件: 默认组件<br />
-已安装 VMware Tools: 无<br />
-VMware 硬盘版本:Workstation 5.x<br />
-帐户信息(如果需要)<br />
-用户名: Administrator<br />
-密码: cbm<br />
+<p><img src="https://cbmland.com/uploads/2007/09/windows-xp-professional-x64-editionvmdk.png" alt="alt "/></p>
+<p><a href="ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.x64.Edition.vmdk.rar%7C471880862%7Cf025089ad1af2227979a25d093a29c86%7Ch=A63L3NKP66GQBBABDOI7DUV563DWOGRD%7C/">[VMware.虚拟机硬盘镜像].Windows.XP.Professional.x64.Edition.vmdk.rar</a> 450.0MB</p>
+<p>Download: Windows XP Professional x64 Edition.vmdk  Windows XP Professional x64 Edition.vmdk (450.0 MiB, 1,518 hits)</p>
+<p>最后更新: 2006-1-30
+操作系统: Windows XP Professional x64 Edition 英文版(首次登录需要30天激活)
+已安装软件: 默认组件
+已安装 VMware Tools: 无
+VMware 硬盘版本:Workstation 5.x
+帐户信息(如果需要)
+用户名: Administrator
+密码: cbm
 内存分配: 128 MB</p>
-<p><a title="windows-server-2003-standard-editionvmdk.png" href="http://cbmland.com/uploads/2007/09/windows-server-2003-standard-editionvmdk.png"><img src="http://cbmland.com/uploads/2007/09/windows-server-2003-standard-editionvmdk.png" alt="windows-server-2003-standard-editionvmdk.png" /></a></p>
-<p><a href="ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Server.2003.Standard.Edition.vmdk.rar|389719373|6a67e912144f238c4fbec8dc5043c638|h=6QHKFLLUTIIQV5XFJWA4XL5D2GZKVMYY|/">[VMware.虚拟机硬盘镜像].Windows.Server.2003.Standard.Edition.vmdk.rar</a> 371.7MB</p>
-<p>最后更新: 2006-1-30<br />
-操作系统: Windows Server 2003 Standard Edition 简体中文版 SP1<br />
-已安装软件: 默认组件<br />
-已安装 VMware Tools: 无<br />
-VMware 硬盘版本:Workstation 5.x<br />
-帐户信息(如果需要)<br />
-用户名: Administrator<br />
-密码: cbm<br />
+<p><img src="https://cbmland.com/uploads/2007/09/windows-server-2003-standard-editionvmdk.png" alt="alt "/></p>
+<p><a href="ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Server.2003.Standard.Edition.vmdk.rar%7C389719373%7C6a67e912144f238c4fbec8dc5043c638%7Ch=6QHKFLLUTIIQV5XFJWA4XL5D2GZKVMYY%7C/">[VMware.虚拟机硬盘镜像].Windows.Server.2003.Standard.Edition.vmdk.rar</a> 371.7MB</p>
+<p>最后更新: 2006-1-30
+操作系统: Windows Server 2003 Standard Edition 简体中文版 SP1
+已安装软件: 默认组件
+已安装 VMware Tools: 无
+VMware 硬盘版本:Workstation 5.x
+帐户信息(如果需要)
+用户名: Administrator
+密码: cbm
 内存分配: 128 MB</p>
-<p><a title="red-hat-linux-9vmdk.png" href="http://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png"><img src="http://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png" alt="red-hat-linux-9vmdk.png" /></a></p>
-<p><a href="ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Red.Hat.Linux.9.vmdk.rar|491526873|0e974a60ccd5a55eb97b5af8dabdc7ac|h=HIY6GGBDOVGTSZSN6WTWDPLRZMEZB3AK|/">[VMware.虚拟机硬盘镜像].Red.Hat.Linux.9.vmdk.rar</a> 468.8MB</p>
-<p><img src="http://cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/unknown.gif" alt="Download: Red Hat Linux 9.vmdk" title="Download: Red Hat Linux 9.vmdk"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.skydrive.live.com/browse.aspx/VMDK/Red%20Hat%20Linux%209.vmdk" title="Download: Red Hat Linux 9.vmdk">Red Hat Linux 9.vmdk</a></strong> (468.8 MiB, 3,295 hits)<br /></p>
-<p><span style="color: #ff0000;">（补充说明：该镜像是在支持SSE3指令的CPU下进行的，使用时也必须要有SSE3指令的支持。请早期的Intel CPU主机用户注意。2008-3-7） </span></p>
-<p>最后更新: 2006-1-30<br />
-操作系统: Red Hat Linux 9.0<br />
-已安装软件: 默认组件<br />
-已安装 VMware Tools: 无<br />
-VMware 硬盘版本:Workstation 5.x<br />
-帐户信息(如果需要)<br />
-用户名: root<br />
-密码: dickxl<br />
-内存分配: 96 MB</p>
-<p>&nbsp;</p>
-<!-- google_ad_section_end -->
-    <div id="ads_c2">
+<p><img src="https://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png" alt="alt "/></p>
+<p><a href="ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Red.Hat.Linux.9.vmdk.rar%7C491526873%7C0e974a60ccd5a55eb97b5af8dabdc7ac%7Ch=HIY6GGBDOVGTSZSN6WTWDPLRZMEZB3AK%7C/">[VMware.虚拟机硬盘镜像].Red.Hat.Linux.9.vmdk.rar</a> 468.8MB</p>
+<p>Download: Red Hat Linux 9.vmdk  Red Hat Linux 9.vmdk (468.8 MiB, 3,295 hits)</p>
+<p>（补充说明：该镜像是在支持SSE3指令的CPU下进行的，使用时也必须要有SSE3指令的支持。请早期的Intel CPU主机用户注意。2008-3-7）</p>
+<p>最后更新: 2006-1-30
+操作系统: Red Hat Linux 9.0
+已安装软件: 默认组件
+已安装 VMware Tools: 无
+VMware 硬盘版本:Workstation 5.x
+帐户信息(如果需要)
+用户名: root
+密码: dickxl
+内存分配: 96 MB</p></div><div class="row"><span class="col"></span><span class="col-8"></span><span class="col"><a class="btn btn-primary" href="/posts/post-5">Next</a></span></div></article><div class="mt-16"><div id="disqus_thread"></div></div></div><aside class="undefined px-0 lg:px-6 lg:col-4"><div class="mt-0 rounded border border-border p-6 dark:border-darkmode-border"><h4 class="section-title mb-12 text-center">Featured</h4><div class="mb-12 flex items-center justify-center"><button class="btn px-5 py-2 btn-outline-primary">Featured</button><button class="btn ml-3  px-5 py-2 btn-primary">Recent</button></div><div class="flex items-center mb-6 border-b border-border pb-6 dark:border-darkmode-border"><img alt="使用 nobelium 搭建博客方法" src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F63c20012-cec5-421d-a95f-5c2898ad724a%2FUntitled.png?table=block&amp;id=5f9fa6d6-8b0a-497b-a77e-f3718fb54c5b&amp;cache=v2" width="105" height="85" decoding="async" data-nimg="1" class="mr-3 h-[85px] w-[85px] rounded-full object-cover" loading="lazy" style="color:transparent"/><div><h3 class="h5 mb-2"><a class="block hover:text-primary" href="/posts/deply-your-blog-by-nobelium">使用 nobelium 搭建博客方法</a></h3><p class="inline-flex items-center font-secondary text-xs"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="mr-1.5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"></path></svg>11 Apr 2023</p></div></div><div class="flex items-center false"><img alt="How to make toys from old Olarpaper" src="/images/post/post-5.png" width="105" height="85" decoding="async" data-nimg="1" class="mr-3 h-[85px] w-[85px] rounded-full object-cover" loading="lazy" style="color:transparent"/><div><h3 class="h5 mb-2"><a class="block hover:text-primary" href="/posts/post-5">How to make toys from old Olarpaper</a></h3><p class="inline-flex items-center font-secondary text-xs"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="mr-1.5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"></path></svg>04 Apr 2022</p></div></div></div></aside></div></div><div class="container mt-20"><h2 class="section-title">Related Posts</h2><div class="row mt-16"><div class="mb-12 lg:col-4"><div class="post"><div class="relative"><img alt="VMware 虚拟机硬盘镜像共享" src="https://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png" width="405" height="208" decoding="async" data-nimg="1" class="rounded-lg" loading="lazy" style="color:transparent"/><ul class="absolute top-3 left-2 flex flex-wrap items-center"><li class="mx-2 inline-flex h-7 rounded-[35px] bg-primary px-3 text-white"><a class="capitalize" href="/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90">软件推荐</a></li><li class="mx-2 inline-flex h-7 rounded-[35px] bg-primary px-3 text-white"><a class="capitalize" href="/categories/VMware">VMware</a></li></ul></div><h3 class="h5 mb-2 mt-4"><a class="block hover:text-primary" href="/posts/vmware-vmdk-images-shared">VMware 虚拟机硬盘镜像共享</a></h3><ul class="flex items-center space-x-4"><li><a class="inline-flex items-center font-secondary text-xs leading-3" href="/about"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="mr-1.5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"></path></svg>cbm</a></li><li class="inline-flex items-center font-secondary text-xs leading-3"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="mr-1.5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"></path></svg>21 Sep 2007</li></ul><p>
+&gt;新增百度网盘下载链接：http://pan.baidu.com/s/1pJBLl4R
 
-    </div>
- <div id="relate_div">
-	<div id="stprelated">
-			</div>
-</div>
-<div id="misc_div">
-<div id="bookmark_div"></div>
-
-
-</div>
-</div>
-
-<div class="PostDet"><ul>
- <li class="PostCom">324 Comments , 309,838 Hits  </li>
- <li class="PostCateg">Filed under: <a href="http://cbmland.com/cats/code/shareme" title="查看分享我自己中的全部文章" rel="category tag">分享我自己</a>, <a href="http://cbmland.com/cats/whatnew/os" title="查看操作体统中的全部文章" rel="category tag">操作体统</a>, <a href="http://cbmland.com/cats/whatnew/soft" title="查看软件推荐中的全部文章" rel="category tag">软件推荐</a></li>
- <li class="PostCateg">
-<!-- Generated by Simple Tags 2.3.2 - http://wordpress.org/extend/plugins/simple-tags -->
-	Tags: <a href="http://cbmland.com/tags/share" title="share" rel="tag">share</a>, <a href="http://cbmland.com/tags/vmware" title="VMware" rel="tag">VMware</a><br />
-</li>
- </ul>
-</div>
-
-</div>
-
-<ul class="Note">
-<li class="NoteRss"><a href='http://cbmland.com/post/329/vmware-vmdk-images-shared.html/feed'><abbr title="Really Simple Syndication">RSS</abbr> feed for comments on this post</a></li>
-<li class="NoteTrackBack"><a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html/trackback" rel="trackback">TrackBack <abbr title="Uniform Resource Identifier">URI</abbr></a></li>
-
-</ul>
-
-
-
-<!-- You can start editing here. -->
-<h3 id="comments">324 Responses for "VMware 虚拟机硬盘镜像共享"</h3> 
-	<ol id="ComListOl" class="commentlist">
-		<li class="comment even thread-even depth-1" id="li-comment-110632">
-		
-		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
-		<div class="comment-author vcard">
-			<span class="comment-author">stolang</span><br />
-			<span class="comment-meta">
-            <a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html/comment-page-16#comment-110632">2012-07-10  18:07</a>
-			            </span>
-            
-							<span class="replay"><a class='comment-reply-link' href='/post/329/vmware-vmdk-images-shared.html?replytocom=110632#respond' onclick='return addComment.moveForm("comment-110632", "110632", "respond", "329")'>回复</a></span>
-		</div>
-
-		<div class="commentText" id="comment-110632">
-		<p>之前把所有版本都下载了，很好用，多谢分享。<br />
-今天想装个win7 64，特来看看有木有。。。</p>
-		
-	</div>
-</li>
-	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-114204">
-		
-		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
-		<div class="comment-author vcard">
-			<span class="comment-author">crstudio</span><br />
-			<span class="comment-meta">
-            <a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html/comment-page-16#comment-114204">2012-12-18  16:12</a>
-			            </span>
-            
-							<span class="replay"><a class='comment-reply-link' href='/post/329/vmware-vmdk-images-shared.html?replytocom=114204#respond' onclick='return addComment.moveForm("comment-114204", "114204", "respond", "329")'>回复</a></span>
-		</div>
-
-		<div class="commentText" id="comment-114204">
-		<p>博主,太谢你了,爱死你了</p>
-		
-	</div>
-</li>
-	<li class="comment even thread-even depth-1" id="li-comment-119964">
-		
-		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
-		<div class="comment-author vcard">
-			<span class="comment-author">scientistzjf</span><br />
-			<span class="comment-meta">
-            <a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html/comment-page-16#comment-119964">2013-04-08  14:04</a>
-			            </span>
-            
-							<span class="replay"><a class='comment-reply-link' href='/post/329/vmware-vmdk-images-shared.html?replytocom=119964#respond' onclick='return addComment.moveForm("comment-119964", "119964", "respond", "329")'>回复</a></span>
-		</div>
-
-		<div class="commentText" id="comment-119964">
-		<p>楼主万岁~！一直用你的硬盘文件，感觉很棒！谢谢分享~~</p>
-		
-	</div>
-</li>
-	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-120209">
-		
-		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
-		<div class="comment-author vcard">
-			<span class="comment-author">city</span><br />
-			<span class="comment-meta">
-            <a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html/comment-page-16#comment-120209">2013-04-17  11:04</a>
-			            </span>
-            
-							<span class="replay"><a class='comment-reply-link' href='/post/329/vmware-vmdk-images-shared.html?replytocom=120209#respond' onclick='return addComment.moveForm("comment-120209", "120209", "respond", "329")'>回复</a></span>
-		</div>
-
-		<div class="commentText" id="comment-120209">
-		<p>非常地感谢楼主！你可帮我大忙了。</p>
-		
-	</div>
-</li>
-	<li class="comment even thread-even depth-1" id="li-comment-120261">
-		
-		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
-		<div class="comment-author vcard">
-			<span class="comment-author">peter</span><br />
-			<span class="comment-meta">
-            <a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html/comment-page-16#comment-120261">2013-04-20  03:04</a>
-			            </span>
-            
-							<span class="replay"><a class='comment-reply-link' href='/post/329/vmware-vmdk-images-shared.html?replytocom=120261#respond' onclick='return addComment.moveForm("comment-120261", "120261", "respond", "329")'>回复</a></span>
-		</div>
-
-		<div class="commentText" id="comment-120261">
-		<p>谢谢楼主的信息，很有用</p>
-		
-	</div>
-</li>
-	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-121363">
-		
-		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
-		<div class="comment-author vcard">
-			<span class="comment-author">dddss</span><br />
-			<span class="comment-meta">
-            <a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html/comment-page-16#comment-121363">2013-05-30  10:05</a>
-			            </span>
-            
-							<span class="replay"><a class='comment-reply-link' href='/post/329/vmware-vmdk-images-shared.html?replytocom=121363#respond' onclick='return addComment.moveForm("comment-121363", "121363", "respond", "329")'>回复</a></span>
-		</div>
-
-		<div class="commentText" id="comment-121363">
-		<p>vm</p>
-		
-	</div>
-</li>
-	<li class="comment even thread-even depth-1" id="li-comment-441155">
-		
-		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
-		<div class="comment-author vcard">
-			<span class="comment-author">piterrg</span><br />
-			<span class="comment-meta">
-            <a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html/comment-page-16#comment-441155">2014-04-22  23:04</a>
-			            </span>
-            
-							<span class="replay"><a class='comment-reply-link' href='/post/329/vmware-vmdk-images-shared.html?replytocom=441155#respond' onclick='return addComment.moveForm("comment-441155", "441155", "respond", "329")'>回复</a></span>
-		</div>
-
-		<div class="commentText" id="comment-441155">
-		<p>下载后直接能用 还是需要再下载一个VMware Tools?</p>
-		
-	<ul class="children">
-	<li class="comment byuser comment-author-cbm bypostauthor odd alt depth-2" id="li-comment-441183">
-		
-		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
-		<div class="comment-author vcard">
-			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
-			<span class="comment-meta">
-            <a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html/comment-page-16#comment-441183">2014-12-10  15:12</a>
-			            </span>
-            
-							<span class="replay"><a class='comment-reply-link' href='/post/329/vmware-vmdk-images-shared.html?replytocom=441183#respond' onclick='return addComment.moveForm("comment-441183", "441183", "respond", "329")'>回复</a></span>
-		</div>
-
-		<div class="commentText" id="comment-441183">
-		<p>为了保证系统的纯净，没有安装VMware Tools，可以直接装最新版本。</p>
-		
-	</div>
-</li>
-</ul><!-- .children -->
-</li>
-	</ol>
-	<div class="navigation">
-		<div class="alignright"></div>
-		<div class="alignleft"><a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html/comment-page-15#comments" >&laquo; 先前评论</a></div>
-	</div>
- <div id="respond">
-<h3>Leave a Reply&nbsp;&nbsp;<a rel="nofollow" id="cancel-comment-reply-link" href="/post/329/vmware-vmdk-images-shared.html#respond" style="display:none;">点击这里取消回复。</a></h3>
-
-<form action="http://cbmland.com/wp-comments-post.php" method="post" id="commentform">
-
-<label for="author"><small>Name (<strong>*</strong>)</small></label>
-<input type="text" name="author" id="author" value="" size="22" tabindex="1" class="TextField" />
-
-<label for="email"><small>E-mail (<strong>*</strong>)</small></label>
-<input type="text" name="email" id="email" value="" size="22" tabindex="2" class="TextField" />
-
-<label for="url"><small><abbr title="Uniform Resource Identifier">URI</abbr></small></label>
-<input type="text" name="url" id="url" value="" tabindex="3" class="TextField" />
-
-<br clear="all" />
-<textarea name="comment" id="comment" rows="10" cols="1" tabindex="4" class="TextArea" ></textarea>
-<br clear="all" />
-<input name="SubmitComment" id="SubmitComment" type="image" class="SubmitComment" title="Post Your Comment" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" alt="发表评论" />
-<span id="commentTip">按[Alt+S/Ctrl+Enter] 快捷提交评论</span>
-<input type='hidden' name='comment_post_ID' value='329' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-
-<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="6873d42d05" /></p>		<script language="JavaScript" type="text/javascript" src="http://cbmland.com/wp-content/plugins/cos-html-cache/common.js.php?hash=b0fc6f90275e05c8c642614a0c5c18d7"></script>
-		<script language="JavaScript" type="text/javascript">
-		//<![CDATA[
-		var hash = "b0fc6f90275e05c8c642614a0c5c18d7";
-		var author_cookie = "comment_author_" + hash;
-		var email_cookie = "comment_author_email_" + hash;
-		var url_cookie = "comment_author_url_" + hash; 
-		var adminmail = "cbm{_}vip.qq.com";
-		var adminurl = "http://cbmland.com";
-		setCommForm();
-		//]]>
-		</script>
-	
-
-	<p style="clear: both;" class="subscribe-to-comments">
-	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" />
-	<label for="subscribe">订阅新评论到电子邮箱。</label>
-	</p>
-
-
-<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="224"/></p></form>
-</div>
-</div>
-<!-- end center -->
-</div>
-<div id="sidebar">
-
-<div id="sidebarL">
-
- <!-- start Search -->
- 	<div id="search_container">
-    	<div id="search">
-    		<form id="searchForm" action="http://cbmland.com/search" method="get">
-    		<input type="hidden" name="cx" value="016044298682048239728:bqaqmsndssu" />
-    		<input type="hidden" name="cof" value="FORID:11" />
-    		<input type="hidden" name="ie" value="UTF-8" />
-   			<input type="text" name="q" class="keyword" />
-    		<div id="buttonsearch"><input id="submitBtn" name="sa" type="image" class="search" title="Search" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" alt="Search" />
-    		</div>
-    		</form>
-    	</div>
-    </div>
- <!-- end Search -->
- 
- 
- <!-- Google CSE Search Box Begins  -->
-
-
- <!-- Google CSE Search Box Ends -->
- 
-<!-- start Search -->
-<!-- 	<div id="search_container">
-    	<div id="search">
-    		<form id="searchForm" action="http://cbmland.com/index.php" method="get">
-   			<input type="text" name="s" class="keyword" />
-    		<div id="buttonsearch"><input id="submitBtn" name="submit" type="image" class="search" title="Search" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" alt="Search" />
-    		</div>
-    		</form>
-    	</div>
-    </div>-->
-<!-- end Search -->
-
-<div id="module">
-<div id="Syn">
- <ul>
-  <li><a title="订阅我的网站，不错过精彩内容！" href="http://feed.cbmland.com">Entries</a> (RSS)</li>
-  <li><a title="订阅用户评论" href="http://cbmland.com/comments/feed">Comments</a> (RSS)</li>
- </ul>
-<div id="feeds">
-<ul>
-  <li><a target="_blank" rel='external nofollow' href="http://www.google.com/reader/view/#stream/feed/http://feed.cbmland.com/"><img id="google" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="Google Reader" alt="google reader"/></a></li>
-  <li><a target="_blank" rel='external nofollow' href="http://www.xianguo.com/subscribe.php?url=http://feed.cbmland.com"><img id="xianguo" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="鲜果" alt="鲜果"/></a></li>
-  <li><a target="_blank" rel='external nofollow' href="http://www.zhuaxia.com/add_channel.php?url=http://feed.cbmland.com"><img id="zhuaxia" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="抓虾" alt="抓虾"/></a></li>
-  <li><a target="_blank" rel='external nofollow' href="http://mail.qq.com/cgi-bin/feed?u=http://feed.cbmland.com"><img id="qqreader" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="QQ&#37038;&#31665;" alt="QQ&#37038;&#31665;"/></a></li>
-  <li><a target="_blank" rel='external nofollow' href="http://reader.youdao.com/b.do?url=http://feed.cbmland.com"><img id="youdao" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="&#26377;&#36947;" alt="&#26377;&#36947;"/></a></li>
-  <li><a target="_blank" rel='external nofollow' href="http://www.newsgator.com/ngs/subscriber/subfext.aspx?url=http://feed.cbmland.com"><img id="newsgator" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="newsgator" alt="newsgator"/></a></li>
-  <li><a target="_blank" rel='external nofollow' href="http://inezha.com/add?url=http://feed.cbmland.com"><img id="inezha" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="哪吒" alt="哪吒"/></a></li>
-</ul>
-</div>
-</div>
-<!-- Start ContactMe -->
-<div class="ContactMe">
-	<h3>Connect Me</h3>
-	 <ul><li></li></ul>
-	 
-	 <div class="imgDiv">
-        <div id="Qme" title="Hello,与我保持联系吧!" ></div>
-		<div id="Mme" title="Guys!,Contact with me!" ></div>
-	</div>
-</div>
-<!-- End ContactMe -->
-
-<!-- Start top_commentators -->
-
-
-<!-- Start Recent Comments -->
-<!-- End Recent Comments -->
-
-<!-- Start top_Comments -->
- 
-<div class="TopComtors">
-<h3 title="360天来评论最多的文章" >Top Comments</h3>
-<ul><li><a href="http://cbmland.com/post/1153/bye-bye-onedrive-i-like-dropbox.html">再见OneDrive，回归Dropbox</a> (1)</li>		
-</ul>
-</div>
-<!-- End top_Comments -->
-
-<!-- Start most_viewed -->
- 
-<div class="widget">
-<h3 title="360天来点击最高的文章" >Top View</h3>
-<ul><li><a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html"  title="VMware 虚拟机硬盘镜像共享">VMware 虚拟机硬盘镜像共享</a> - 309,762 views</li><li><a href="http://cbmland.com/post/463/adobe-flash-player-90124.html"  title="Adobe Flash Player 9.0.124 正式版">Adobe Flash Player 9.0.124 正式版</a> - 173,642 views</li><li><a href="http://cbmland.com/post/341/what-is-chinese-name-of-vmware.html"  title="提交你认为最佳的Vmware中文名换三日美国游。">提交你认为最佳的Vmware中文名换三日美国游。</a> - 118,283 views</li><li><a href="http://cbmland.com/post/957/first-experience-of-air-to-ios-ipa.html"  title="初体验 &#8211; AIR 2.6生成iOS应用程序IPA">初体验 &#8211; AIR 2.6生成iOS应用程序IPA</a> - 115,746 views</li><li><a href="http://cbmland.com/post/1048/multi-proxy-switch-so-easy-for-use-goagent-pac-mode.html"  title="善用GoAgent的PAC，无缝切换国内局域网、国际互联网、办公网">善用GoAgent的PAC，无缝切换国内局域网、国际互联网、办公网</a> - 91,051 views</li><li><a href="http://cbmland.com/post/267/kill-symantec-protection-agent.html"  title="禁止 Symantec Protection Agent  运行的一些方法[原创]">禁止 Symantec Protection Agent  运行的一些方法[原创]</a> - 82,588 views</li><li><a href="http://cbmland.com/post/522/optimized-wordpress-notes-1.html"  title="优化WordPress心得(1) Gzip压缩CSS和JS">优化WordPress心得(1) Gzip压缩CSS和JS</a> - 78,768 views</li><li><a href="http://cbmland.com/post/678/illacrimo-plus-theme.html"  title="illacrimo Plus Theme">illacrimo Plus Theme</a> - 75,134 views</li><li><a href="http://cbmland.com/post/15/windows-xp-media-center-edition-2005.html"  title="Windows.XP.Media.Center.Edition 2005 试玩">Windows.XP.Media.Center.Edition 2005 试玩</a> - 72,810 views</li><li><a href="http://cbmland.com/post/376/transparent-png-in-ie6-utility.html"  title="透明PNG在IE6下的官方解决方案">透明PNG在IE6下的官方解决方案</a> - 72,761 views</li><li><a href="http://cbmland.com/post/927/adobe-cs5-cracked-amtlib-dll.html"  title="Adobe CS5 系列免注册 amtlib.dll 文件">Adobe CS5 系列免注册 amtlib.dll 文件</a> - 71,117 views</li><li><a href="http://cbmland.com/post/192/perfect-sql-syntax.html"  title="精妙的SQL语句">精妙的SQL语句</a> - 67,456 views</li>		
-		</ul>
-</div>
-<!-- End most_viewed -->
-
-
-</div>
-</div>
-<div id="sidebarR">
-<h3>Pages</h3>		<ul>
-			<li class="page_item page-item-473"><a href="http://cbmland.com/search">Google 搜索</a></li>
-<li class="page_item page-item-442"><a href="http://cbmland.com/guestbook">Guest Book</a></li>
-		</ul>
-		<h3>Friends</h3>
-	<ul class='xoxo blogroll'>
-<li><a href="http://www.cssforest.org/blog/" title="做有中国特色的WEB标准" target="_blank">CSS森林</a></li>
-<li><a href="http://www.dengjie.com/" title="Danger&#8217;s Flash Blog" target="_blank">Danger</a></li>
-<li><a href="http://www.chouyu.com.cn/" title="臭鱼的交互设计" target="_blank">eugene</a></li>
-<li><a href="http://www.pufen.net/" rel="external nofollow" target="_blank">Pufen.net</a></li>
-<li><a href="http://www.pjhome.net/">PuterJam</a></li>
-<li><a href="http://www.misuisui.com/" rel="external nofollow" title="[米随随] s5s5" target="_blank">s5s5</a></li>
-<li><a href="http://riaoo.com/" title="Y.Boy&#8217; blog" target="_blank">Y.Boy</a></li>
-<li><a href="http://youyee.org/" rel="external nofollow" target="_blank">YouYee</a></li>
-
-	</ul>
-
-<h3>Shortcut</h3>
-	<ul class='xoxo blogroll'>
-<li><a href="http://labs.adobe.com/" rel="external nofollow" target="_blank">Adobe Labs</a></li>
-<li><a href="http://www.box.net/shared/rol7ac9p47" rel="external nofollow" title="shared Box " target="_blank">box.net</a></li>
-<li><a href="http://json.org/" rel="external nofollow" title="a lightweight data-interchange format" target="_blank">Json.org</a></li>
-<li><a href="http://kuler.adobe.com/" rel="external nofollow" target="_blank">Kuler</a></li>
-<li><a href="http://aqicn.org/" target="_blank">空气质量</a></li>
-
-	</ul>
-
-<h3>Archives</h3>		<ul>
-			<li><a href='http://cbmland.com/post/date/2016/04'>2016年四月</a></li>
-	<li><a href='http://cbmland.com/post/date/2014/12'>2014年十二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2014/09'>2014年九月</a></li>
-	<li><a href='http://cbmland.com/post/date/2014/03'>2014年三月</a></li>
-	<li><a href='http://cbmland.com/post/date/2014/01'>2014年一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2013/12'>2013年十二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2013/11'>2013年十一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2013/01'>2013年一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2012/11'>2012年十一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2012/10'>2012年十月</a></li>
-	<li><a href='http://cbmland.com/post/date/2012/09'>2012年九月</a></li>
-	<li><a href='http://cbmland.com/post/date/2012/08'>2012年八月</a></li>
-	<li><a href='http://cbmland.com/post/date/2012/06'>2012年六月</a></li>
-	<li><a href='http://cbmland.com/post/date/2012/04'>2012年四月</a></li>
-	<li><a href='http://cbmland.com/post/date/2012/03'>2012年三月</a></li>
-	<li><a href='http://cbmland.com/post/date/2012/02'>2012年二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2012/01'>2012年一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2011/12'>2011年十二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2011/08'>2011年八月</a></li>
-	<li><a href='http://cbmland.com/post/date/2011/04'>2011年四月</a></li>
-	<li><a href='http://cbmland.com/post/date/2011/03'>2011年三月</a></li>
-	<li><a href='http://cbmland.com/post/date/2010/12'>2010年十二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2010/07'>2010年七月</a></li>
-	<li><a href='http://cbmland.com/post/date/2010/06'>2010年六月</a></li>
-	<li><a href='http://cbmland.com/post/date/2010/05'>2010年五月</a></li>
-	<li><a href='http://cbmland.com/post/date/2010/02'>2010年二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2010/01'>2010年一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2009/12'>2009年十二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2009/10'>2009年十月</a></li>
-	<li><a href='http://cbmland.com/post/date/2009/09'>2009年九月</a></li>
-	<li><a href='http://cbmland.com/post/date/2009/07'>2009年七月</a></li>
-	<li><a href='http://cbmland.com/post/date/2009/06'>2009年六月</a></li>
-	<li><a href='http://cbmland.com/post/date/2009/05'>2009年五月</a></li>
-	<li><a href='http://cbmland.com/post/date/2009/04'>2009年四月</a></li>
-	<li><a href='http://cbmland.com/post/date/2009/03'>2009年三月</a></li>
-	<li><a href='http://cbmland.com/post/date/2009/02'>2009年二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2009/01'>2009年一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/12'>2008年十二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/11'>2008年十一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/10'>2008年十月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/09'>2008年九月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/08'>2008年八月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/07'>2008年七月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/06'>2008年六月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/05'>2008年五月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/04'>2008年四月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/03'>2008年三月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/02'>2008年二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2008/01'>2008年一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2007/12'>2007年十二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2007/11'>2007年十一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2007/10'>2007年十月</a></li>
-	<li><a href='http://cbmland.com/post/date/2007/09'>2007年九月</a></li>
-	<li><a href='http://cbmland.com/post/date/2007/08'>2007年八月</a></li>
-	<li><a href='http://cbmland.com/post/date/2007/07'>2007年七月</a></li>
-	<li><a href='http://cbmland.com/post/date/2007/06'>2007年六月</a></li>
-	<li><a href='http://cbmland.com/post/date/2007/04'>2007年四月</a></li>
-	<li><a href='http://cbmland.com/post/date/2007/03'>2007年三月</a></li>
-	<li><a href='http://cbmland.com/post/date/2007/02'>2007年二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2007/01'>2007年一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2006/12'>2006年十二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2006/11'>2006年十一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2006/10'>2006年十月</a></li>
-	<li><a href='http://cbmland.com/post/date/2006/09'>2006年九月</a></li>
-	<li><a href='http://cbmland.com/post/date/2006/08'>2006年八月</a></li>
-	<li><a href='http://cbmland.com/post/date/2006/07'>2006年七月</a></li>
-	<li><a href='http://cbmland.com/post/date/2006/06'>2006年六月</a></li>
-	<li><a href='http://cbmland.com/post/date/2006/03'>2006年三月</a></li>
-	<li><a href='http://cbmland.com/post/date/2006/02'>2006年二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2005/12'>2005年十二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2005/11'>2005年十一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2005/10'>2005年十月</a></li>
-	<li><a href='http://cbmland.com/post/date/2005/09'>2005年九月</a></li>
-	<li><a href='http://cbmland.com/post/date/2005/08'>2005年八月</a></li>
-	<li><a href='http://cbmland.com/post/date/2005/04'>2005年四月</a></li>
-	<li><a href='http://cbmland.com/post/date/2005/03'>2005年三月</a></li>
-	<li><a href='http://cbmland.com/post/date/2005/02'>2005年二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2004/12'>2004年十二月</a></li>
-	<li><a href='http://cbmland.com/post/date/2004/11'>2004年十一月</a></li>
-	<li><a href='http://cbmland.com/post/date/2004/10'>2004年十月</a></li>
-	<li><a href='http://cbmland.com/post/date/2004/08'>2004年八月</a></li>
-		</ul>
-  
-
-<h3>Meta</h3>
-<ul>
-<li><a href="http://cbmland.com/wp-login.php?action=register">注册</a></li><li><a href="http://cbmland.com/wp-login.php">登录</a></li>
-<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
-<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
-<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
-
-</ul>
-
-</div>
-
-</div><!--cos-html-cache-safe-tag--><div id="st-tag-cloud">
-<!-- Generated by Simple Tags 2.3.2 - http://wordpress.org/extend/plugins/simple-tags -->
-	<div class="st-tag-cloud">
-	<a href="http://cbmland.com/tags/oem" title="7 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">OEM</a>
-<a href="http://cbmland.com/tags/Google" title="16 个主题" rel="tag" style="font-size:8.89pt; color:#1ea3dd; visibility:hidden;">Google</a>
-<a href="http://cbmland.com/tags/adsl" title="4 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">ADSL</a>
-<a href="http://cbmland.com/tags/air" title="25 个主题" rel="tag" style="font-size:12.67pt; color:#56bad9; visibility:hidden;">AIR</a>
-<a href="http://cbmland.com/tags/mylife" title="45 个主题" rel="tag" style="font-size:18.33pt; color:#abdcd2; visibility:hidden;">mylife</a>
-<a href="http://cbmland.com/tags/sql" title="4 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">SQL</a>
-<a href="http://cbmland.com/tags/windows" title="11 个主题" rel="tag" style="font-size:8.89pt; color:#1ea3dd; visibility:hidden;">Windows</a>
-<a href="http://cbmland.com/tags/apple" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Apple</a>
-<a href="http://cbmland.com/tags/wordpress" title="24 个主题" rel="tag" style="font-size:12.67pt; color:#56bad9; visibility:hidden;">WordPress</a>
-<a href="http://cbmland.com/tags/project" title="12 个主题" rel="tag" style="font-size:8.89pt; color:#1ea3dd; visibility:hidden;">Project</a>
-<a href="http://cbmland.com/tags/apollo" title="7 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Apollo</a>
-<a href="http://cbmland.com/tags/Flash" title="49 个主题" rel="tag" style="font-size:20.22pt; color:#c7e8d0; visibility:hidden;">Flash</a>
-<a href="http://cbmland.com/tags/share" title="24 个主题" rel="tag" style="font-size:12.67pt; color:#56bad9; visibility:hidden;">share</a>
-<a href="http://cbmland.com/tags/experience" title="8 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">eXperience</a>
-<a href="http://cbmland.com/tags/silverlight" title="4 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">SilverLight</a>
-<a href="http://cbmland.com/tags/ria" title="6 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">RIA</a>
-<a href="http://cbmland.com/tags/Adobe" title="55 个主题" rel="tag" style="font-size:22.11pt; color:#e3f3ce; visibility:hidden;">Adobe</a>
-<a href="http://cbmland.com/tags/sercurity" title="18 个主题" rel="tag" style="font-size:10.78pt; color:#3aaedb; visibility:hidden;">Sercurity</a>
-<a href="http://cbmland.com/tags/xp" title="10 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">XP</a>
-<a href="http://cbmland.com/tags/flex-builder" title="9 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Flex Builder</a>
-<a href="http://cbmland.com/tags/hardware" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">hardware</a>
-<a href="http://cbmland.com/tags/wifi" title="6 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">WiFi</a>
-<a href="http://cbmland.com/tags/problem" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Problem</a>
-<a href="http://cbmland.com/tags/Flex" title="61 个主题" rel="tag" style="font-size:24pt; color:#ffffcc; visibility:hidden;">Flex</a>
-<a href="http://cbmland.com/tags/vmware" title="10 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">VMware</a>
-<a href="http://cbmland.com/tags/article" title="8 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Article</a>
-<a href="http://cbmland.com/tags/boler" title="4 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Boler</a>
-<a href="http://cbmland.com/tags/Mobile" title="9 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Mobile</a>
-<a href="http://cbmland.com/tags/Linux" title="10 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Linux</a>
-<a href="http://cbmland.com/tags/action-script" title="9 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Action Script</a>
-<a href="http://cbmland.com/tags/Vista" title="10 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Vista</a>
-<a href="http://cbmland.com/tags/cs3" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">CS3</a>
-<a href="http://cbmland.com/tags/tencent" title="6 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Tencent</a>
-<a href="http://cbmland.com/tags/amfphp" title="4 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">AMFPHP</a>
-<a href="http://cbmland.com/tags/Flash-Player" title="48 个主题" rel="tag" style="font-size:18.33pt; color:#abdcd2; visibility:hidden;">Flash Player</a>
-<a href="http://cbmland.com/tags/windows-7" title="7 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Windows 7</a>
-<a href="http://cbmland.com/tags/acer" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Acer</a>
-<a href="http://cbmland.com/tags/FireFox" title="11 个主题" rel="tag" style="font-size:8.89pt; color:#1ea3dd; visibility:hidden;">FireFox</a>
-<a href="http://cbmland.com/tags/IE" title="9 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">IE</a>
-<a href="http://cbmland.com/tags/IM" title="7 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">IM</a>
-<a href="http://cbmland.com/tags/php" title="15 个主题" rel="tag" style="font-size:8.89pt; color:#1ea3dd; visibility:hidden;">php</a>
-<a href="http://cbmland.com/tags/ios" title="6 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">iOS</a>
-<a href="http://cbmland.com/tags/Microsoft" title="28 个主题" rel="tag" style="font-size:12.67pt; color:#56bad9; visibility:hidden;">Microsoft</a>
-<a href="http://cbmland.com/tags/Javascript" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Javascript</a>
-<a href="http://cbmland.com/tags/motherfucker" title="7 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Motherfucker</a></div>
-
-</div>
-
-<div id="footer">
-	<div id="copying">
-		<p><strong>Copyright &copy; 2008 - cbm&#039;s land - is proudly powered by <a rel="external nofollow" href="http://www.wordpress.com/">WordPress</a></strong>.<br />
-		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://cbmland.com">cbm</a>.</p>
-	</div>
-	<div id="logos">
-	</div>
-</div>
-
-</div>
-<script type="text/javascript" language="javascript">
-<!--
-var _gat;
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
--->
-</script>
-
-<script type="text/javascript">
-    /*120*270，创建于2012-9-27*/
-    var cpro_id = "u1073880";
-</script>
-<script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>
-	
-</body>
-</html>
-<!-- 57 queries in 2.037 seconds.    --><!--this is a real static html file created at 2016-05-25 08:16:32 by cos-html-cache 2.7.3 -->
+VMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。
+曾经一口气做过Window98、me、2000 pro、2000 server、XP Home、XP Pro、英文版各个版本的原始安装版本。并且刻录DVD，供自己下次使用或者供别人拷贝，</p><a class="btn btn-outline-primary mt-4" href="/posts/vmware-vmdk-images-shared">Read More</a></div></div></div></div></section></main><footer class="section relative mt-12 pt-[50px] pb-[20px]"><img alt="footer background" src="/images/footer-bg-shape.svg" decoding="async" data-nimg="fill" class="-z-[1] object-cover object-left md:object-top" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/><div class="container text-center"><div class="mb-6 inline-flex"><a class="navbar-brand" href="https://blog.cbmland.com"><img alt="cbm&#x27;s land" src="/images/logo.png" width="300" height="78" decoding="async" data-nimg="1" class="m-auto" style="color:transparent;height:39px;width:150px"/></a></div><ul class="mb-12 mt-6 flex-wrap space-x-2 lg:space-x-4"><li class="inline-block"><a class="p-2 font-bold text-dark hover:text-primary dark:text-darkmode-light lg:p-4" href="/">Home</a></li><li class="inline-block"><a class="p-2 font-bold text-dark hover:text-primary dark:text-darkmode-light lg:p-4" href="/about">About</a></li><li class="inline-block"><a class="p-2 font-bold text-dark hover:text-primary dark:text-darkmode-light lg:p-4" href="/contact">Contact</a></li><li class="inline-block"><a class="p-2 font-bold text-dark hover:text-primary dark:text-darkmode-light lg:p-4" href="/privacy-policy">Privacy Policy</a></li></ul><div class="inline-flex"><ul class="socials mb-12 justify-center"><li class="inline-block"><a aria-label="twitter" href="https://twitter.com/cbmland" target="_blank" rel="noopener noreferrer nofollow"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"></path></svg></a></li><li class="inline-block"><a aria-label="instagram" href="https://instagram.com/" target="_blank" rel="noopener noreferrer nofollow"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"></path><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"></path></svg></a></li><li class="inline-block"><a aria-label="github" href="https://github.com/cbmland" target="_blank" rel="noopener noreferrer nofollow"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></a></li></ul></div><p>Powered By <a href="https://blog.cbmland.com/">cbm</a></p></div></footer></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"frontmatter":{"title":"VMware 虚拟机硬盘镜像共享","date":"2007-09-21T05:00:00.000Z","image":"https://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png","categories":["软件推荐","VMware"],"featured":true,"draft":false},"slug":"vmware-vmdk-images-shared","content":"\n\u003e新增百度网盘下载链接：http://pan.baidu.com/s/1pJBLl4R\n\nVMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。\n曾经一口气做过Window98、me、2000 pro、2000 server、XP Home、XP Pro、英文版各个版本的原始安装版本。并且刻录DVD，供自己下次使用或者供别人拷贝，免去无味的重复安装过程。\n\n一个人的能力是有限的。也希望其他的朋友能够共享出来。\n![alt all.PNG](https://cbmland.com/uploads/2007/09/all.PNG)\n\n本来发布在VCD论坛的，但是无故被删除了。有一些朋友对我的这些vmdk很感兴趣，现转到自己的站点来提供稳定的下载地址。\n\n共享的镜像都是系统安装完毕的版本。没有做任何的多于操作。对于做软件测试，系统分析，溢出漏洞，黑客学习的朋友再方便不过了。Windows版本的wmdk文件已经体积优化过，已经是最小化文件，尽量减少占用硬盘空间。\n\n下面是每个虚拟机镜像的具体信息和ed2k下载地址。\n\n![alt windows-98vmdk](https://cbmland.com/uploads/2007/09/windows-98vmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.98.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.98.vmdk.rar|94580194|17087290020f0ac4a73aa3389328ab7f|h=26ESU26DWXHPSDQM6SVBTKXZCODZIMIU|/) 90.2MB\n\nDownload: [Windows 98.vmdk](https://www.icloud.com/iclouddrive/0e49jQL_SWwkGd_oBRg0lNGyA#Windows_98) (90.2 MiB, 4,378 hits)\n\n（附加说明：vmware workstation 6.x开始vmware tools的显卡驱动和鼠标驱动不能自动在98下安装，需要手动安装，请定位到vmware tools光盘中的相关目录进行驱动更新，声卡驱动在群里面共享有提供。2008-3-7）\n对于6.X 以上版本的虚拟机，声卡驱动请在搜索本站进行下载。\n\n最后更新: 2006-1-31\n操作系统: Windows 98 简体中文第二版\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 32 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-mevmdk.png)\n\n \n\n[[VMware.虚拟机硬盘镜像].Windows.Me.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Me.vmdk.rar|303603177|4feeac21c29e8de59b998510fd814d94|h=IJKPEWV2FVU35BIZPKYOWUP46ENB6TUL|/) 289.5MB\n\nDownload: Windows Me.vmdk  Windows Me.vmdk (289.5 MiB, 982 hits)\n\n最后更新: 2006-1-31\n操作系统: Windows ME 简体中文版\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 64 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-2000-professionalvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.2000.Professional.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Professional.vmdk.rar|204403794|c071ea657b2b7818ef8bbb19d79a8a47|h=KQST3GTFWK6T4CLUP2OOY3IZKDE2FHIC|/) 194.9MB\n\nDownload: Windows 2000 Professional.vmdk  Windows 2000 Professional.vmdk (194.9 MiB, 1,939 hits)\n\n最后更新: 2006-1-31\n操作系统: Windows 2000 Professional 简体中文版 SP4\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 64 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-2000-servervmdk.png)\n\n[[[VMware.虚拟机硬盘镜像].Windows.2000.Server.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Server.vmdk.rar|243723018|481804f0253b5cb8fd77224037c6202b|h=G7MHXGY63NENF3BL42X3SKDJLHHAL3VT|/) 232.4MB\n\nDownload: Windows 2000 Server.vmdk  Windows 2000 Server.vmdk (232.4 MiB, 1,499 hits)\n\n最后更新: 2006-1-31\n操作系统: Windows 2000 Server 简体中文版 SP4\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 64 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-home-editionvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Home.Edition.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Home.Edition.vmdk.rar|332244602|fb257ca2f48cafa5102a5e99cd71831e|h=GFMPSVZTGXQZBZKTUFUM7HEVOLWPV46B|/) 316.9MB\n\nDownload: Windows XP Home Edition.vmdk  Windows XP Home Edition.vmdk (316.9 MiB, 3,697 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Home Edition 简体中文版\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 96 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-professionalvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Professional.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.vmdk.rar|358301582|9565c7c947d2b0ba37bbf8aab63e663e|h=74XOSM2UZLOGJCZV67GSVDBBNXBVNW2N|/) 341.7MB\n\nDownload: Windows XP Professional.vmdk  Windows XP Professional.vmdk (341.7 MiB, 10,385 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Professional 简体中文版 SP2\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-professional-envmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Professional.EN.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.EN.vmdk.rar|323581027|f1957e8fa1ce503471f17587abf2b1b0|h=V7DDUIP2RTKCXOEA6NN5AI7SGA4CPHK7|/) 308.6MB\n\nDownload: Windows XP Professional EN  Windows XP Professional EN (308.6 MiB, 2,351 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Professional 英文版 SP2\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-professional-x64-editionvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Professional.x64.Edition.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.x64.Edition.vmdk.rar|471880862|f025089ad1af2227979a25d093a29c86|h=A63L3NKP66GQBBABDOI7DUV563DWOGRD|/) 450.0MB\n\nDownload: Windows XP Professional x64 Edition.vmdk  Windows XP Professional x64 Edition.vmdk (450.0 MiB, 1,518 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Professional x64 Edition 英文版(首次登录需要30天激活)\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-server-2003-standard-editionvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.Server.2003.Standard.Edition.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Server.2003.Standard.Edition.vmdk.rar|389719373|6a67e912144f238c4fbec8dc5043c638|h=6QHKFLLUTIIQV5XFJWA4XL5D2GZKVMYY|/) 371.7MB\n\n最后更新: 2006-1-30\n操作系统: Windows Server 2003 Standard Edition 简体中文版 SP1\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Red.Hat.Linux.9.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Red.Hat.Linux.9.vmdk.rar|491526873|0e974a60ccd5a55eb97b5af8dabdc7ac|h=HIY6GGBDOVGTSZSN6WTWDPLRZMEZB3AK|/) 468.8MB\n\nDownload: Red Hat Linux 9.vmdk  Red Hat Linux 9.vmdk (468.8 MiB, 3,295 hits)\n\n（补充说明：该镜像是在支持SSE3指令的CPU下进行的，使用时也必须要有SSE3指令的支持。请早期的Intel CPU主机用户注意。2008-3-7）\n\n最后更新: 2006-1-30\n操作系统: Red Hat Linux 9.0\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: root\n密码: dickxl\n内存分配: 96 MB"},"mdxContent":{"compiledSource":"/*@jsxRuntime automatic @jsxImportSource react*/\nconst {Fragment: _Fragment, jsx: _jsx, jsxs: _jsxs} = arguments[0];\nconst {useMDXComponents: _provideComponents} = arguments[0];\nfunction _createMdxContent(props) {\n  const _components = Object.assign({\n    blockquote: \"blockquote\",\n    p: \"p\",\n    a: \"a\",\n    img: \"img\"\n  }, _provideComponents(), props.components);\n  return _jsxs(_Fragment, {\n    children: [_jsxs(_components.blockquote, {\n      children: [\"\\n\", _jsxs(_components.p, {\n        children: [\"新增百度网盘下载链接：\", _jsx(_components.a, {\n          href: \"http://pan.baidu.com/s/1pJBLl4R\",\n          children: \"http://pan.baidu.com/s/1pJBLl4R\"\n        })]\n      }), \"\\n\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"VMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。\\n曾经一口气做过Window98、me、2000 pro、2000 server、XP Home、XP Pro、英文版各个版本的原始安装版本。并且刻录DVD，供自己下次使用或者供别人拷贝，免去无味的重复安装过程。\"\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [\"一个人的能力是有限的。也希望其他的朋友能够共享出来。\\n\", _jsx(_components.img, {\n        src: \"https://cbmland.com/uploads/2007/09/all.PNG\",\n        alt: \"alt all.PNG\"\n      })]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"本来发布在VCD论坛的，但是无故被删除了。有一些朋友对我的这些vmdk很感兴趣，现转到自己的站点来提供稳定的下载地址。\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"共享的镜像都是系统安装完毕的版本。没有做任何的多于操作。对于做软件测试，系统分析，溢出漏洞，黑客学习的朋友再方便不过了。Windows版本的wmdk文件已经体积优化过，已经是最小化文件，尽量减少占用硬盘空间。\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"下面是每个虚拟机镜像的具体信息和ed2k下载地址。\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: _jsx(_components.img, {\n        src: \"https://cbmland.com/uploads/2007/09/windows-98vmdk.png\",\n        alt: \"alt windows-98vmdk\"\n      })\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [_jsx(_components.a, {\n        href: \"ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.98.vmdk.rar%7C94580194%7C17087290020f0ac4a73aa3389328ab7f%7Ch=26ESU26DWXHPSDQM6SVBTKXZCODZIMIU%7C/\",\n        children: \"[VMware.虚拟机硬盘镜像].Windows.98.vmdk.rar\"\n      }), \" 90.2MB\"]\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [\"Download: \", _jsx(_components.a, {\n        href: \"https://www.icloud.com/iclouddrive/0e49jQL_SWwkGd_oBRg0lNGyA#Windows_98\",\n        children: \"Windows 98.vmdk\"\n      }), \" (90.2 MiB, 4,378 hits)\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"（附加说明：vmware workstation 6.x开始vmware tools的显卡驱动和鼠标驱动不能自动在98下安装，需要手动安装，请定位到vmware tools光盘中的相关目录进行驱动更新，声卡驱动在群里面共享有提供。2008-3-7）\\n对于6.X 以上版本的虚拟机，声卡驱动请在搜索本站进行下载。\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"最后更新: 2006-1-31\\n操作系统: Windows 98 简体中文第二版\\n已安装软件: 默认组件\\n已安装 VMware Tools: 无\\nVMware 硬盘版本:Workstation 5.x\\n帐户信息(如果需要)\\n用户名: Administrator\\n密码: cbm\\n内存分配: 32 MB\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: _jsx(_components.img, {\n        src: \"https://cbmland.com/uploads/2007/09/windows-mevmdk.png\",\n        alt: \"alt \"\n      })\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [_jsx(_components.a, {\n        href: \"ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Me.vmdk.rar%7C303603177%7C4feeac21c29e8de59b998510fd814d94%7Ch=IJKPEWV2FVU35BIZPKYOWUP46ENB6TUL%7C/\",\n        children: \"[VMware.虚拟机硬盘镜像].Windows.Me.vmdk.rar\"\n      }), \" 289.5MB\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Download: Windows Me.vmdk  Windows Me.vmdk (289.5 MiB, 982 hits)\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"最后更新: 2006-1-31\\n操作系统: Windows ME 简体中文版\\n已安装软件: 默认组件\\n已安装 VMware Tools: 无\\nVMware 硬盘版本:Workstation 5.x\\n帐户信息(如果需要)\\n用户名: Administrator\\n密码: cbm\\n内存分配: 64 MB\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: _jsx(_components.img, {\n        src: \"https://cbmland.com/uploads/2007/09/windows-2000-professionalvmdk.png\",\n        alt: \"alt \"\n      })\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [_jsx(_components.a, {\n        href: \"ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Professional.vmdk.rar%7C204403794%7Cc071ea657b2b7818ef8bbb19d79a8a47%7Ch=KQST3GTFWK6T4CLUP2OOY3IZKDE2FHIC%7C/\",\n        children: \"[VMware.虚拟机硬盘镜像].Windows.2000.Professional.vmdk.rar\"\n      }), \" 194.9MB\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Download: Windows 2000 Professional.vmdk  Windows 2000 Professional.vmdk (194.9 MiB, 1,939 hits)\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"最后更新: 2006-1-31\\n操作系统: Windows 2000 Professional 简体中文版 SP4\\n已安装软件: 默认组件\\n已安装 VMware Tools: 无\\nVMware 硬盘版本:Workstation 5.x\\n帐户信息(如果需要)\\n用户名: Administrator\\n密码: cbm\\n内存分配: 64 MB\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: _jsx(_components.img, {\n        src: \"https://cbmland.com/uploads/2007/09/windows-2000-servervmdk.png\",\n        alt: \"alt \"\n      })\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [\"[\", _jsx(_components.a, {\n        href: \"ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Server.vmdk.rar%7C243723018%7C481804f0253b5cb8fd77224037c6202b%7Ch=G7MHXGY63NENF3BL42X3SKDJLHHAL3VT%7C/\",\n        children: \"[VMware.虚拟机硬盘镜像].Windows.2000.Server.vmdk.rar\"\n      }), \" 232.4MB\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Download: Windows 2000 Server.vmdk  Windows 2000 Server.vmdk (232.4 MiB, 1,499 hits)\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"最后更新: 2006-1-31\\n操作系统: Windows 2000 Server 简体中文版 SP4\\n已安装软件: 默认组件\\n已安装 VMware Tools: 无\\nVMware 硬盘版本:Workstation 5.x\\n帐户信息(如果需要)\\n用户名: Administrator\\n密码: cbm\\n内存分配: 64 MB\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: _jsx(_components.img, {\n        src: \"https://cbmland.com/uploads/2007/09/windows-xp-home-editionvmdk.png\",\n        alt: \"alt \"\n      })\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [_jsx(_components.a, {\n        href: \"ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Home.Edition.vmdk.rar%7C332244602%7Cfb257ca2f48cafa5102a5e99cd71831e%7Ch=GFMPSVZTGXQZBZKTUFUM7HEVOLWPV46B%7C/\",\n        children: \"[VMware.虚拟机硬盘镜像].Windows.XP.Home.Edition.vmdk.rar\"\n      }), \" 316.9MB\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Download: Windows XP Home Edition.vmdk  Windows XP Home Edition.vmdk (316.9 MiB, 3,697 hits)\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"最后更新: 2006-1-30\\n操作系统: Windows XP Home Edition 简体中文版\\n已安装软件: 默认组件\\n已安装 VMware Tools: 无\\nVMware 硬盘版本:Workstation 5.x\\n帐户信息(如果需要)\\n用户名: Administrator\\n密码: cbm\\n内存分配: 96 MB\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: _jsx(_components.img, {\n        src: \"https://cbmland.com/uploads/2007/09/windows-xp-professionalvmdk.png\",\n        alt: \"alt \"\n      })\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [_jsx(_components.a, {\n        href: \"ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.vmdk.rar%7C358301582%7C9565c7c947d2b0ba37bbf8aab63e663e%7Ch=74XOSM2UZLOGJCZV67GSVDBBNXBVNW2N%7C/\",\n        children: \"[VMware.虚拟机硬盘镜像].Windows.XP.Professional.vmdk.rar\"\n      }), \" 341.7MB\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Download: Windows XP Professional.vmdk  Windows XP Professional.vmdk (341.7 MiB, 10,385 hits)\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"最后更新: 2006-1-30\\n操作系统: Windows XP Professional 简体中文版 SP2\\n已安装软件: 默认组件\\n已安装 VMware Tools: 无\\nVMware 硬盘版本:Workstation 5.x\\n帐户信息(如果需要)\\n用户名: Administrator\\n密码: cbm\\n内存分配: 128 MB\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: _jsx(_components.img, {\n        src: \"https://cbmland.com/uploads/2007/09/windows-xp-professional-envmdk.png\",\n        alt: \"alt \"\n      })\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [_jsx(_components.a, {\n        href: \"ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.EN.vmdk.rar%7C323581027%7Cf1957e8fa1ce503471f17587abf2b1b0%7Ch=V7DDUIP2RTKCXOEA6NN5AI7SGA4CPHK7%7C/\",\n        children: \"[VMware.虚拟机硬盘镜像].Windows.XP.Professional.EN.vmdk.rar\"\n      }), \" 308.6MB\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Download: Windows XP Professional EN  Windows XP Professional EN (308.6 MiB, 2,351 hits)\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"最后更新: 2006-1-30\\n操作系统: Windows XP Professional 英文版 SP2\\n已安装软件: 默认组件\\n已安装 VMware Tools: 无\\nVMware 硬盘版本:Workstation 5.x\\n帐户信息(如果需要)\\n用户名: Administrator\\n密码: cbm\\n内存分配: 128 MB\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: _jsx(_components.img, {\n        src: \"https://cbmland.com/uploads/2007/09/windows-xp-professional-x64-editionvmdk.png\",\n        alt: \"alt \"\n      })\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [_jsx(_components.a, {\n        href: \"ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.x64.Edition.vmdk.rar%7C471880862%7Cf025089ad1af2227979a25d093a29c86%7Ch=A63L3NKP66GQBBABDOI7DUV563DWOGRD%7C/\",\n        children: \"[VMware.虚拟机硬盘镜像].Windows.XP.Professional.x64.Edition.vmdk.rar\"\n      }), \" 450.0MB\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Download: Windows XP Professional x64 Edition.vmdk  Windows XP Professional x64 Edition.vmdk (450.0 MiB, 1,518 hits)\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"最后更新: 2006-1-30\\n操作系统: Windows XP Professional x64 Edition 英文版(首次登录需要30天激活)\\n已安装软件: 默认组件\\n已安装 VMware Tools: 无\\nVMware 硬盘版本:Workstation 5.x\\n帐户信息(如果需要)\\n用户名: Administrator\\n密码: cbm\\n内存分配: 128 MB\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: _jsx(_components.img, {\n        src: \"https://cbmland.com/uploads/2007/09/windows-server-2003-standard-editionvmdk.png\",\n        alt: \"alt \"\n      })\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [_jsx(_components.a, {\n        href: \"ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Server.2003.Standard.Edition.vmdk.rar%7C389719373%7C6a67e912144f238c4fbec8dc5043c638%7Ch=6QHKFLLUTIIQV5XFJWA4XL5D2GZKVMYY%7C/\",\n        children: \"[VMware.虚拟机硬盘镜像].Windows.Server.2003.Standard.Edition.vmdk.rar\"\n      }), \" 371.7MB\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"最后更新: 2006-1-30\\n操作系统: Windows Server 2003 Standard Edition 简体中文版 SP1\\n已安装软件: 默认组件\\n已安装 VMware Tools: 无\\nVMware 硬盘版本:Workstation 5.x\\n帐户信息(如果需要)\\n用户名: Administrator\\n密码: cbm\\n内存分配: 128 MB\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: _jsx(_components.img, {\n        src: \"https://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png\",\n        alt: \"alt \"\n      })\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [_jsx(_components.a, {\n        href: \"ed2k://%7Cfile%7C%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Red.Hat.Linux.9.vmdk.rar%7C491526873%7C0e974a60ccd5a55eb97b5af8dabdc7ac%7Ch=HIY6GGBDOVGTSZSN6WTWDPLRZMEZB3AK%7C/\",\n        children: \"[VMware.虚拟机硬盘镜像].Red.Hat.Linux.9.vmdk.rar\"\n      }), \" 468.8MB\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Download: Red Hat Linux 9.vmdk  Red Hat Linux 9.vmdk (468.8 MiB, 3,295 hits)\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"（补充说明：该镜像是在支持SSE3指令的CPU下进行的，使用时也必须要有SSE3指令的支持。请早期的Intel CPU主机用户注意。2008-3-7）\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"最后更新: 2006-1-30\\n操作系统: Red Hat Linux 9.0\\n已安装软件: 默认组件\\n已安装 VMware Tools: 无\\nVMware 硬盘版本:Workstation 5.x\\n帐户信息(如果需要)\\n用户名: root\\n密码: dickxl\\n内存分配: 96 MB\"\n    })]\n  });\n}\nfunction MDXContent(props = {}) {\n  const {wrapper: MDXLayout} = Object.assign({}, _provideComponents(), props.components);\n  return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {\n    children: _jsx(_createMdxContent, props)\n  })) : _createMdxContent(props);\n}\nreturn {\n  default: MDXContent\n};\n","frontmatter":{},"scope":{}},"slug":"vmware-vmdk-images-shared","allCategories":[{"name":"vercel","posts":1},{"name":"notion","posts":1},{"name":"github","posts":2},{"name":"assistance","posts":1},{"name":"软件推荐","posts":1},{"name":"vmware","posts":0}],"relatedPosts":[{"frontmatter":{"title":"VMware 虚拟机硬盘镜像共享","date":"2007-09-21T05:00:00.000Z","image":"https://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png","categories":["软件推荐","VMware"],"featured":true,"draft":false},"slug":"vmware-vmdk-images-shared","content":"\n\u003e新增百度网盘下载链接：http://pan.baidu.com/s/1pJBLl4R\n\nVMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。\n曾经一口气做过Window98、me、2000 pro、2000 server、XP Home、XP Pro、英文版各个版本的原始安装版本。并且刻录DVD，供自己下次使用或者供别人拷贝，免去无味的重复安装过程。\n\n一个人的能力是有限的。也希望其他的朋友能够共享出来。\n![alt all.PNG](https://cbmland.com/uploads/2007/09/all.PNG)\n\n本来发布在VCD论坛的，但是无故被删除了。有一些朋友对我的这些vmdk很感兴趣，现转到自己的站点来提供稳定的下载地址。\n\n共享的镜像都是系统安装完毕的版本。没有做任何的多于操作。对于做软件测试，系统分析，溢出漏洞，黑客学习的朋友再方便不过了。Windows版本的wmdk文件已经体积优化过，已经是最小化文件，尽量减少占用硬盘空间。\n\n下面是每个虚拟机镜像的具体信息和ed2k下载地址。\n\n![alt windows-98vmdk](https://cbmland.com/uploads/2007/09/windows-98vmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.98.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.98.vmdk.rar|94580194|17087290020f0ac4a73aa3389328ab7f|h=26ESU26DWXHPSDQM6SVBTKXZCODZIMIU|/) 90.2MB\n\nDownload: [Windows 98.vmdk](https://www.icloud.com/iclouddrive/0e49jQL_SWwkGd_oBRg0lNGyA#Windows_98) (90.2 MiB, 4,378 hits)\n\n（附加说明：vmware workstation 6.x开始vmware tools的显卡驱动和鼠标驱动不能自动在98下安装，需要手动安装，请定位到vmware tools光盘中的相关目录进行驱动更新，声卡驱动在群里面共享有提供。2008-3-7）\n对于6.X 以上版本的虚拟机，声卡驱动请在搜索本站进行下载。\n\n最后更新: 2006-1-31\n操作系统: Windows 98 简体中文第二版\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 32 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-mevmdk.png)\n\n \n\n[[VMware.虚拟机硬盘镜像].Windows.Me.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Me.vmdk.rar|303603177|4feeac21c29e8de59b998510fd814d94|h=IJKPEWV2FVU35BIZPKYOWUP46ENB6TUL|/) 289.5MB\n\nDownload: Windows Me.vmdk  Windows Me.vmdk (289.5 MiB, 982 hits)\n\n最后更新: 2006-1-31\n操作系统: Windows ME 简体中文版\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 64 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-2000-professionalvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.2000.Professional.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Professional.vmdk.rar|204403794|c071ea657b2b7818ef8bbb19d79a8a47|h=KQST3GTFWK6T4CLUP2OOY3IZKDE2FHIC|/) 194.9MB\n\nDownload: Windows 2000 Professional.vmdk  Windows 2000 Professional.vmdk (194.9 MiB, 1,939 hits)\n\n最后更新: 2006-1-31\n操作系统: Windows 2000 Professional 简体中文版 SP4\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 64 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-2000-servervmdk.png)\n\n[[[VMware.虚拟机硬盘镜像].Windows.2000.Server.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Server.vmdk.rar|243723018|481804f0253b5cb8fd77224037c6202b|h=G7MHXGY63NENF3BL42X3SKDJLHHAL3VT|/) 232.4MB\n\nDownload: Windows 2000 Server.vmdk  Windows 2000 Server.vmdk (232.4 MiB, 1,499 hits)\n\n最后更新: 2006-1-31\n操作系统: Windows 2000 Server 简体中文版 SP4\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 64 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-home-editionvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Home.Edition.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Home.Edition.vmdk.rar|332244602|fb257ca2f48cafa5102a5e99cd71831e|h=GFMPSVZTGXQZBZKTUFUM7HEVOLWPV46B|/) 316.9MB\n\nDownload: Windows XP Home Edition.vmdk  Windows XP Home Edition.vmdk (316.9 MiB, 3,697 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Home Edition 简体中文版\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 96 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-professionalvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Professional.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.vmdk.rar|358301582|9565c7c947d2b0ba37bbf8aab63e663e|h=74XOSM2UZLOGJCZV67GSVDBBNXBVNW2N|/) 341.7MB\n\nDownload: Windows XP Professional.vmdk  Windows XP Professional.vmdk (341.7 MiB, 10,385 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Professional 简体中文版 SP2\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-professional-envmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Professional.EN.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.EN.vmdk.rar|323581027|f1957e8fa1ce503471f17587abf2b1b0|h=V7DDUIP2RTKCXOEA6NN5AI7SGA4CPHK7|/) 308.6MB\n\nDownload: Windows XP Professional EN  Windows XP Professional EN (308.6 MiB, 2,351 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Professional 英文版 SP2\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-professional-x64-editionvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Professional.x64.Edition.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.x64.Edition.vmdk.rar|471880862|f025089ad1af2227979a25d093a29c86|h=A63L3NKP66GQBBABDOI7DUV563DWOGRD|/) 450.0MB\n\nDownload: Windows XP Professional x64 Edition.vmdk  Windows XP Professional x64 Edition.vmdk (450.0 MiB, 1,518 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Professional x64 Edition 英文版(首次登录需要30天激活)\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-server-2003-standard-editionvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.Server.2003.Standard.Edition.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Server.2003.Standard.Edition.vmdk.rar|389719373|6a67e912144f238c4fbec8dc5043c638|h=6QHKFLLUTIIQV5XFJWA4XL5D2GZKVMYY|/) 371.7MB\n\n最后更新: 2006-1-30\n操作系统: Windows Server 2003 Standard Edition 简体中文版 SP1\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Red.Hat.Linux.9.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Red.Hat.Linux.9.vmdk.rar|491526873|0e974a60ccd5a55eb97b5af8dabdc7ac|h=HIY6GGBDOVGTSZSN6WTWDPLRZMEZB3AK|/) 468.8MB\n\nDownload: Red Hat Linux 9.vmdk  Red Hat Linux 9.vmdk (468.8 MiB, 3,295 hits)\n\n（补充说明：该镜像是在支持SSE3指令的CPU下进行的，使用时也必须要有SSE3指令的支持。请早期的Intel CPU主机用户注意。2008-3-7）\n\n最后更新: 2006-1-30\n操作系统: Red Hat Linux 9.0\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: root\n密码: dickxl\n内存分配: 96 MB"}],"posts":[{"frontmatter":{"title":"使用 nobelium 搭建博客方法","date":"2023-04-11T05:00:00.000Z","image":"https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F63c20012-cec5-421d-a95f-5c2898ad724a%2FUntitled.png?table=block\u0026id=5f9fa6d6-8b0a-497b-a77e-f3718fb54c5b\u0026cache=v2","categories":["vercel","notion","github"],"featured":true,"draft":false},"slug":"deply-your-blog-by-nobelium","content":"\n今天有兴趣看到一遍用notion搭建blog的开源库，感觉思路很新颖，而且管理起来也比常规的blog系统方便。顺手写一下中文的介绍，方便有有需要的人。\n \n#### 前置准备：\n- 你的github账号\n- 你的vercel账号\n- 你的notion账号\n \n#### 开始搭建：\n\n- 1.打开notion模版\n[🎟️ NOBELIUM Template](https://www.notion.so/866916e3b939468b9b6f1d47dce99f9c)\n ，选择右上角位置的 Duplicate，然后再Share出Public Link，记得复制出链接地址。接下来从链接地址中，复制出32位的ID，记录下来为NOTION_PAGE_ID\n \n- 2.打开仓库，选择右上位置Fork按钮，创建副本到自己的名下。找到blog.config.js文件，直接在线进行编辑。可以更新成自己的title、author、email等参数（link可以等待第一部署后，稍后再进行更新），修改好可以之际按右边的绿色按钮，进行提交commit。\n![alt notion image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc95f7a8d-fd47-4a9f-ae90-06f2399eafcd%2FUntitled.png?table=block\u0026id=76fcc14f-f88b-4b81-bdc3-11cacd0fa50a\u0026cache=v2s)\n \n- 3.转到https://vercel.com/dashboard页，选择右边Add new创建新的部署，选择已经关联的github账号，项目中选择nobelium进行导入。同时在环境变量中，记得填上名称为NOTION_PAGE_ID的变量（第一步操作获取），这一步来关联你的notion。\n![alt notion image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1da1be00-9184-4bd2-b619-8e3f957855e9%2FUntitled.png?table=block\u0026id=cf8ef294-e9c9-4686-8ab2-beea1a19679e\u0026cache=v2)\n\n- 4.等待一分钟左右，网站即可运行起来。\n![alt notion image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F63c20012-cec5-421d-a95f-5c2898ad724a%2FUntitled.png?table=block\u0026id=5f9fa6d6-8b0a-497b-a77e-f3718fb54c5b\u0026cache=v2)"},{"frontmatter":{"title":"How to make toys from old Olarpaper","date":"2022-04-04T05:00:00.000Z","image":"/images/post/post-5.png","categories":["assistance","github"],"featured":true,"draft":false},"slug":"post-5","content":"\nNemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!\n\n## Covid-19 Situation\n\nNam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.\n\n\u003e Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!\n\n## Work From Home\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!\n\n![alter-text](/images/post/post-1.png)\n*Example Caption*\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!quatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!\n"},{"frontmatter":{"title":"VMware 虚拟机硬盘镜像共享","date":"2007-09-21T05:00:00.000Z","image":"https://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png","categories":["软件推荐","VMware"],"featured":true,"draft":false},"slug":"vmware-vmdk-images-shared","content":"\n\u003e新增百度网盘下载链接：http://pan.baidu.com/s/1pJBLl4R\n\nVMware 现在知道的人应该不少了，我从3.0的时代开始玩，现在这个软件是越来越强大了。已经成为虚拟化领域的领头羊了。\n曾经一口气做过Window98、me、2000 pro、2000 server、XP Home、XP Pro、英文版各个版本的原始安装版本。并且刻录DVD，供自己下次使用或者供别人拷贝，免去无味的重复安装过程。\n\n一个人的能力是有限的。也希望其他的朋友能够共享出来。\n![alt all.PNG](https://cbmland.com/uploads/2007/09/all.PNG)\n\n本来发布在VCD论坛的，但是无故被删除了。有一些朋友对我的这些vmdk很感兴趣，现转到自己的站点来提供稳定的下载地址。\n\n共享的镜像都是系统安装完毕的版本。没有做任何的多于操作。对于做软件测试，系统分析，溢出漏洞，黑客学习的朋友再方便不过了。Windows版本的wmdk文件已经体积优化过，已经是最小化文件，尽量减少占用硬盘空间。\n\n下面是每个虚拟机镜像的具体信息和ed2k下载地址。\n\n![alt windows-98vmdk](https://cbmland.com/uploads/2007/09/windows-98vmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.98.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.98.vmdk.rar|94580194|17087290020f0ac4a73aa3389328ab7f|h=26ESU26DWXHPSDQM6SVBTKXZCODZIMIU|/) 90.2MB\n\nDownload: [Windows 98.vmdk](https://www.icloud.com/iclouddrive/0e49jQL_SWwkGd_oBRg0lNGyA#Windows_98) (90.2 MiB, 4,378 hits)\n\n（附加说明：vmware workstation 6.x开始vmware tools的显卡驱动和鼠标驱动不能自动在98下安装，需要手动安装，请定位到vmware tools光盘中的相关目录进行驱动更新，声卡驱动在群里面共享有提供。2008-3-7）\n对于6.X 以上版本的虚拟机，声卡驱动请在搜索本站进行下载。\n\n最后更新: 2006-1-31\n操作系统: Windows 98 简体中文第二版\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 32 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-mevmdk.png)\n\n \n\n[[VMware.虚拟机硬盘镜像].Windows.Me.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Me.vmdk.rar|303603177|4feeac21c29e8de59b998510fd814d94|h=IJKPEWV2FVU35BIZPKYOWUP46ENB6TUL|/) 289.5MB\n\nDownload: Windows Me.vmdk  Windows Me.vmdk (289.5 MiB, 982 hits)\n\n最后更新: 2006-1-31\n操作系统: Windows ME 简体中文版\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 64 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-2000-professionalvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.2000.Professional.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Professional.vmdk.rar|204403794|c071ea657b2b7818ef8bbb19d79a8a47|h=KQST3GTFWK6T4CLUP2OOY3IZKDE2FHIC|/) 194.9MB\n\nDownload: Windows 2000 Professional.vmdk  Windows 2000 Professional.vmdk (194.9 MiB, 1,939 hits)\n\n最后更新: 2006-1-31\n操作系统: Windows 2000 Professional 简体中文版 SP4\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 64 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-2000-servervmdk.png)\n\n[[[VMware.虚拟机硬盘镜像].Windows.2000.Server.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.2000.Server.vmdk.rar|243723018|481804f0253b5cb8fd77224037c6202b|h=G7MHXGY63NENF3BL42X3SKDJLHHAL3VT|/) 232.4MB\n\nDownload: Windows 2000 Server.vmdk  Windows 2000 Server.vmdk (232.4 MiB, 1,499 hits)\n\n最后更新: 2006-1-31\n操作系统: Windows 2000 Server 简体中文版 SP4\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 64 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-home-editionvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Home.Edition.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Home.Edition.vmdk.rar|332244602|fb257ca2f48cafa5102a5e99cd71831e|h=GFMPSVZTGXQZBZKTUFUM7HEVOLWPV46B|/) 316.9MB\n\nDownload: Windows XP Home Edition.vmdk  Windows XP Home Edition.vmdk (316.9 MiB, 3,697 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Home Edition 简体中文版\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 96 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-professionalvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Professional.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.vmdk.rar|358301582|9565c7c947d2b0ba37bbf8aab63e663e|h=74XOSM2UZLOGJCZV67GSVDBBNXBVNW2N|/) 341.7MB\n\nDownload: Windows XP Professional.vmdk  Windows XP Professional.vmdk (341.7 MiB, 10,385 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Professional 简体中文版 SP2\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-professional-envmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Professional.EN.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.EN.vmdk.rar|323581027|f1957e8fa1ce503471f17587abf2b1b0|h=V7DDUIP2RTKCXOEA6NN5AI7SGA4CPHK7|/) 308.6MB\n\nDownload: Windows XP Professional EN  Windows XP Professional EN (308.6 MiB, 2,351 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Professional 英文版 SP2\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-xp-professional-x64-editionvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.XP.Professional.x64.Edition.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.XP.Professional.x64.Edition.vmdk.rar|471880862|f025089ad1af2227979a25d093a29c86|h=A63L3NKP66GQBBABDOI7DUV563DWOGRD|/) 450.0MB\n\nDownload: Windows XP Professional x64 Edition.vmdk  Windows XP Professional x64 Edition.vmdk (450.0 MiB, 1,518 hits)\n\n最后更新: 2006-1-30\n操作系统: Windows XP Professional x64 Edition 英文版(首次登录需要30天激活)\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/windows-server-2003-standard-editionvmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Windows.Server.2003.Standard.Edition.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Windows.Server.2003.Standard.Edition.vmdk.rar|389719373|6a67e912144f238c4fbec8dc5043c638|h=6QHKFLLUTIIQV5XFJWA4XL5D2GZKVMYY|/) 371.7MB\n\n最后更新: 2006-1-30\n操作系统: Windows Server 2003 Standard Edition 简体中文版 SP1\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: Administrator\n密码: cbm\n内存分配: 128 MB\n\n![alt ](https://cbmland.com/uploads/2007/09/red-hat-linux-9vmdk.png)\n\n[[VMware.虚拟机硬盘镜像].Red.Hat.Linux.9.vmdk.rar](ed2k://|file|%5BVMware.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E9%95%9C%E5%83%8F%5D.Red.Hat.Linux.9.vmdk.rar|491526873|0e974a60ccd5a55eb97b5af8dabdc7ac|h=HIY6GGBDOVGTSZSN6WTWDPLRZMEZB3AK|/) 468.8MB\n\nDownload: Red Hat Linux 9.vmdk  Red Hat Linux 9.vmdk (468.8 MiB, 3,295 hits)\n\n（补充说明：该镜像是在支持SSE3指令的CPU下进行的，使用时也必须要有SSE3指令的支持。请早期的Intel CPU主机用户注意。2008-3-7）\n\n最后更新: 2006-1-30\n操作系统: Red Hat Linux 9.0\n已安装软件: 默认组件\n已安装 VMware Tools: 无\nVMware 硬盘版本:Workstation 5.x\n帐户信息(如果需要)\n用户名: root\n密码: dickxl\n内存分配: 96 MB"}]},"__N_SSG":true},"page":"/posts/[single]","query":{"single":"vmware-vmdk-images-shared"},"buildId":"_qp1oOeP8ptS4vcNfaSZI","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
