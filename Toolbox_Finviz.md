@@ -8,9 +8,9 @@ MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?INTU,SNAP
 
 ## AA
 
-Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=ETN,FANG,JBL,MELI,TEAM&ta=0)  
+Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=TEAM,FANG,JBL,MELI,ETN&ta=0)  
 
-MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?ETN,FANG,JBL,MELI,TEAM|B|C20|) 
+MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?TEAM,FANG,JBL,MELI,ETN|B|C20|) 
 
 ## 中概
 
@@ -20,9 +20,9 @@ MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?TIGR,TME,
 
 ## 半导体
 
-Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=GFS,LRCX,WDC,SOXL,SMH,INTC,AMD,MU,TSM,NVDA,ASML,QCOM&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=AMAT&ta=0)  
+Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=ARM,GFS,LRCX,WDC,SOXL,SMH,INTC,AMD,MU,TSM,NVDA,ASML&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=QCOM,AMAT&ta=0)  
 
-MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?GFS,LRCX,WDC,SOXL,SMH,INTC,AMD,MU,TSM,NVDA,ASML,QCOM|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?AMAT|B|C20|) 
+MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?ARM,GFS,LRCX,WDC,SOXL,SMH,INTC,AMD,MU,TSM,NVDA,ASML|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?QCOM,AMAT|B|C20|) 
 
 ## 基建
 
@@ -44,9 +44,9 @@ MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?LOW,JNJ,A
 
 ## 出行
 
-Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=JETS,RCL,ZIM,BA,ABNB,CCL,UBER,DIS,NCLH,DAL,UAL,AAL&ta=0)  
+Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=JETS,RCL,BA,ABNB,CCL,UBER,DIS,NCLH,DAL,UAL,AAL&ta=0)  
 
-MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?JETS,RCL,ZIM,BA,ABNB,CCL,UBER,DIS,NCLH,DAL,UAL,AAL|B|C20|) 
+MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?JETS,RCL,BA,ABNB,CCL,UBER,DIS,NCLH,DAL,UAL,AAL|B|C20|) 
 
 ## 重点ETF
 
@@ -68,9 +68,9 @@ MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?PTLO,DPZ,
 
 ## 互联网服务
 
-Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=ZS,PLTR,AI,CRM,UPWK,PINS,INTU,ADSK,DBX,NET,FSLY,AKAM&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=ZM,NTGR,SNAP,SHOP,SNOW,ADBE,TWLO,CYBR&ta=0)  
+Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=ZS,PLTR,AI,CRM,UPWK,PINS,INTU,ADSK,DBX,NET,FSLY,AKAM&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=ZM,SNAP,SHOP,SNOW,ADBE,TWLO,CYBR&ta=0)  
 
-MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?ZS,PLTR,AI,CRM,UPWK,PINS,INTU,ADSK,DBX,NET,FSLY,AKAM|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?ZM,NTGR,SNAP,SHOP,SNOW,ADBE,TWLO,CYBR|B|C20|) 
+MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?ZS,PLTR,AI,CRM,UPWK,PINS,INTU,ADSK,DBX,NET,FSLY,AKAM|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?ZM,SNAP,SHOP,SNOW,ADBE,TWLO,CYBR|B|C20|) 
 
 ## 电商
 
@@ -140,9 +140,9 @@ MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?VTV,UNG,S
 
 ## Watch
 
-Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=LOGI,URI,SPOT,TWST,ZS,ADSK,INTU,GRWG,DDOG,NET,TTD,SNOW&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=ARLO,DASH,MMM,DKNG,AFRM,OPEN,MSA,CCJ,NU,GRIN,WWE,ISRG&ta=0) [[ 3 ]](https://finviz.com/screener.ashx?v=211&t=MDB,ACN,HD&ta=0)  
+Finviz [[ 1 ]](https://finviz.com/screener.ashx?v=211&t=LOGI,URI,SPOT,TWST,ZS,ADSK,INTU,GRWG,DDOG,NET,TTD,SNOW&ta=0) [[ 2 ]](https://finviz.com/screener.ashx?v=211&t=ARLO,DASH,MMM,DKNG,AFRM,OPEN,MSA,CCJ,NU,GRIN,ISRG,MDB&ta=0) [[ 3 ]](https://finviz.com/screener.ashx?v=211&t=SIRI,APP,ACN,HD&ta=0)  
 
-MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?LOGI,URI,SPOT,TWST,ZS,ADSK,INTU,GRWG,DDOG,NET,TTD,SNOW|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?ARLO,DASH,MMM,DKNG,AFRM,OPEN,MSA,CCJ,NU,GRIN,WWE,ISRG|B|C20|) [[ 3 ]](https://stockcharts.com/freecharts/candleglance.html?MDB,ACN,HD|B|C20|) 
+MoneyFlow [[ 1 ]](https://stockcharts.com/freecharts/candleglance.html?LOGI,URI,SPOT,TWST,ZS,ADSK,INTU,GRWG,DDOG,NET,TTD,SNOW|B|C20|) [[ 2 ]](https://stockcharts.com/freecharts/candleglance.html?ARLO,DASH,MMM,DKNG,AFRM,OPEN,MSA,CCJ,NU,GRIN,ISRG,MDB|B|C20|) [[ 3 ]](https://stockcharts.com/freecharts/candleglance.html?SIRI,APP,ACN,HD|B|C20|) 
 
 ## 能源
 
@@ -169,5 +169,5 @@ MoneyFlow [[ 1 ]](https://stockcharts.com/h-sc/ui?s=%24NYMO&p=D&yr=0&mn=9&dy=0&i
 MoneyFlow [[ 1 ]](https://stockcharts.com/h-sc/ui?s=%24NAMO&p=D&yr=0&mn=9&dy=0&id=p79316909740)
 
 ## 
-> last updated: 2023-09-03 22:17:45
+> last updated: 2023-10-11 15:35:12
 
