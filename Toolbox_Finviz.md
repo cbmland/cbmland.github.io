@@ -169,5 +169,5 @@ MoneyFlow [[ 1 ]](https://stockcharts.com/h-sc/ui?s=%24NYMO&p=D&yr=0&mn=9&dy=0&i
 MoneyFlow [[ 1 ]](https://stockcharts.com/h-sc/ui?s=%24NAMO&p=D&yr=0&mn=9&dy=0&id=p79316909740)
 
 ## 
-> last updated: 2023-10-12 00:33:27
+> last updated: 2023-10-16 21:58:34
 

@@ -1,5 +1,5 @@
 {
-    "updated": "2023-10-12 00:33:27",
+    "updated": "2023-10-16 21:58:34",
     "groups": [
         {
             "name": "重点ETF",
@@ -461,7 +461,7 @@
                 },
                 {
                     "symbol": "ARM",
-                    "name": "ARM Holdings Ltd"
+                    "name": "Arm Holdings"
                 },
                 {
                     "symbol": "GFS",
