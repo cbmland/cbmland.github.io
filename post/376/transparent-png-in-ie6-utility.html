@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>透明PNG在IE6下的官方解决方案 | 西边饿魔</title>
+<meta name="generator" content="WordPress 3.7.5" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="http://cbmland.com/wp-content/plugins/wp-pda/pda-theme/style.css?nocache=1464190312" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="cbm&#039;s land RSS Feed" href="http://cbmland.com/feed" />
+<link rel="pingback" href="http://cbmland.com/xmlrpc.php" />
+</head>
+<body>
+<div id="header">
+	<h1><a href="http://cbmland.com/">cbm&#039;s land</a></h1>
+	<div class="description">记录我的全新旅程</div>
+</div>
+<div id="searchform"><form method="get" action="http://cbmland.com/">
+	<input type="text" value="" name="s" />&nbsp;<input type="submit" value="Search" />
+</form>
+</div>
+<div id="content">
+  		<div class="post" id="post-376">
+			<h2><a href="http://cbmland.com/post/376/transparent-png-in-ie6-utility.html" rel="bookmark" title="Permanent Link to 透明PNG在IE6下的官方解决方案">透明PNG在IE6下的官方解决方案</a></h2>
+			<div class="entry">
+				<p>做Web开发的朋友一定都知道PNG是一个相当不错的图片格式，但是这个好的格式却在IE6时代造成了麻烦，IE6会使透明的PNG的透明部分出现#DBEAED的色彩。透明不了。使得在FF下开发表现很好的界面换成IE浏览就惨不忍睹，又逼着换成GIF，而GIF的假透明在变换背景时造成毛边现象。</p>
+<p> 刚去了<a href="http://www.gowindowslive.com/">www.gowindowslive.com</a>去生成一个WLM的联系方式图标，结果发现的官方的解决方案。;)</p>
+<div id="ads_c2">™</div>
+<p>核心函数贴出来供分析</p><!-- Crayon Syntax Highlighter v2.5.0 -->
+
+		<div id="crayon-5745c56888c0e103624910" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" touchscreen minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; float: none; clear: both; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings="" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-mixed-highlight" title="含多种语言"></span><div class="crayon-button crayon-nums-button" title="切换显示行编号"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="纯文本显示代码"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="切换自动换行"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="在新窗口中显示代码"><div class="crayon-button-icon"></div></div><span class="crayon-language">JavaScript</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick"  style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+/* 
+Correctly handle PNG transparency in Win IE 5.5 &amp;amp; 6. 
+Copyright 2007 Ignia, LLC 
+Based in part on code from from http://homepage.ntlworld.com/bobosola. 
+
+Use in  with DEFER keyword wrapped in conditional comments: 
+
+&lt;script type="text/javascript" defer="true" src="pngfix.js"&gt;&lt;/script&gt; 
+
+*/ 
+
+function fixPng() { 
+  var arVersion = navigator.appVersion.split("MSIE") 
+  var version = parseFloat(arVersion[1]) 
+
+  if ((version &amp;gt;= 5.5 &amp;amp;&amp;amp; version &amp;lt; 7.0) &amp;amp;&amp;amp; (document.body.filters)) { 
+    for(var i=0; i&lt;document.images.length;&gt;&lt;/document.images.length;&gt;      var img = document.images[i]; 
+      var imgName = img.src.toUpperCase(); 
+      if (imgName.indexOf(".PNG") &amp;gt; 0) { 
+        var width = img.width; 
+        var height = img.height; 
+        var sizingMethod = (img.className.toLowerCase().indexOf("scale") &amp;gt;= 0)? "scale" : "image"; 
+        img.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + img.src.replace('%23', '%2523').replace("'", "%27") + "', sizingMethod='" + sizingMethod + "')"; 
+        img.src="images/blank.gif" mce_src="images/blank.gif"; 
+        img.width = width; 
+        img.height = height; 
+        } 
+      } 
+    } 
+  } 
+
+fixPng();</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-2">2</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-4">4</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-6">6</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-8">8</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-10">10</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-12">12</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-14">14</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-16">16</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-18">18</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-20">20</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-22">22</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-24">24</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-26">26</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-28">28</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-30">30</div><div class="crayon-num" data-line="crayon-5745c56888c0e103624910-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745c56888c0e103624910-32">32</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-5745c56888c0e103624910-1"><span class="crayon-c">/* </span></div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-2"><span class="crayon-c">Correctly handle PNG transparency in Win IE 5.5 &amp;amp; 6. </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-3"><span class="crayon-c">Copyright 2007 Ignia, LLC </span></div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-4"><span class="crayon-c">Based in part on code from from http://homepage.ntlworld.com/bobosola. </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-5">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-6"><span class="crayon-c">Use in&nbsp;&nbsp;with DEFER keyword wrapped in conditional comments: </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-7">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-8"><span class="crayon-c"><span class="crayon-ta">&lt;script </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s">"text/javascript"</span><span class="crayon-h"> </span><span class="crayon-e ">defer</span><span class="crayon-o">=</span><span class="crayon-s">"true"</span><span class="crayon-h"> </span><span class="crayon-e ">src</span><span class="crayon-o">=</span><span class="crayon-s">"pngfix.js"</span><span class="crayon-o">&gt;</span><span class="crayon-ta">&lt;/script&gt;</span> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-9">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-10"><span class="crayon-c">*/</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-11">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-12"><span class="crayon-t">function</span><span class="crayon-h"> </span><span class="crayon-e">fixPng</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-13"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">arVersion</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">navigator</span><span class="crayon-sy">.</span><span class="crayon-v">appVersion</span><span class="crayon-sy">.</span><span class="crayon-e">split</span><span class="crayon-sy">(</span><span class="crayon-s">"MSIE"</span><span class="crayon-sy">)</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-14"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">version</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">parseFloat</span><span class="crayon-sy">(</span><span class="crayon-v">arVersion</span><span class="crayon-sy">[</span><span class="crayon-cn">1</span><span class="crayon-sy">]</span><span class="crayon-sy">)</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-15">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-16"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-sy">(</span><span class="crayon-i">version</span><span class="crayon-h"> </span><span class="crayon-o">&amp;</span><span class="crayon-i">gt</span><span class="crayon-sy">;</span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">5.5</span><span class="crayon-h"> </span><span class="crayon-o">&amp;</span><span class="crayon-i">amp</span><span class="crayon-sy">;</span><span class="crayon-o">&amp;</span><span class="crayon-i">amp</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-i">version</span><span class="crayon-h"> </span><span class="crayon-o">&amp;</span><span class="crayon-i">lt</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-cn">7.0</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">&amp;</span><span class="crayon-i">amp</span><span class="crayon-sy">;</span><span class="crayon-o">&amp;</span><span class="crayon-i">amp</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-v">body</span><span class="crayon-sy">.</span><span class="crayon-i">filters</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-17"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">for</span><span class="crayon-sy">(</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-o">=</span><span class="crayon-cn">0</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-i">i</span><span class="crayon-o">&lt;</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-v">images</span><span class="crayon-sy">.</span><span class="crayon-i">length</span><span class="crayon-sy">;</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-v">images</span><span class="crayon-sy">.</span><span class="crayon-i">length</span><span class="crayon-sy">;</span><span class="crayon-o">&gt;</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">img</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-v">images</span><span class="crayon-sy">[</span><span class="crayon-i">i</span><span class="crayon-sy">]</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-18"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">imgName</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">img</span><span class="crayon-sy">.</span><span class="crayon-v">src</span><span class="crayon-sy">.</span><span class="crayon-e">toUpperCase</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-19"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">imgName</span><span class="crayon-sy">.</span><span class="crayon-e">indexOf</span><span class="crayon-sy">(</span><span class="crayon-s">".PNG"</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">&amp;</span><span class="crayon-i">gt</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-20"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">width</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">img</span><span class="crayon-sy">.</span><span class="crayon-i">width</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-21"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">height</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">img</span><span class="crayon-sy">.</span><span class="crayon-i">height</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-22"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">sizingMethod</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">img</span><span class="crayon-sy">.</span><span class="crayon-v">className</span><span class="crayon-sy">.</span><span class="crayon-e">toLowerCase</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">.</span><span class="crayon-e">indexOf</span><span class="crayon-sy">(</span><span class="crayon-s">"scale"</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">&amp;</span><span class="crayon-i">gt</span><span class="crayon-sy">;</span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">)</span><span class="crayon-sy">?</span><span class="crayon-h"> </span><span class="crayon-s">"scale"</span><span class="crayon-h"> </span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"image"</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-23"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">img</span><span class="crayon-sy">.</span><span class="crayon-v">runtimeStyle</span><span class="crayon-sy">.</span><span class="crayon-e ">filter</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">img</span><span class="crayon-sy">.</span><span class="crayon-v">src</span><span class="crayon-sy">.</span><span class="crayon-e">replace</span><span class="crayon-sy">(</span><span class="crayon-s">'%23'</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">'%2523'</span><span class="crayon-sy">)</span><span class="crayon-sy">.</span><span class="crayon-e">replace</span><span class="crayon-sy">(</span><span class="crayon-s">"'"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"%27"</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-s">"', sizingMethod='"</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-i">sizingMethod</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-s">"')"</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-24"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">img</span><span class="crayon-sy">.</span><span class="crayon-e ">src</span><span class="crayon-o">=</span><span class="crayon-s">"images/blank.gif"</span><span class="crayon-h"> </span><span class="crayon-e ">mce_src</span><span class="crayon-o">=</span><span class="crayon-s">"images/blank.gif"</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-25"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">img</span><span class="crayon-sy">.</span><span class="crayon-v">width</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-i">width</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-26"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">img</span><span class="crayon-sy">.</span><span class="crayon-v">height</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-i">height</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-27"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-28"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-29"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-30"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5745c56888c0e103624910-31">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5745c56888c0e103624910-32"><span class="crayon-e">fixPng</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0126 seconds] -->
+<p><a href="http://cbmland.com/uploads/2007/10/msiepng.rar" title="msiepng.rar">打包打包提供下载测试</a></p>
+							</div>
+			<br clear="all" />
+			<p class="postmetadata">
+				This entry was posted on 星期日, 十月 21st, 2007 at 13:33 and is filled under: <a href="http://cbmland.com/cats/code" title="查看代码人生中的全部文章" rel="category tag">代码人生</a>, <a href="http://cbmland.com/cats/code/shareme" title="查看分享我自己中的全部文章" rel="category tag">分享我自己</a>				Tags: <a href="http://cbmland.com/tags/IE" rel="tag">IE</a>, <a href="http://cbmland.com/tags/Microsoft" rel="tag">Microsoft</a>			</p>
+		</div>
+	<!-- You can start editing here. -->
+	<h3 id="comments">26 Responses to &#8220透明PNG在IE6下的官方解决方案&#8221;</h3> 
+	<ol class="commentlist">
+			<li class="alt" id="comment-696">
+			<cite><a href='http://www.awflasher.com/blog/' rel='external nofollow' class='url'>awflasher</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-696" title="">十一月 13th, 2007 at 22:16</a> </small>
+			<p>在有些“standalone IE6”下面，似乎不好用。<br />
+而且，对于定义在CSS里面的背景PNG，似乎也不能这么处理吧？</p>
+		</li>
+				<li class="" id="comment-698">
+			<cite>cbm</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-698" title="">十一月 14th, 2007 at 00:35</a> </small>
+			<p>这个解决方案有局限性，img标签可以处理一下。css的就不是同一层面了。</p>
+		</li>
+				<li class="alt" id="comment-1031">
+			<cite><a href='http://a' rel='external nofollow' class='url'>aaa</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-1031" title="">三月 6th, 2008 at 15:27</a> </small>
+			<p>背景一样适用</p>
+		</li>
+				<li class="" id="comment-1058">
+			<cite>aileen</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-1058" title="">三月 25th, 2008 at 09:51</a> </small>
+			<p>png能显示的颜色要比gif丰富得多，这个办法太有效了。<br />
+实现了。感谢楼主！！！</p>
+		</li>
+				<li class="alt" id="comment-1357">
+			<cite>笨小妹</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-1357" title="">七月 7th, 2008 at 18:53</a> </small>
+			<p>這個方法超棒的~~<br />
+不過背景怎麼試都不成功耶!!?<br />
+請問大師該怎麼樣才會適用呢?</p>
+		</li>
+				<li class="" id="comment-1467">
+			<cite>VF</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-1467" title="">八月 13th, 2008 at 17:59</a> </small>
+			<p>我想说这个方法，在ie6依然不行，请问是怎样一回事</p>
+		</li>
+				<li class="alt" id="comment-1478">
+			<cite><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-1478" title="">八月 19th, 2008 at 02:07</a> </small>
+			<p>直接运行网页就可以看到效果。</p>
+		</li>
+				<li class="" id="comment-1567">
+			<cite>Eric</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-1567" title="">九月 17th, 2008 at 16:37</a> </small>
+			<p>我暂时用的方法.直接在CSS中重写下IMG</p>
+<p>IMG {<br />
+	azimuth:expression(<br />
+	this.pngSet?this.pngSet=true:(this.nodeName == &#8220;IMG&#8221; &amp;&amp; this.src.toLowerCase().indexOf(&#8216;.png&#8217;)&gt;-1?(this.runtimeStyle.backgroundImage = &#8220;none&#8221;,<br />
+	this.runtimeStyle.filter = &#8220;progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#8217;&#8221; + this.src + &#8220;&#8216;, sizingMethod=&#8217;image&#8217;)&#8221;,<br />
+	this.src = &#8220;gifmask.gif&#8221;):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace(&#8216;url(&#8220;&#8216;,&#8221;).replace(&#8216;&#8221;)&#8217;,&#8221;),<br />
+	this.runtimeStyle.filter = &#8220;progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#8217;&#8221; + this.origBg + &#8220;&#8216;, sizingMethod=&#8217;crop&#8217;)&#8221;,<br />
+	this.runtimeStyle.backgroundImage = &#8220;none&#8221;)),this.pngSet=true);<br />
+}</p>
+		</li>
+				<li class="alt" id="comment-3411">
+			<cite>壮壮</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-3411" title="">十二月 2nd, 2008 at 11:34</a> </small>
+			<p>好方法，谢谢！</p>
+		</li>
+				<li class="" id="comment-3431">
+			<cite>周裕波</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-3431" title="">十二月 3rd, 2008 at 15:37</a> </small>
+			<p>此方法不妥！</p>
+		</li>
+				<li class="alt" id="comment-4308">
+			<cite>Felix</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-4308" title="">二月 4th, 2009 at 10:46</a> </small>
+			<p>好使！！！</p>
+		</li>
+				<li class="" id="comment-6195">
+			<cite>yeyushu</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-6195" title="">四月 24th, 2009 at 14:50</a> </small>
+			<p>很奇怪的是我在本地测试没问题 但是上传到服务器上就出问题了。</p>
+		</li>
+				<li class="alt" id="comment-8933">
+			<cite>uukn</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-8933" title="">五月 28th, 2009 at 12:46</a> </small>
+			<p>方法不妥谁都会说。你既然说了为什么不拿出来一个好的解决方案呢?不要光说大话，要有实际行动才行，不然你只能让人讨厌！</p>
+		</li>
+				<li class="" id="comment-9625">
+			<cite><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-9625" title="">六月 1st, 2009 at 09:47</a> </small>
+			<p>万恶的IE6让人折腾.</p>
+		</li>
+				<li class="alt" id="comment-27933">
+			<cite>Ton.Y</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-27933" title="">八月 31st, 2009 at 13:17</a> </small>
+			<p>如果想在背景PNG里使用改怎么修改？</p>
+		</li>
+				<li class="" id="comment-39028">
+			<cite><a href='http://blog.huachen.me/' rel='external nofollow' class='url'>华晨</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-39028" title="">十一月 3rd, 2009 at 08:29</a> </small>
+			<p>还是没看懂怎么做到的。</p>
+		</li>
+				<li class="alt" id="comment-39242">
+			<cite><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-39242" title="">十一月 4th, 2009 at 15:57</a> </small>
+			<p>无视IE6吧.支持了这么久,够给面子了.</p>
+		</li>
+				<li class="" id="comment-64586">
+			<cite>fie</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-64586" title="">五月 6th, 2010 at 18:14</a> </small>
+			<p>10年了。要继续用的话就不提出新需求。一个更新的东西怎么提供新功能？ 不懂技术的人是不知道什么ie6,7,8的。懂点技术的人情不要一厢情愿地认为大家还用ie6.他们还用是因为他们不知道。我觉得懂点技术的人应该推广最新的浏览器给不懂的人。而不是去兼容ie6。现在不是用户偏爱ie6而是他们根本不知道什么是ie什么是浏览器。</p>
+		</li>
+				<li class="alt" id="comment-64905">
+			<cite><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-64905" title="">五月 9th, 2010 at 14:45</a> </small>
+			<p>现在是可以开始放弃了。</p>
+		</li>
+				<li class="" id="comment-70052">
+			<cite><a href='http://dev.meettea.com' rel='external nofollow' class='url'>shiny</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-70052" title="">六月 20th, 2010 at 14:59</a> </small>
+			<p>一般我img里使用24位png，用此法解决问题；背景一般用8位png；实在不行的优雅降级处理，放弃对IE6的支持。</p>
+		</li>
+				<li class="alt" id="comment-70737">
+			<cite><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-70737" title="">六月 28th, 2010 at 01:58</a> </small>
+			<p>是可以放弃ie6了。放了十年的牛奶。</p>
+		</li>
+				<li class="" id="comment-71653">
+			<cite>help</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-71653" title="">七月 6th, 2010 at 17:41</a> </small>
+			<p>我下载你的测试包，原封不动，改一下大背景颜色，还是无法显示透明效果，求救ING。。</p>
+<p>QQ：271127886</p>
+		</li>
+				<li class="alt" id="comment-72226">
+			<cite><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-72226" title="">七月 9th, 2010 at 00:43</a> </small>
+			<p>这个我不好回答，首先保证测试包在你那里是Ok的。</p>
+		</li>
+				<li class="" id="comment-98099">
+			<cite><a href='http://www.maocos.com/' rel='external nofollow' class='url'>阿蒙</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-98099" title="">四月 28th, 2011 at 13:39</a> </small>
+			<p>没成功的试试这个解决方案吧<br />
+<a href="http://unitinteractive.com/labs/unitpngfix.php" rel="nofollow">http://unitinteractive.com/labs/unitpngfix.php</a></p>
+		</li>
+				<li class="alt" id="comment-105217">
+			<cite>Birdie</cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-105217" title="">十一月 3rd, 2011 at 11:22</a> </small>
+			<p>很奇怪说什么放弃不放弃的。谁放弃？说服广大网民去放弃？还是放弃用IE6的网民？新浏览器是要推广，但是网站的开发者一定要全面考虑。用户看到你的网站的时候，专注的是网站的内容，一味地要求人家去升级才能正常浏览，容易引起排斥心理。<br />
+网页能对浏览器最大兼容才是王道！IE6的市场还是很大的，必须考虑。</p>
+		</li>
+				<li class="" id="comment-111785">
+			<cite><a href='http://www.zhaokunyao.com' rel='external nofollow' class='url'>huarong</a></cite> Says:						<br />
+			<small class="commentmetadata"><a href="#comment-111785" title="">九月 6th, 2012 at 15:46</a> </small>
+			<p>考虑你妹！</p>
+<p>抵制IE6的网站越多， 才会促进社会的进步。</p>
+		</li>
+			</ol>
+ <h3 id="respond">Leave a Reply</h3>
+<form action="http://cbmland.com/wp-comments-post.php" method="post" id="commentform">
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name (required)</small></label></p>
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+<!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code class=&quot;&quot; title=&quot;&quot; data-url=&quot;&quot;&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; &lt;pre class=&quot;&quot; title=&quot;&quot; data-url=&quot;&quot;&gt; &lt;span class=&quot;&quot; title=&quot;&quot; data-url=&quot;&quot;&gt; </small></p>-->
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="376" />
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5f951b8cf8" /></p>		<script language="JavaScript" type="text/javascript" src="http://cbmland.com/wp-content/plugins/cos-html-cache/common.js.php?hash=b0fc6f90275e05c8c642614a0c5c18d7"></script>
+		<script language="JavaScript" type="text/javascript">
+		//<![CDATA[
+		var hash = "b0fc6f90275e05c8c642614a0c5c18d7";
+		var author_cookie = "comment_author_" + hash;
+		var email_cookie = "comment_author_email_" + hash;
+		var url_cookie = "comment_author_url_" + hash; 
+		var adminmail = "cbm{_}vip.qq.com";
+		var adminurl = "http://cbmland.com";
+		setCommForm();
+		//]]>
+		</script>
+	
+
+	<p style="clear: both;" class="subscribe-to-comments">
+	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" />
+	<label for="subscribe">订阅新评论到电子邮箱。</label>
+	</p>
+
+
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="169"/></p></form>
+	<div class="navigation">
+		&laquo; <a href="http://cbmland.com/post/375/xpsp2-iso-for-acer-aspire-4720g.html" rel="prev">在系统安装时就能识别所有硬件安装驱动的XPSP2安装光盘for Aspire 4720G[原]</a>&nbsp;<a href="http://cbmland.com/post/378/improve-intel-3945abg-network-usage.html" rel="next">开启 Intel 3945ABG 吞吐量增强 提高WIFI网络使用率[原]</a> &raquo;	</div>
+	</div>
+<!--cos-html-cache-safe-tag--><div id="footer">
+	<p>
+	  cbm&#039;s land is proudly powered by <a href="http://wordpress.org/">WordPress</a> and pda enhancement by <a href="http://www.imthi.com/wp-pda/">wp-pda</a>.	</p>
+</div>
+</body>
+</html>
+<!--this is a real static html file created at 2016-05-25 15:31:52 by cos-html-cache 2.7.3 -->

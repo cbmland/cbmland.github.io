@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.599, user-scalable=no">
+    <title>Social</title>
+    <script src="//cdn.bootcdn.net/ajax/libs/vue/3.2.26/vue.global.min.js"></script>
+    <script src="//cdn.bootcdn.net/ajax/libs/axios/0.24.0/axios.min.js"></script>
+
+</head>
+<style>
+
+.fade-enter-active, .fade-leave-active {
+
+  transition: opacity .5s ease;
+
+}
+
+.fade-enter-from, .fade-leave-to {
+
+  opacity: 0;
+
+}
+
+.tool-panel{
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info-pannel{
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.info-pannel a{
+    text-decoration: none;
+    color: black;
+}
+
+</style>
+<body>
+
+<div id="app">
+      
+      <input v-model="symbol" @keyup.enter="viewChart" placeholder="input symbol" />
+      <button @click="viewChart">View Chart</button>
+      <button @click="addFocus(2)">Like</button>
+      <button @click="addFocus(5)">Super</button>
+      <button @click="viewTitter">Twitter</button>
+      <button @click="viewFinviz">Finviz</button>
+      <span class="tool-panel">
+        <img width="600" height="460" :src="chart_img_url" />
+        <div class="info-pannel">
+          <a :href="chart_img_href">{{symbol}} </a>
+        </div>
+      </span>
+
+</div>
+
+</body>
+<script>
+
+        const ComponentsApp = {
+            data() {
+                return {
+                    groups: [],
+                    updated:"",
+                    symbol:"AAPL",
+                    chart_img_url :"",
+                    chart_img_href :"",
+                }
+            },
+            mounted(){
+
+              this.prepData()
+
+            },
+            methods: {
+
+              prepData:function(){
+
+                // console.log(this.symbol)
+                let symbol = this.symbol.toUpperCase()
+                
+                if(symbol.length>0 && symbol.length<6){
+
+                  
+                  //this.chart_img_url = 'https://stockcharts.com/c-sc/sc?r=&chart='+symbol+',uu[305,a]dacayaci[pb20!b50][dg][ilC20]'
+                  this.chart_img_url = 'https://stockcharts.com/c-sc/sc?s='+symbol+'&p=D&b=5&g=0&i=0'
+                  this.chart_img_href = 'https://stockcharts.com/h-sc/ui?s='+symbol
+                  this.chart_tiger_href = 'tigerbrokersusstock://com.tigerbrokers.usstock/S/'+symbol
+
+                }
+              },
+              viewChart:function(){
+
+                this.prepData()
+              },
+              viewTitter:function(){
+                
+                let symbol = this.symbol.toUpperCase()
+                if(symbol.length>0 && symbol.length<6){
+
+                window.location.href = 'https://twitter.com/search?q=%24'+symbol+'&src=typed_query&f=live'
+                }
+              },
+              viewFinviz:function(){
+                
+                let symbol = this.symbol.toUpperCase()
+                if(symbol.length>0 && symbol.length<6){
+
+                window.location.href = 'https://finviz.com/quote.ashx?t='+symbol+'&p=d&tas=0'
+                }
+              },
+              addFocus: function(score){
+
+                var json_url = '//sh1.tohaw.com/screener/add-social-symbol';
+                let that = this;
+
+                // Make a request for a user with a given ID
+                axios.post(json_url,{"symbol":this.symbol.toUpperCase(),"score":score})
+                //axios.get('/backtrader-master/logs/Toolbox_Screener_Data.json')
+                  .then(function (response) {
+                    // handle success
+                    console.log(response);
+
+                  })
+                  .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                  })
+                  .then(function () {
+                    // always executed
+                  });
+
+              }
+
+            }
+        }
+
+
+        const app = Vue.createApp(ComponentsApp)
+
+        app.component('todo-item', {
+            props: ['todo'],
+            template: '<span class="tool-panel"><img width="305" height="225" :src="todo.img_url" /><div class="info-pannel"><a :href="todo.img_href">{{todo.symbol}} </a></div></span>'
+        });
+
+        app.mount('#app')
+    
+</script>
+</html>

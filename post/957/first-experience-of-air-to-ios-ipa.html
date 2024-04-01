@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head profile="http://gmpg.org/xfn/11">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>初体验 &#8211; AIR 2.6生成iOS应用程序IPA | 西边饿魔</title>
+		<meta name="generator" content="WordPress 3.7.5" /> <!-- leave this for stats -->
+		<link rel="pingback" href="http://cbmland.com/xmlrpc.php" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="http://cbmland.com/wp-content/plugins/wp-pda/jqmobile-theme/script.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+		<link rel="stylesheet" href="http://cbmland.com/wp-content/plugins/wp-pda/jqmobile-theme/style.css?nocache=1464163806" type="text/css" media="screen" />
+	</head>
+<body>
+<div data-role="page">
+	<div data-role="header">
+		<h1>cbm&#039;s land</h1>
+	</div><!-- /header -->
+		<div data-role="navbar" class="navbar-header" >
+		<ul>
+			<li><a  href="http://cbmland.com/?mobilePage=home"  id="navbar-icon-home" data-icon="custom">Home</a></li>
+			<li><a  href="http://cbmland.com/?mobilePage=categories"  id="navbar-icon-categories" data-icon="custom">Categories</a></li>
+			<li><a  href="http://cbmland.com/?mobilePage=tags"  id="navbar-icon-tags" data-icon="custom">Tags</a></li>
+			<li><a  href="http://cbmland.com/?mobilePage=pages"  id="navbar-icon-pages" data-icon="custom">Pages</a></li>
+		</ul>
+		</div>	
+
+
+        		<div data-role="content" id="maincontent">
+		    <h2>初体验 &#8211; AIR 2.6生成iOS应用程序IPA</h2>
+	    	<div class="content"><p>AIR 2.6 发布，加强了很多支持iOS的特性。实践证明比Flash CS5的Pakage for iPhone 好多了。</p>
+<p><strong>前置条件</strong></p>
+<p>1.安装iTunes（安装编译出的IPA文件）<br />
+2.安装Adobe Flash Builder 4 以及获取 Flex 4.5 SDK (Hero)（建议直接安装 <a href="http://www.adobe.com/cfusion/entitlement/index.cfm?e=labs_flashbuilder_burrito">Burrito</a> 60天试用版本，已内置Flex 4.5 SDK）<br />
+3.下载<a href="http://www.adobe.com/products/air/sdk/">AIR 2.6 SDK</a>，解压覆盖到Flex 4.5 SDK目录，更新AIR相关文件。</p>
+<p>创建一个常规的AIR程序，可以简单的添加点可见对象在舞台，毕竟初次是为了顺利编译，正常测试。</p>
+<p><strong>编辑-app.xml文件</strong></p>
+<p>1.确保使用了2.6版本特性</p><!-- Crayon Syntax Highlighter v2.5.0 -->
+
+		<div id="crayon-57455dde15cce806742863" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" touchscreen minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; float: none; clear: both; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings="" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="切换显示行编号"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="纯文本显示代码"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="切换自动换行"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="在新窗口中显示代码"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick"  style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;application xmlns="http://ns.adobe.com/air/application/2.6"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57455dde15cce806742863-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-57455dde15cce806742863-1"><span class="crayon-o">&lt;</span><span class="crayon-e">application </span><span class="crayon-v">xmlns</span><span class="crayon-o">=</span><span class="crayon-s">"http://ns.adobe.com/air/application/2.6"</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p></p>
+<p>2.设置程序图标</p><!-- Crayon Syntax Highlighter v2.5.0 -->
+
+		<div id="crayon-57455dde15cf1420999120" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" touchscreen minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; float: none; clear: both; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings="" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="切换显示行编号"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="纯文本显示代码"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="切换自动换行"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="在新窗口中显示代码"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick"  style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+	&lt;icon&gt;
+		&lt;image57x57&gt;icons/icon57x57.png&lt;/image57x57&gt;
+		&lt;image114x114&gt;icons/icon114x114.png&lt;/image114x114&gt;
+	&lt;/icon&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57455dde15cf1420999120-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57455dde15cf1420999120-2">2</div><div class="crayon-num" data-line="crayon-57455dde15cf1420999120-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-57455dde15cf1420999120-4">4</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-57455dde15cf1420999120-1"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-i">icon</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57455dde15cf1420999120-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-i">image57x57</span><span class="crayon-o">&gt;</span><span class="crayon-i">icons</span><span class="crayon-o">/</span><span class="crayon-v">icon57x57</span><span class="crayon-sy">.</span><span class="crayon-i">png</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">image57x57</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57455dde15cf1420999120-3"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-i">image114x114</span><span class="crayon-o">&gt;</span><span class="crayon-i">icons</span><span class="crayon-o">/</span><span class="crayon-v">icon114x114</span><span class="crayon-sy">.</span><span class="crayon-i">png</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">image114x114</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57455dde15cf1420999120-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">icon</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0018 seconds] -->
+<p>这次我只生成了2种格式的图标文件，顺便贴一下Android和iOS平台的应用程序图标规格<br />
+<img src="http://cbmland.com/uploads/2011/03/c3a75d14af522d2bea12.jpg" alt="" title="c3a75d14af522d2bea12" width="171" height="289" class="alignnone size-full wp-image-959" /></p>
+<p>3.设置iOS兼容性，iPhone 4 Retina Display 注意下列的requestedDisplayResolution参数才能是高清版。</p><!-- Crayon Syntax Highlighter v2.5.0 -->
+
+		<div id="crayon-57455dde15cfc345950376" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" touchscreen minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; float: none; clear: both; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings="" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="切换显示行编号"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="纯文本显示代码"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="切换自动换行"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="在新窗口中显示代码"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick"  style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+    &lt;!-- iOS specific capabilities --&gt;
+	&lt;iPhone&gt;&lt;!--  --&gt;
+		&lt;!-- A list of plist key/value pairs to be added to the application Info.plist --&gt;
+		&lt;InfoAdditions&gt;
+            &lt;![CDATA[
+                &lt;key&gt;UIDeviceFamily&lt;/key&gt;
+                &lt;array&gt;
+                    &lt;string&gt;1&lt;/string&gt;
+                    &lt;string&gt;2&lt;/string&gt;
+                &lt;/array&gt;
+                &lt;key&gt;UIStatusBarStyle&lt;/key&gt;
+                &lt;string&gt;UIStatusBarStyleBlackOpaque&lt;/string&gt;
+                &lt;key&gt;UIRequiresPersistentWiFi&lt;/key&gt;
+                &lt;string&gt;YES&lt;/string&gt;
+            ]]&gt;
+        &lt;/InfoAdditions&gt;&lt;!--  --&gt;
+        &lt;requestedDisplayResolution&gt;high&lt;/requestedDisplayResolution&gt;
+	&lt;/iPhone&gt;&lt;!--  --&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57455dde15cfc345950376-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57455dde15cfc345950376-2">2</div><div class="crayon-num" data-line="crayon-57455dde15cfc345950376-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-57455dde15cfc345950376-4">4</div><div class="crayon-num" data-line="crayon-57455dde15cfc345950376-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-57455dde15cfc345950376-6">6</div><div class="crayon-num" data-line="crayon-57455dde15cfc345950376-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-57455dde15cfc345950376-8">8</div><div class="crayon-num" data-line="crayon-57455dde15cfc345950376-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-57455dde15cfc345950376-10">10</div><div class="crayon-num" data-line="crayon-57455dde15cfc345950376-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-57455dde15cfc345950376-12">12</div><div class="crayon-num" data-line="crayon-57455dde15cfc345950376-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-57455dde15cfc345950376-14">14</div><div class="crayon-num" data-line="crayon-57455dde15cfc345950376-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-57455dde15cfc345950376-16">16</div><div class="crayon-num" data-line="crayon-57455dde15cfc345950376-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-57455dde15cfc345950376-18">18</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-57455dde15cfc345950376-1"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-e">iOS </span><span class="crayon-e">specific </span><span class="crayon-i">capabilities</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57455dde15cfc345950376-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-i">iPhone</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-o">--</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">--</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57455dde15cfc345950376-3"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-i">A</span><span class="crayon-h"> </span><span class="crayon-e">list </span><span class="crayon-e">of </span><span class="crayon-e">plist </span><span class="crayon-i">key</span><span class="crayon-o">/</span><span class="crayon-e">value </span><span class="crayon-e">pairs </span><span class="crayon-st">to</span><span class="crayon-h"> </span><span class="crayon-e">be </span><span class="crayon-e">added </span><span class="crayon-st">to</span><span class="crayon-h"> </span><span class="crayon-e">the </span><span class="crayon-e">application </span><span class="crayon-v">Info</span><span class="crayon-sy">.</span><span class="crayon-i">plist</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57455dde15cfc345950376-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-i">InfoAdditions</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57455dde15cfc345950376-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-sy">[</span><span class="crayon-v">CDATA</span><span class="crayon-sy">[</span></div><div class="crayon-line crayon-striped-line" id="crayon-57455dde15cfc345950376-6"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-i">key</span><span class="crayon-o">&gt;</span><span class="crayon-i">UIDeviceFamily</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">key</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57455dde15cfc345950376-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-t">array</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57455dde15cfc345950376-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-t">string</span><span class="crayon-o">&gt;</span><span class="crayon-cn">1</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-t">string</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57455dde15cfc345950376-9"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-t">string</span><span class="crayon-o">&gt;</span><span class="crayon-cn">2</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-t">string</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57455dde15cfc345950376-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-t">array</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57455dde15cfc345950376-11"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-i">key</span><span class="crayon-o">&gt;</span><span class="crayon-i">UIStatusBarStyle</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">key</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57455dde15cfc345950376-12"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-t">string</span><span class="crayon-o">&gt;</span><span class="crayon-i">UIStatusBarStyleBlackOpaque</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-t">string</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57455dde15cfc345950376-13"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-i">key</span><span class="crayon-o">&gt;</span><span class="crayon-i">UIRequiresPersistentWiFi</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">key</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57455dde15cfc345950376-14"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-t">string</span><span class="crayon-o">&gt;</span><span class="crayon-i">YES</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-t">string</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57455dde15cfc345950376-15"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">]</span><span class="crayon-sy">]</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57455dde15cfc345950376-16"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">InfoAdditions</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-o">--</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">--</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57455dde15cfc345950376-17"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-i">requestedDisplayResolution</span><span class="crayon-o">&gt;</span><span class="crayon-i">high</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">requestedDisplayResolution</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57455dde15cfc345950376-18"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">iPhone</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-o">--</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">--</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0077 seconds] -->
+<p></p>
+<p><strong>准备启动画面和图标文件</strong></p>
+<p>启动图片由640&#215;960和320&#215;480两个尺寸，命名为Default@2x.png、Default.png<br />
+图标文件放到icons文件夹下，命名为icon114x114.png、icon57x57.png</p>
+<p><strong>准备证书文件</strong></p>
+<p>将你的证书文件cbmland.com.p12、embedded.mobileprovision （以实际为准）复制到发布项目bin-debug目录</p>
+<p><strong>准备编译</strong></p>
+<p>在bin-debug文件夹中打开命令行，运行下列类似命令，这时输入p12证书文件的密码，开始编译IPA，建议把命令行存成cmd文件以便后续编译测试。</p>
+<p></p><!-- Crayon Syntax Highlighter v2.5.0 -->
+
+		<div id="crayon-57455dde15d06694151573" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" touchscreen minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; float: none; clear: both; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings="" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="切换显示行编号"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="纯文本显示代码"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="切换自动换行"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="在新窗口中显示代码"><div class="crayon-button-icon"></div></div><span class="crayon-language">MS DOS</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick"  style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+"D:\Program Files\Adobe\Adobe Flash Builder Burrito\sdks\4.5.0\bin\adt" -package -target ipa-test -provisioning-profile embedded.mobileprovision -storetype pkcs12 -keystore cbmland.com.p12 AIRLinux.ipa AIRLinux-app.xml AIRLinux.swf Default.png Default@2x.png icons</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57455dde15d06694151573-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-57455dde15d06694151573-1"><span class="crayon-s">"D:\Program Files\Adobe\Adobe Flash Builder Burrito\sdks\4.5.0\bin\adt"</span><span class="crayon-e "> -package</span><span class="crayon-e "> -target</span><span class="crayon-h"> </span>ipa<span class="crayon-o">-</span>test<span class="crayon-e "> -provisioning</span><span class="crayon-o">-</span>profile<span class="crayon-h"> </span>embedded<span class="crayon-sy">.</span>mobileprovision<span class="crayon-e "> -storetype</span><span class="crayon-h"> </span>pkcs12<span class="crayon-e "> -keystore</span><span class="crayon-h"> </span>cbmland<span class="crayon-sy">.</span>com<span class="crayon-sy">.</span>p12<span class="crayon-h"> </span>AIRLinux<span class="crayon-sy">.</span>ipa<span class="crayon-h"> </span>AIRLinux<span class="crayon-o">-</span>app<span class="crayon-sy">.</span>xml<span class="crayon-h"> </span>AIRLinux<span class="crayon-sy">.</span>swf<span class="crayon-h"> </span>Default<span class="crayon-sy">.</span>png<span class="crayon-h"> </span>Default<span class="crayon-sy">@</span>2x<span class="crayon-sy">.</span>png<span class="crayon-h"> </span>icons</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0030 seconds] -->
+<p></p>
+<p>不出意外的话，泡杯茶回来，IPA已经生成，大约3M+，这时可以使用iTunes安装到你的iOS设备来测试了。</p>
+<p><strong>编译目录截图</strong><br />
+<a href="http://cbmland.com/uploads/2011/03/2011-03-27_163025.png"><img src="http://cbmland.com/uploads/2011/03/2011-03-27_163025.png" alt="" title="2011-03-27_163025" width="475" height="246" class="alignnone size-full wp-image-958" /></a></p>
+<p>BTW：可以尝试将设置为GPU来提升性能。</p><!-- Crayon Syntax Highlighter v2.5.0 -->
+
+		<div id="crayon-57455dde15d10096976619" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" touchscreen minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; float: none; clear: both; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings="" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="切换显示行编号"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="纯文本显示代码"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="切换自动换行"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="在新窗口中显示代码"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick"  style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+        &lt;renderMode&gt;gpu&lt;/renderMode&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57455dde15d10096976619-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-57455dde15d10096976619-1"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;renderMode&gt;</span><span class="crayon-i ">gpu</span><span class="crayon-r ">&lt;/renderMode&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0010 seconds] -->
+<p></p>
+<p><strong>在iPhone 4下的成功运行的截图</strong><br />
+<img src="http://cbmland.com/uploads/2011/03/f8cde25b53f13daa600e.jpg" alt="" title="f8cde25b53f13daa600e" width="640" height="960" class="alignnone size-full wp-image-961" /></p>
+</div>
+			<p>
+				<small>
+					This entry was posted on 星期日, 三月 27th, 2011 at 17:11 and is filled under: <a href="http://cbmland.com/cats/code" title="查看代码人生中的全部文章" rel="category tag">代码人生</a>, <a href="http://cbmland.com/cats/whatnew" title="查看全新体验中的全部文章" rel="category tag">全新体验</a>, <a href="http://cbmland.com/cats/code/shareme" title="查看分享我自己中的全部文章" rel="category tag">分享我自己</a>, <a href="http://cbmland.com/cats/life/misc" title="查看扎乱有章中的全部文章" rel="category tag">扎乱有章</a>				</small>
+			</p>
+		</div>
+		<div data-role="footer" class="ui-bar">	
+			<a data-role="button" data-icon="arrow-l" data-iconpos="left" href="http://cbmland.com/post/953/firefox-4-hate-flash-still.html" rel="prev">Previous</a>			<a data-role="button" data-icon="arrow-r" data-iconpos="right" href="http://cbmland.com/post/962/air-for-ios-ipa-is-without-avm.html" rel="next">Next</a>	   
+		</div>
+	<!--cos-html-cache-safe-tag--></body>
+</html>
+<!--this is a real static html file created at 2016-05-25 08:10:05 by cos-html-cache 2.7.3 -->

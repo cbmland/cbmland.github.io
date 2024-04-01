@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head profile="http://gmpg.org/xfn/11">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>小技巧:在Flex builder 3 中创作纯AS的AIR项目 | 西边饿魔</title>
+		<meta name="generator" content="WordPress 3.7.5" /> <!-- leave this for stats -->
+		<link rel="pingback" href="http://cbmland.com/xmlrpc.php" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="http://cbmland.com/wp-content/plugins/wp-pda/jqmobile-theme/script.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+		<link rel="stylesheet" href="http://cbmland.com/wp-content/plugins/wp-pda/jqmobile-theme/style.css?nocache=1464229701" type="text/css" media="screen" />
+	</head>
+<body>
+<div data-role="page">
+	<div data-role="header">
+		<h1>cbm&#039;s land</h1>
+	</div><!-- /header -->
+		<div data-role="navbar" class="navbar-header" >
+		<ul>
+			<li><a  href="http://cbmland.com/?mobilePage=home"  id="navbar-icon-home" data-icon="custom">Home</a></li>
+			<li><a  href="http://cbmland.com/?mobilePage=categories"  id="navbar-icon-categories" data-icon="custom">Categories</a></li>
+			<li><a  href="http://cbmland.com/?mobilePage=tags"  id="navbar-icon-tags" data-icon="custom">Tags</a></li>
+			<li><a  href="http://cbmland.com/?mobilePage=pages"  id="navbar-icon-pages" data-icon="custom">Pages</a></li>
+		</ul>
+		</div>	
+
+
+        		<div data-role="content" id="maincontent">
+		    <h2>小技巧:在Flex builder 3 中创作纯AS的AIR项目</h2>
+	    	<div class="content"><p><a title="2008-02-19_143706.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_143706.png"></a><a title="2008-02-19_145840.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_145840.png"></a><a title="2008-02-19_144326.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_144326.png"></a><a title="2008-02-19_161927.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_161927.png"></a><a title="2008-02-19_161904.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_161904.png"></a>众所周知，Flex builder 3 beta3版本中已经集成了AIR的SDK，可以开发基于Flex框架的AIR应用程序了。但是使用了Flex框架编译出的SWF有点大。个人很喜欢Action Script Project（俗称纯AS项目）编译出的SWF。文件十分小巧。但如果你想在Flex builder 3 beta3中创建纯AS项目来做AIR的话会可能遇到一些困难。</p>
+<p>当然在Flash CS3中也可以制作Action Script Project类似的。但是代码提示功能和调试功能贫弱。还是很想在Flex builder开发。发了一番时间折腾后，找到了如何在Flex Builder 3中开发和调试纯粹AS的AIR项目的小技巧。今天抽时间来整理一下。</p>
+<p>如果你对这个感兴趣，请往下看。</p>
+<p>1）新建Flex Preoject，选择AIR类型。直接finish</p>
+<p><a title="2008-02-19_143706.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_143706.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_143706.png" alt="2008-02-19_143706.png" /></a></p>
+<p>2）新建Action Script Class，同样命名为“pureASProject.as”</p>
+<p>3）删除自动创建的pureASProject.mxml</p>
+<p>4）把pureASProject.as项目的默认运行文件</p>
+<p><a title="2008-02-19_144326.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_144326.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_144326.png" alt="2008-02-19_144326.png" /></a></p>
+<p><a title="2008-02-19_145840.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_145840.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_145840.png" alt="2008-02-19_145840.png" /></a></p>
+<p>5）编辑pureASProject-app.xml文件（重点）</p><!-- Crayon Syntax Highlighter v2.5.0 -->
+
+		<div id="crayon-57465f458034b684963705" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" touchscreen minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; float: none; clear: both; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings="" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-mixed-highlight" title="含多种语言"></span><div class="crayon-button crayon-nums-button" title="切换显示行编号"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="纯文本显示代码"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="切换自动换行"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="在新窗口中显示代码"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick"  style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;application xmlns="http://ns.adobe.com/air/application/1.0.M6"&gt;
+
+	&lt;id&gt;pureASProject&lt;/id&gt;
+
+	&lt;filename&gt;pureASProject&lt;/filename&gt;
+
+	&lt;name&gt;pureASProject&lt;/name&gt;
+
+	&lt;version&gt;v1&lt;/version&gt;
+
+	&lt;description&gt;pureASProject&lt;/description&gt;
+
+	&lt;copyright&gt;cbmland.com&lt;/copyright&gt;
+
+	&lt;initialWindow&gt;
+
+		&lt;content&gt;[This value will be overwritten by Flex Builder in the output app.xml]&lt;/content&gt;
+		
+		&lt;title&gt;pureASProject&lt;/title&gt;
+
+		&lt;systemChrome&gt;none&lt;/systemChrome&gt;
+
+		&lt;transparent&gt;true&lt;/transparent&gt;
+
+		&lt;visible&gt;true&lt;/visible&gt;
+
+	&lt;/initialWindow&gt;
+
+	&lt;customUpdateUI&gt;false&lt;/customUpdateUI&gt;
+	
+	&lt;allowBrowserInvocation&gt;false&lt;/allowBrowserInvocation&gt;
+
+&lt;/application&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57465f458034b684963705-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-2">2</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-4">4</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-6">6</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-8">8</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-10">10</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-12">12</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-14">14</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-16">16</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-18">18</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-20">20</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-22">22</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-24">24</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-26">26</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-28">28</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-30">30</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-32">32</div><div class="crayon-num" data-line="crayon-57465f458034b684963705-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-57465f458034b684963705-34">34</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-57465f458034b684963705-1"><span class="crayon-ta">&lt;?</span><span class="crayon-e">xml </span><span class="crayon-i">version</span><span class="crayon-o">=</span><span class="crayon-s">"1.0"</span><span class="crayon-h"> </span><span class="crayon-i">encoding</span><span class="crayon-o">=</span><span class="crayon-s">"UTF-8"</span><span class="crayon-ta">?&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-2"><span class="crayon-r ">&lt;application </span><span class="crayon-e ">xmlns</span><span class="crayon-o">=</span><span class="crayon-s ">"http://ns.adobe.com/air/application/1.0.M6"</span><span class="crayon-r ">&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-3">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-4"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;id&gt;</span><span class="crayon-i ">pureASProject</span><span class="crayon-r ">&lt;/id&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-5">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-6"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;filename&gt;</span><span class="crayon-i ">pureASProject</span><span class="crayon-r ">&lt;/filename&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-7">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-8"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;name&gt;</span><span class="crayon-i ">pureASProject</span><span class="crayon-r ">&lt;/name&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-9">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-10"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;version&gt;</span><span class="crayon-i ">v1</span><span class="crayon-r ">&lt;/version&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-11">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-12"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;description&gt;</span><span class="crayon-i ">pureASProject</span><span class="crayon-r ">&lt;/description&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-13">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-14"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;copyright&gt;</span><span class="crayon-i ">cbmland.com</span><span class="crayon-r ">&lt;/copyright&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-15">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-16"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;initialWindow&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-17">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-18"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;content&gt;</span><span class="crayon-i ">[This value will be overwritten by Flex Builder in the output app.xml]</span><span class="crayon-r ">&lt;/content&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-19"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-20"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;title&gt;</span><span class="crayon-i ">pureASProject</span><span class="crayon-r ">&lt;/title&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-21">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-22"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;systemChrome&gt;</span><span class="crayon-i ">none</span><span class="crayon-r ">&lt;/systemChrome&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-23">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-24"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;transparent&gt;</span><span class="crayon-i ">true</span><span class="crayon-r ">&lt;/transparent&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-25">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-26"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;visible&gt;</span><span class="crayon-i ">true</span><span class="crayon-r ">&lt;/visible&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-27">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-28"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;/initialWindow&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-29">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-30"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;customUpdateUI&gt;</span><span class="crayon-i ">false</span><span class="crayon-r ">&lt;/customUpdateUI&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-31"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-32"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;allowBrowserInvocation&gt;</span><span class="crayon-i ">false</span><span class="crayon-r ">&lt;/allowBrowserInvocation&gt;</span></div><div class="crayon-line" id="crayon-57465f458034b684963705-33">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57465f458034b684963705-34"><span class="crayon-r ">&lt;/application&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0124 seconds] -->
+<p>6）使用AIR中的API，尽情创作。现在就可以在Flex Builer中运行和调试纯AS项目了。</p>
+<p><a title="2008-02-19_162343.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_162343.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_162343.png" alt="2008-02-19_162343.png" /></a></p>
+<p>7）打包发布</p>
+<p><a title="2008-02-19_161904.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_161904.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_161904.png" alt="2008-02-19_161904.png" /></a></p>
+<p><a title="2008-02-19_161927.png" href="http://cbmland.com/uploads/2008/02/2008-02-19_161927.png"><img src="http://cbmland.com/uploads/2008/02/2008-02-19_161927.png" alt="2008-02-19_161927.png" /></a></p>
+<p>8）提供demo下载</p>
+<p><img src="http://cbmland.com/wp-content/plugins/wp-downloadmanager/images/ext/rar.gif" alt="Download: 纯AS的AIR项目Demo" title="Download: 纯AS的AIR项目Demo"/>&nbsp;&nbsp;<strong><a target="_blank"  href="/ready-to-download#http://cid-dacd45366fd7a8a4.office.live.com/self.aspx/Downloads/pureASProject.rar" title="Download: 纯AS的AIR项目Demo">纯AS的AIR项目Demo</a></strong> (317.6 KiB, 607 hits)<br />小技巧:在Flex builder 3 中创作纯AS的AIR项目Demo</p>
+<p>估计下个版本的Flex builder会更新到这一点。</p>
+</div>
+			<p>
+				<small>
+					This entry was posted on 星期二, 二月 19th, 2008 at 17:09 and is filled under: <a href="http://cbmland.com/cats/code/shareme" title="查看分享我自己中的全部文章" rel="category tag">分享我自己</a>, <a href="http://cbmland.com/cats/code/web" title="查看前端技术中的全部文章" rel="category tag">前端技术</a>				</small>
+			</p>
+		</div>
+		<div data-role="footer" class="ui-bar">	
+			<a data-role="button" data-icon="arrow-l" data-iconpos="left" href="http://cbmland.com/post/419/mobile-firewall-qcellcore.html" rel="prev">Previous</a>			<a data-role="button" data-icon="arrow-r" data-iconpos="right" href="http://cbmland.com/post/428/any-swf-play-in-air-debug-player.html" rel="next">Next</a>	   
+		</div>
+	<!--cos-html-cache-safe-tag--></body>
+</html>
+<!--this is a real static html file created at 2016-05-26 02:28:21 by cos-html-cache 2.7.3 -->

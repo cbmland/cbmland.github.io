@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>React Data List Example</title>
+    <!-- Load React and ReactDOM -->
+    <script src="https://unpkg.com/react@16.14.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.14.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button id="switchDataButton" class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">Switch Data</button>
+    <div id="root"></div>
+    
+    <script>
+      let currentDataUrl = '/json/signal_60_data.json';
+      const e = React.createElement;
+      // Define the function that retrieves the data from the server
+      function fetchData() {
+
+        return fetch(currentDataUrl)
+          .then(response => response.json())
+          .catch(error => {
+            console.error('Error retrieving data:', error);
+          });
+      }
+
+      // Define the component that renders the data list
+      function DataList(props) {
+        const list = props.data.items;
+
+        const listItems = list.map(item =>
+          e("li", { key: item.key, title: item.strategy}, `${item.symbol} - ${item.barTime} - ${item.content}`)
+        );
+
+        return e("ul", null, listItems);
+      }
+      class LikeButton extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = { liked: false };
+        }
+
+        render() {
+          if (this.state.liked) {
+            return e('div',null,'You liked this.');
+          }
+
+          return (
+            e('button',{onClick:() => this.setState({ liked: true })},'Like')
+          );
+        }
+      }
+
+      // Define the function that switches the data set
+      function switchData() {
+        currentDataUrl = currentDataUrl === '/json/signal_1440_data.json' ? '/json/signal_60_data.json' : '/json/signal_1440_data.json';
+        fetchData().then(data => {
+            reader(data)
+        });
+      }
+
+      function reader(data){
+
+        const dataList = e('div',null,[
+            e(DataList, { data: data }),
+            e(LikeButton,null)
+        ]);
+
+        ReactDOM.render(dataList, document.getElementById('root'));
+
+      }
+
+      // Render the initial data set to the page
+      fetchData().then(data => {
+        reader(data)
+      });
+
+      // Attach an event listener to the switch button
+      document.getElementById('switchDataButton').addEventListener('click', switchData);
+    </script>
+  </body>
+</html>

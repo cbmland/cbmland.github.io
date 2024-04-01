@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>React Data List Example</title>
+    <!-- Load React and ReactDOM -->
+    <script src="https://unpkg.com/react@16.14.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.14.0/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <button id="switchDataButton">Switch Data</button>
+    <div id="root"></div>
+    
+    <script>
+      let currentDataUrl = '/json/Indicator_day_Data.json';
+      const e = React.createElement;
+      // Define the function that retrieves the data from the server
+      function fetchData() {
+
+        return fetch(currentDataUrl)
+          .then(response => response.json())
+          .catch(error => {
+            console.error('Error retrieving data:', error);
+          });
+      }
+
+      // Define the component that renders the data list
+      function DataList(props) {
+        const list = props.data.items;
+
+        const listItems = list.map(item =>
+          e("li", { key: item.symbol+Math.floor(Math.random()*100000000)}, `${item.symbol} - ${item.barTime}`)
+        );
+
+        return e("ul", null, listItems);
+      }
+      class LikeButton extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = { liked: false };
+        }
+
+        render() {
+          if (this.state.liked) {
+            return e('div',null,'You liked this.');
+          }
+
+          return (
+            e('button',{onClick:() => this.setState({ liked: true })},'Like')
+          );
+        }
+      }
+
+      // Define the function that switches the data set
+      function switchData() {
+        currentDataUrl = currentDataUrl === '/json/Indicator_day_Data.json' ? '/json/Indicator_60min_Data.json' : '/json/Indicator_day_Data.json';
+        fetchData().then(data => {
+            reader(data)
+        });
+      }
+
+      function reader(data){
+
+        const dataList = e('div',null,[
+            e(DataList, { data: data }),
+            e(LikeButton,null)
+        ]);
+
+        ReactDOM.render(dataList, document.getElementById('root'));
+
+      }
+
+      // Render the initial data set to the page
+      fetchData().then(data => {
+        reader(data)
+      });
+
+      // Attach an event listener to the switch button
+      document.getElementById('switchDataButton').addEventListener('click', switchData);
+    </script>
+  </body>
+</html>

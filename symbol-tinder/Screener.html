@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.599, user-scalable=no">
+    <title>Screener</title>
+    <script src="//cdn.bootcdn.net/ajax/libs/vue/3.2.26/vue.global.min.js"></script>
+    <script src="//cdn.bootcdn.net/ajax/libs/axios/0.24.0/axios.min.js"></script>
+
+</head>
+<style>
+
+.fade-enter-active, .fade-leave-active {
+
+  transition: opacity .5s ease;
+
+}
+
+.fade-enter-from, .fade-leave-to {
+
+  opacity: 0;
+
+}
+
+.tool-panel{
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info-pannel{
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.info-pannel a{
+    text-decoration: none;
+    color: black;
+}
+
+</style>
+<body>
+
+<div id="app">
+        <h2 >Superf - Screener ({{updated}})</h2>
+      <span></span>
+      <div v-on:click="expland($event)" v-bind:id="'group_'+index" v-for="(groupItem,index) in groups">
+        <h3 v-bind:id="'span_'+index">{{groupItem.name}}</h3>
+        <transition name="fade">
+        <div v-if="groupItem.isOpen">
+          <todo-item
+            v-for="item in groupItem.list"
+            v-bind:todo="item"
+            v-bind:key="item.id"
+          ></todo-item>
+         </div>
+        </transition>
+      </div>
+
+
+</div>
+
+</body>
+<script>
+
+    var json_url = '//sh1.tohaw.com/screener/symbols';
+
+    // Make a request for a user with a given ID
+    axios.post(json_url,{})
+    //axios.get('/backtrader-master/logs/Toolbox_Screener_Data.json')
+      .then(function (response) {
+        // handle success
+        //console.log(response);
+
+        let groups = response.data.groups;
+
+        for( var i in groups){
+            var group = groups[i];
+            var list = group.list;
+            for(var j in list){
+                var item = list[j];
+                //console.log(item)
+                item.img_url = 'https://stockcharts.com/c-sc/sc?r=&chart='+item.symbol+',uu[305,a]dacayaci[pb20!b50][dg][ilC20]'
+                item.img_href = 'https://stockcharts.com/h-sc/ui?s='+item.symbol
+                item.tiger_href = 'tigerbrokersusstock://com.tigerbrokers.usstock/S/'+item.symbol
+            }
+
+        }
+        //console.log(groups)
+        onData(response.data)
+
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+
+    function onData(value) {
+
+        const ComponentsApp = {
+            data() {
+                return {
+                    groups: value.groups,
+                    updated:value.updated
+                }
+            },
+            methods: {
+                expland(e) {
+
+                    let id = e.target.id;
+
+                    if (id.indexOf('span_') == 0) {
+
+                        let index = id.split('_')[1]
+
+                        if (index) {
+
+                            if (!this.groups[index].isOpen) {
+                                this.groups[index].isOpen = true
+                            } else {
+                                this.groups[index].isOpen = false
+
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+
+        const app = Vue.createApp(ComponentsApp)
+
+        app.component('todo-item', {
+            props: ['todo'],
+            template: '<span class="tool-panel"><img width="305" height="225" :src="todo.img_url" /><div class="info-pannel"><a :href="todo.img_href">{{todo.symbol}} </a><a :href="todo.tiger_href">({{todo.name}})</a></div></span>'
+        });
+
+        app.mount('#app')
+    }
+</script>
+</html>

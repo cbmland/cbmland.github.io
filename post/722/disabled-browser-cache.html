@@ -1,0 +1,849 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<title>每次都要清理cache？强制不让浏览器缓存！ | 西边饿魔</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name = "viewport" content = "width = 1024, initial-scale = 1">
+<link rel="alternate" type="application/rss+xml" title="cbm&#039;s land RSS" href="http://feed.cbmland.com" />
+<link rel="shortcut icon" href="http://cbmland.com/wp-content/themes/illacrimo-plus/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="http://cbmland.com/wp-content/themes/illacrimo-plus/favicon.icon" type="image/gif" />
+<link rel="pingback" href="http://cbmland.com/xmlrpc.php" />
+<link rel="stylesheet" href="/wp-content/themes/illacrimo-plus/style.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/wp-content/themes/illacrimo-plus/script.js"></script>
+<script type="text/javascript" src="/js/show_ads.js"></script><!--  -->
+<style type="text/css">
+
+
+
+</style>
+    <script type="text/javascript">
+
+        /*setTimeout(function(){
+
+            $('sidebarL').style.cssText = '-webkit-transition-duration: 1s;-webkit-transform: translate3d(-200px,0,0);';
+
+        },15000)*/
+
+    </script>
+
+<script type="text/javascript" src="/js/swfobject.js"></script>
+
+<link rel="alternate" type="application/rss+xml" title="cbm&#039;s land &raquo; 每次都要清理cache？强制不让浏览器缓存！评论Feed" href="http://cbmland.com/post/722/disabled-browser-cache.html/feed" />
+<link rel='stylesheet' id='crayon-css'  href='http://cbmland.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-classic-css'  href='http://cbmland.com/wp-content/plugins/crayon-syntax-highlighter/themes/classic/classic.css?ver=2.5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-monaco-css'  href='http://cbmland.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=2.5.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://cbmland.com/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://cbmland.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.5.0","is_admin":"0","ajaxurl":"http:\/\/cbmland.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u7528 %s \u7c98\u8d34\u3002","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://cbmland.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.5.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://cbmland.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://cbmland.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='实用参数，定制自己的Firefox便携版(Portable Edition)' href='http://cbmland.com/post/707/profile-firefox-portable-edition.html' />
+<link rel='next' title='Adobe Flash CS4 官方简体中文正式版出现[下载地址]' href='http://cbmland.com/post/723/flash-cs4-chs.html' />
+
+<link rel='shortlink' href='http://cbmland.com/?p=722' />
+
+<!-- All in One SEO Pack 2.1 by Michael Torbert of Semper Fi Web Design[206,237] -->
+<link rel="canonical" href="http://cbmland.com/post/722/disabled-browser-cache.html" />
+<meta property="og:title" content="每次都要清理cache？强制不让浏览器缓存！ | 西边饿魔" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://cbmland.com/post/722/disabled-browser-cache.html" />
+<meta property="og:image" content="http://cbmland.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+<meta property="og:site_name" content="cbm&#039;s land" />
+<meta property="og:description" content="做过网页方面工作的朋友一定知道浏览器缓存(cache)这个机制，但是在开发中是一个比较烦人功能，每次修改了代码，想刷新看结果，这时你就有可能被浏览欺骗，看到的是上次缓存住的结果页面，然后接着N次的修改代码，结果才发现是被缓存了，于是要养成一个每次刷新页面看结果的时候要记得清理缓存。。。效率和心情就这样被搞下去了。
+
+很烦啊，最近在开发一个Flex项目，生成的swf时不时被浏览器缓存住，调试的时候老会怀疑是不是被缓存了，实在是太影响开发了，干脆发时间先搞定浏览器缓存的问题，一劳永逸，强制浏览器每次都去服务器读取数据。
+
+在Apache的配置文件httpd.conf中确已经加载mod_headers模块
+
+按文件类型让浏览器每次都从服务器拉取，我这里指定的是php、js、swf、html这几种文件，可自行定制。
+
+这样就大功告成了。现在看来屡试不爽。分享一下~，免除清理浏览器缓存之烦。" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="做过网页方面工作的朋友一定知道浏览器缓存(cache)这个机制，但是在开发中是一个比较烦人功能，每次修改了代码，想刷新看结果，这时你就有可能被浏览欺骗，看到的是上次缓存住的结果页面，然后接着N次的修改代码，结果才发现是被缓存了，于是要养成一个每次刷新页面看结果的时候要记得清理缓存。。。效率和心情就这样被搞下去了。
+
+很烦啊，最近在开发一个Flex项目，生成的swf时不时被浏览器缓存住，调试的时候老会怀疑是不是被缓存了，实在是太影响开发了，干脆发时间先搞定浏览器缓存的问题，一劳永逸，强制浏览器每次都去服务器读取数据。
+
+在Apache的配置文件httpd.conf中确已经加载mod_headers模块
+
+按文件类型让浏览器每次都从服务器拉取，我这里指定的是php、js、swf、html这几种文件，可自行定制。
+
+这样就大功告成了。现在看来屡试不爽。分享一下~，免除清理浏览器缓存之烦。" />
+<!-- /all in one seo pack -->
+<script type="text/javascript">
+(function(url){
+if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+var wfscr = document.createElement('script');
+wfscr.type = 'text/javascript';
+wfscr.async = true;
+wfscr.src = url + '&r=' + Math.random();
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+})('//cbmland.com/wp-admin/admin-ajax.php?action=wordfence_logHuman&hid=D74E028B8C88E95DF69F4D68C9492B48'); 
+</script></head>
+<body>
+<div id="page">
+<!-- start header -->
+<div id="header">
+<div id="tag-cloud"></div>
+<div class="LS"></div>
+
+   <h1><a href="http://cbmland.com/">cbm&#039;s land</a></h1>
+   <p class="Desc">记录我的全新旅程</p>
+   
+<div id="taotao"></div>
+</div>
+
+<div id="menu"><div id="PageRank"><img id="PageRankImg" alt="PRank" title="PageRank" width="43" height="17" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/ranking.gif" /></div>
+   <ul id="nav">
+   <li class="current_page_item"><a href="http://cbmland.com/">Blog</a></li>
+   
+<li class="page_item page-item-295"><a href="http://cbmland.com/flash-player-update">Flash Player Update</a></li>
+<li class="page_item page-item-474"><a href="http://cbmland.com/download">Downloads</a></li>
+</ul> 
+</div>
+ 
+ 
+
+<!-- start content items -->
+<div id="content">
+
+<!-- start center -->
+<div id="SC">
+
+
+<div class="Post" id="post-722">
+<div class="PostHead">
+<!-- google_ad_section_start -->
+<div><h1>每次都要清理cache？强制不让浏览器缓存！<span id="scrollto" ></span></h1></div>
+<div class="navigation"> <a href="http://cbmland.com/post/707/profile-firefox-portable-edition.html" rel="prev">实用参数，定制自己的Firefox便携版(Portable Edition)</a> &raquo;</div>
+<small class="PostAuthor">Author: cbm  </small>
+
+<p class="PostDate">
+<small class="day">5</small>
+<small class="month">十一</small>
+<small class="year">2008</small>
+</p>
+
+</div>
+
+<div class="PostContent">
+<div id="ads_b1">
+
+</div>
+
+ <p>做过网页方面工作的朋友一定知道浏览器缓存(cache)这个机制，但是在开发中是一个比较烦人功能，每次修改了代码，想刷新看结果，这时你就有可能被浏览欺骗，看到的是上次缓存住的结果页面，然后接着N次的修改代码，结果才发现是被缓存了，于是要养成一个每次刷新页面看结果的时候要记得清理缓存。。。效率和心情就这样被搞下去了。</p>
+<p>很烦啊，最近在开发一个Flex项目，生成的swf时不时被浏览器缓存住，调试的时候老会怀疑是不是被缓存了，实在是太影响开发了，干脆发时间先搞定浏览器缓存的问题，一劳永逸，强制浏览器每次都去服务器读取数据。</p>
+<p>在Apache的配置文件httpd.conf中确已经加载mod_headers模块</p><!-- Crayon Syntax Highlighter v2.5.0 -->
+
+		<div id="crayon-5745711e32705062672897" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; float: none; clear: both; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="切换显示行编号"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="纯文本显示代码"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="切换自动换行"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="在新窗口中显示代码"><div class="crayon-button-icon"></div></div><span class="crayon-language">Shell</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+LoadModule headers_module modules/mod_headers.so</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5745711e32705062672897-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-5745711e32705062672897-1"><span class="crayon-e">LoadModule </span><span class="crayon-e">headers_module </span><span class="crayon-i">modules</span><span class="crayon-o">/</span><span class="crayon-v">mod_headers</span><span class="crayon-e">.so</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0018 seconds] -->
+<p>按文件类型让浏览器每次都从服务器拉取，我这里指定的是php、js、swf、html这几种文件，可自行定制。</p><!-- Crayon Syntax Highlighter v2.5.0 -->
+
+		<div id="crayon-5745711e3271f092400307" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; float: none; clear: both; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="切换显示行编号"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="纯文本显示代码"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="切换自动换行"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="在新窗口中显示代码"><div class="crayon-button-icon"></div></div><span class="crayon-language">PHP</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+# 强制浏览器每次都从服务器上读取文件
+
+&lt;FilesMatch “\.(php|js|swf|html)$”&gt;
+Header set Cache-Control "private, no-cache, no-store, proxy-revalidate, no-transform"
+Header set Pragma "no-cache"
+&lt;/FilesMatch&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5745711e3271f092400307-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745711e3271f092400307-2">2</div><div class="crayon-num" data-line="crayon-5745711e3271f092400307-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745711e3271f092400307-4">4</div><div class="crayon-num" data-line="crayon-5745711e3271f092400307-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5745711e3271f092400307-6">6</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-5745711e3271f092400307-1"><span class="crayon-c"># 强制浏览器每次都从服务器上读取文件</span></div><div class="crayon-line crayon-striped-line" id="crayon-5745711e3271f092400307-2">&nbsp;</div><div class="crayon-line" id="crayon-5745711e3271f092400307-3"><span class="crayon-o">&lt;</span><span class="crayon-i">FilesMatch</span><span class="crayon-h"> </span>“<span class="crayon-sy">\</span><span class="crayon-sy">.</span><span class="crayon-sy">(</span><span class="crayon-i">php</span><span class="crayon-o">|</span><span class="crayon-i">js</span><span class="crayon-o">|</span><span class="crayon-i">swf</span><span class="crayon-o">|</span><span class="crayon-i">html</span><span class="crayon-sy">)</span><span class="crayon-sy">$</span>”<span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5745711e3271f092400307-4"><span class="crayon-e">Header </span><span class="crayon-e">set </span><span class="crayon-i">Cache</span><span class="crayon-o">-</span><span class="crayon-i">Control</span><span class="crayon-h"> </span><span class="crayon-s">"private, no-cache, no-store, proxy-revalidate, no-transform"</span></div><div class="crayon-line" id="crayon-5745711e3271f092400307-5"><span class="crayon-e">Header </span><span class="crayon-e">set </span><span class="crayon-i">Pragma</span><span class="crayon-h"> </span><span class="crayon-s">"no-cache"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5745711e3271f092400307-6"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">FilesMatch</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0035 seconds] -->
+<p>这样就大功告成了。现在看来屡试不爽。分享一下~，免除清理浏览器缓存之烦。</p>
+<!-- google_ad_section_end -->
+    <div id="ads_c2">
+
+    </div>
+ <div id="relate_div">
+	<div id="stprelated">
+			</div>
+</div>
+<div id="misc_div">
+<div id="bookmark_div"></div>
+
+
+</div>
+</div>
+
+<div class="PostDet"><ul>
+ <li class="PostCom">15 Comments , 18,621 Hits  </li>
+ <li class="PostCateg">Filed under: <a href="http://cbmland.com/cats/code/shareme" title="查看分享我自己中的全部文章" rel="category tag">分享我自己</a>, <a href="http://cbmland.com/cats/code/sever" title="查看服务器相关中的全部文章" rel="category tag">服务器相关</a></li>
+ <li class="PostCateg">
+<!-- Generated by Simple Tags 2.3.2 - http://wordpress.org/extend/plugins/simple-tags -->
+	Tags: <a href="http://cbmland.com/tags/Apache" title="Apache" rel="tag">Apache</a><br />
+</li>
+ </ul>
+</div>
+
+</div>
+
+<ul class="Note">
+<li class="NoteRss"><a href='http://cbmland.com/post/722/disabled-browser-cache.html/feed'><abbr title="Really Simple Syndication">RSS</abbr> feed for comments on this post</a></li>
+</ul>
+
+
+
+<!-- You can start editing here. -->
+<h3 id="comments">15 Responses for "每次都要清理cache？强制不让浏览器缓存！"</h3> 
+	<ol id="ComListOl" class="commentlist">
+		<li class="comment even thread-even depth-1" id="li-comment-2773">
+		
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/a64e9c269cbf10beb63abae7f33433ca' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="comment-author vcard">
+			<span class="comment-author">Zhu Zhe</span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-2773">2008-11-05  14:11</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=2773#respond' onclick='return addComment.moveForm("comment-2773", "2773", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-2773">
+		<p>除了你那个之外的2个解决方案<br />
+1.ctrl+f5，强制刷新。<br />
+2.对js,css,swf进行版本控制,在开发环境自动用时间做版本号。</p>
+		
+	</div>
+</li>
+	<li class="comment byuser comment-author-cbm bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-2777">
+		
+		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
+		<div class="comment-author vcard">
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-2777">2008-11-05  18:11</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=2777#respond' onclick='return addComment.moveForm("comment-2777", "2777", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-2777">
+		<p>ZhuZhe提供的2个方法提供的不错的。<br />
+1.ctrl+f5 在ie下测试无效，图片照常cache。其实还算需要而外操作的。<br />
+2.后缀上加随机参数这个应该是可行的。但是真实环境下可能并不需要。</p>
+		
+	</div>
+</li>
+	<li class="comment even thread-even depth-1" id="li-comment-2818">
+		
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/47155b5805ace3a82614187038c6d8b3' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="comment-author vcard">
+			<span class="comment-author">L4cd</span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-2818">2008-11-07  09:11</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=2818#respond' onclick='return addComment.moveForm("comment-2818", "2818", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-2818">
+		<p>还可以<br />
+1.设置IE的自动缓存设置为每次刷新都更新<br />
+2.IE8的话..F12打开开发人员工具.设置&#8221;缓存&#8221;-&#8221;始终从服务器更新&#8221;</p>
+		
+	</div>
+</li>
+	<li class="comment byuser comment-author-cbm bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-2819">
+		
+		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
+		<div class="comment-author vcard">
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-2819">2008-11-07  11:11</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=2819#respond' onclick='return addComment.moveForm("comment-2819", "2819", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-2819">
+		<p>@L4cd<br />
+1.这个确实有作用，但有些时候这个特性会失效。就是不信任这个功能了。<br />
+2.这个功能不错了。涨见识了。不过我可怜的ie还是6.0</p>
+		
+	</div>
+</li>
+	<li class="comment even thread-even depth-1" id="li-comment-2896">
+		
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/5e7d010cd5bf6b2e66ad3368940dbfec' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="comment-author vcard">
+			<span class="comment-author">wind</span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-2896">2008-11-12  03:11</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=2896#respond' onclick='return addComment.moveForm("comment-2896", "2896", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-2896">
+		<p>我觉得你们在讨论的时候 说下设置方法吧<br />
+方便在浏览网页的人 知道如何操作啊</p>
+<p>ie7设置 每次刷新更新<br />
+点右上角 工具 internet 选项</p>
+<p>常规选项卡 浏览历史记录 点设置<br />
+选择 每次访问网页时 然后点 确定<br />
+那么<br />
+每次刷新 网页的时候。就会更新 ie临时文件了</p>
+		
+	</div>
+</li>
+	<li class="comment byuser comment-author-cbm bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-2908">
+		
+		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
+		<div class="comment-author vcard">
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-2908">2008-11-12  14:11</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=2908#respond' onclick='return addComment.moveForm("comment-2908", "2908", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-2908">
+		<p>兄弟，有一天你会发现这个设置永久了后会失效的。</p>
+		
+	</div>
+</li>
+	<li class="comment even thread-even depth-1" id="li-comment-3087">
+		
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/bd97f084328d7820bc193da728485dc5' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="comment-author vcard">
+			<span class="comment-author"><a href='http://www.ideaduo.com' rel='external nofollow' class='url'>wolong</a></span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-3087">2008-11-18  20:11</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=3087#respond' onclick='return addComment.moveForm("comment-3087", "3087", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-3087">
+		<p>开发时被缓存了确实很郁闷，我觉得这句<br />
+应该改成吧？</p>
+		
+	</div>
+</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3088">
+		
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/bd97f084328d7820bc193da728485dc5' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="comment-author vcard">
+			<span class="comment-author"><a href='http://www.ideaduo.com' rel='external nofollow' class='url'>wolong</a></span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-3088">2008-11-18  20:11</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=3088#respond' onclick='return addComment.moveForm("comment-3088", "3088", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-3088">
+		<p>被屏蔽了？<br />
+开发时被缓存了确实很郁闷，我觉得这句&lt;FilesMatch &#8220;\.(phpjsswfhtml)$&#8221;&gt;<br />
+应该改成吧？&lt;FilesMatch &#8220;\.(php|js|swf|html)$&#8221;&gt;</p>
+		
+	</div>
+</li>
+	<li class="comment byuser comment-author-cbm bypostauthor even thread-even depth-1" id="li-comment-3162">
+		
+		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
+		<div class="comment-author vcard">
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-3162">2008-11-21  13:11</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=3162#respond' onclick='return addComment.moveForm("comment-3162", "3162", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-3162">
+		<p>噢，代码被着色器处理了？多谢指出。已修正。</p>
+		
+	</div>
+</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3607">
+		
+		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/b6211ccd4bc9cbf53bda7bb2742c81b1?s=48" class="avatar avatar-48" height="48" width="48"></div>
+		<div class="comment-author vcard">
+			<span class="comment-author">嗰個人</span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-3607">2008-12-18  14:12</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=3607#respond' onclick='return addComment.moveForm("comment-3607", "3607", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-3607">
+		<p>不懂。Apache這是在Linux下的嗎？windows下有沒有類似的辦法？</p>
+		
+	<ul class="children">
+	<li class="comment byuser comment-author-cbm bypostauthor even depth-2" id="li-comment-3614">
+		
+		<div class="gravatar"><img src="https://secure.gravatar.com/avatar/bf772564b791d5982baa0873d7a610f3?s=48" class="avatar avatar-48" height="48" width="48"></div>
+		<div class="comment-author vcard">
+			<span class="comment-author"><a href='http://cbmland.com' rel='external nofollow' class='url'>cbm</a></span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-3614">2008-12-19  10:12</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=3614#respond' onclick='return addComment.moveForm("comment-3614", "3614", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-3614">
+		<p>apache 是跨平台的。win的当然也可以。</p>
+		
+	</div>
+</li>
+</ul><!-- .children -->
+</li>
+	<li class="comment odd alt thread-even depth-1" id="li-comment-3634">
+		
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/0ea83f58447a955cb8a7203724b81a85' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="comment-author vcard">
+			<span class="comment-author">嗰個人</span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-3634">2008-12-20  10:12</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=3634#respond' onclick='return addComment.moveForm("comment-3634", "3634", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-3634">
+		<p>那麽上面那段代碼也是加在httpd.conf文件中？</p>
+		
+	</div>
+</li>
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-3639">
+		
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="comment-author vcard">
+			<span class="comment-author"><a href='http://niuniujidi-wang.cn' rel='external nofollow' class='url'>妞妞基地</a></span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-3639">2008-12-20  17:12</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=3639#respond' onclick='return addComment.moveForm("comment-3639", "3639", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-3639">
+		<p>很好的的方法,以后好用了.谢谢!!</p>
+		
+	</div>
+</li>
+	<li class="comment odd alt thread-even depth-1" id="li-comment-96612">
+		
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="comment-author vcard">
+			<span class="comment-author"><a href='http://www.oovvo.com' rel='external nofollow' class='url'>长沙网站开发</a></span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-96612">2011-03-25  13:03</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=96612#respond' onclick='return addComment.moveForm("comment-96612", "96612", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-96612">
+		<p>写得好，学习中ing</p>
+		
+	</div>
+</li>
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-103933">
+		
+		<div class="gravatar"><img alt='' src='http://cbmland.com/wp-content/plugins/fv-gravatar-cache/images/default.png' class='avatar avatar-48 photo' height='48' width='48' /></div>
+		<div class="comment-author vcard">
+			<span class="comment-author"><a href='http://bestspinnersoftware.com' rel='external nofollow' class='url'>Ken Steen</a></span><br />
+			<span class="comment-meta">
+            <a href="http://cbmland.com/post/722/disabled-browser-cache.html/comment-page-1#comment-103933">2011-10-09  13:10</a>
+			            </span>
+            
+							<span class="replay"><a class='comment-reply-link' href='/post/722/disabled-browser-cache.html?replytocom=103933#respond' onclick='return addComment.moveForm("comment-103933", "103933", "respond", "722")'>回复</a></span>
+		</div>
+
+		<div class="commentText" id="comment-103933">
+		<p>Is this information available on the site in English somewhere?</p>
+		
+	</div>
+</li>
+	</ol>
+	<div class="navigation">
+		<div class="alignright"></div>
+		<div class="alignleft"></div>
+	</div>
+ <div id="respond">
+<h3>Leave a Reply&nbsp;&nbsp;<a rel="nofollow" id="cancel-comment-reply-link" href="/post/722/disabled-browser-cache.html#respond" style="display:none;">点击这里取消回复。</a></h3>
+
+<form action="http://cbmland.com/wp-comments-post.php" method="post" id="commentform">
+
+<label for="author"><small>Name (<strong>*</strong>)</small></label>
+<input type="text" name="author" id="author" value="" size="22" tabindex="1" class="TextField" />
+
+<label for="email"><small>E-mail (<strong>*</strong>)</small></label>
+<input type="text" name="email" id="email" value="" size="22" tabindex="2" class="TextField" />
+
+<label for="url"><small><abbr title="Uniform Resource Identifier">URI</abbr></small></label>
+<input type="text" name="url" id="url" value="" tabindex="3" class="TextField" />
+
+<br clear="all" />
+<textarea name="comment" id="comment" rows="10" cols="1" tabindex="4" class="TextArea" ></textarea>
+<br clear="all" />
+<input name="SubmitComment" id="SubmitComment" type="image" class="SubmitComment" title="Post Your Comment" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" alt="发表评论" />
+<span id="commentTip">按[Alt+S/Ctrl+Enter] 快捷提交评论</span>
+<input type='hidden' name='comment_post_ID' value='722' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="59958d3e54" /></p>		<script language="JavaScript" type="text/javascript" src="http://cbmland.com/wp-content/plugins/cos-html-cache/common.js.php?hash=b0fc6f90275e05c8c642614a0c5c18d7"></script>
+		<script language="JavaScript" type="text/javascript">
+		//<![CDATA[
+		var hash = "b0fc6f90275e05c8c642614a0c5c18d7";
+		var author_cookie = "comment_author_" + hash;
+		var email_cookie = "comment_author_email_" + hash;
+		var url_cookie = "comment_author_url_" + hash; 
+		var adminmail = "cbm{_}vip.qq.com";
+		var adminurl = "http://cbmland.com";
+		setCommForm();
+		//]]>
+		</script>
+	
+
+	<p style="clear: both;" class="subscribe-to-comments">
+	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" />
+	<label for="subscribe">订阅新评论到电子邮箱。</label>
+	</p>
+
+
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="234"/></p></form>
+</div>
+</div>
+<!-- end center -->
+</div>
+<div id="sidebar">
+
+<div id="sidebarL">
+
+ <!-- start Search -->
+ 	<div id="search_container">
+    	<div id="search">
+    		<form id="searchForm" action="http://cbmland.com/search" method="get">
+    		<input type="hidden" name="cx" value="016044298682048239728:bqaqmsndssu" />
+    		<input type="hidden" name="cof" value="FORID:11" />
+    		<input type="hidden" name="ie" value="UTF-8" />
+   			<input type="text" name="q" class="keyword" />
+    		<div id="buttonsearch"><input id="submitBtn" name="sa" type="image" class="search" title="Search" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" alt="Search" />
+    		</div>
+    		</form>
+    	</div>
+    </div>
+ <!-- end Search -->
+ 
+ 
+ <!-- Google CSE Search Box Begins  -->
+
+
+ <!-- Google CSE Search Box Ends -->
+ 
+<!-- start Search -->
+<!-- 	<div id="search_container">
+    	<div id="search">
+    		<form id="searchForm" action="http://cbmland.com/index.php" method="get">
+   			<input type="text" name="s" class="keyword" />
+    		<div id="buttonsearch"><input id="submitBtn" name="submit" type="image" class="search" title="Search" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" alt="Search" />
+    		</div>
+    		</form>
+    	</div>
+    </div>-->
+<!-- end Search -->
+
+<div id="module">
+<div id="Syn">
+ <ul>
+  <li><a title="订阅我的网站，不错过精彩内容！" href="http://feed.cbmland.com">Entries</a> (RSS)</li>
+  <li><a title="订阅用户评论" href="http://cbmland.com/comments/feed">Comments</a> (RSS)</li>
+ </ul>
+<div id="feeds">
+<ul>
+  <li><a target="_blank" rel='external nofollow' href="http://www.google.com/reader/view/#stream/feed/http://feed.cbmland.com/"><img id="google" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="Google Reader" alt="google reader"/></a></li>
+  <li><a target="_blank" rel='external nofollow' href="http://www.xianguo.com/subscribe.php?url=http://feed.cbmland.com"><img id="xianguo" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="鲜果" alt="鲜果"/></a></li>
+  <li><a target="_blank" rel='external nofollow' href="http://www.zhuaxia.com/add_channel.php?url=http://feed.cbmland.com"><img id="zhuaxia" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="抓虾" alt="抓虾"/></a></li>
+  <li><a target="_blank" rel='external nofollow' href="http://mail.qq.com/cgi-bin/feed?u=http://feed.cbmland.com"><img id="qqreader" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="QQ&#37038;&#31665;" alt="QQ&#37038;&#31665;"/></a></li>
+  <li><a target="_blank" rel='external nofollow' href="http://reader.youdao.com/b.do?url=http://feed.cbmland.com"><img id="youdao" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="&#26377;&#36947;" alt="&#26377;&#36947;"/></a></li>
+  <li><a target="_blank" rel='external nofollow' href="http://www.newsgator.com/ngs/subscriber/subfext.aspx?url=http://feed.cbmland.com"><img id="newsgator" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="newsgator" alt="newsgator"/></a></li>
+  <li><a target="_blank" rel='external nofollow' href="http://inezha.com/add?url=http://feed.cbmland.com"><img id="inezha" src="http://cbmland.com/wp-content/themes/illacrimo-plus/images/t.png" title="哪吒" alt="哪吒"/></a></li>
+</ul>
+</div>
+</div>
+<!-- Start ContactMe -->
+<div class="ContactMe">
+	<h3>Connect Me</h3>
+	 <ul><li></li></ul>
+	 
+	 <div class="imgDiv">
+        <div id="Qme" title="Hello,与我保持联系吧!" ></div>
+		<div id="Mme" title="Guys!,Contact with me!" ></div>
+	</div>
+</div>
+<!-- End ContactMe -->
+
+<!-- Start top_commentators -->
+
+
+<!-- Start Recent Comments -->
+<!-- End Recent Comments -->
+
+<!-- Start top_Comments -->
+ 
+<div class="TopComtors">
+<h3 title="360天来评论最多的文章" >Top Comments</h3>
+<ul><li><a href="http://cbmland.com/post/1153/bye-bye-onedrive-i-like-dropbox.html">再见OneDrive，回归Dropbox</a> (1)</li>		
+</ul>
+</div>
+<!-- End top_Comments -->
+
+<!-- Start most_viewed -->
+ 
+<div class="widget">
+<h3 title="360天来点击最高的文章" >Top View</h3>
+<ul><li><a href="http://cbmland.com/post/329/vmware-vmdk-images-shared.html"  title="VMware 虚拟机硬盘镜像共享">VMware 虚拟机硬盘镜像共享</a> - 309,840 views</li><li><a href="http://cbmland.com/post/463/adobe-flash-player-90124.html"  title="Adobe Flash Player 9.0.124 正式版">Adobe Flash Player 9.0.124 正式版</a> - 173,664 views</li><li><a href="http://cbmland.com/post/341/what-is-chinese-name-of-vmware.html"  title="提交你认为最佳的Vmware中文名换三日美国游。">提交你认为最佳的Vmware中文名换三日美国游。</a> - 118,290 views</li><li><a href="http://cbmland.com/post/957/first-experience-of-air-to-ios-ipa.html"  title="初体验 &#8211; AIR 2.6生成iOS应用程序IPA">初体验 &#8211; AIR 2.6生成iOS应用程序IPA</a> - 115,773 views</li><li><a href="http://cbmland.com/post/1048/multi-proxy-switch-so-easy-for-use-goagent-pac-mode.html"  title="善用GoAgent的PAC，无缝切换国内局域网、国际互联网、办公网">善用GoAgent的PAC，无缝切换国内局域网、国际互联网、办公网</a> - 91,076 views</li><li><a href="http://cbmland.com/post/267/kill-symantec-protection-agent.html"  title="禁止 Symantec Protection Agent  运行的一些方法[原创]">禁止 Symantec Protection Agent  运行的一些方法[原创]</a> - 82,612 views</li><li><a href="http://cbmland.com/post/522/optimized-wordpress-notes-1.html"  title="优化WordPress心得(1) Gzip压缩CSS和JS">优化WordPress心得(1) Gzip压缩CSS和JS</a> - 78,778 views</li><li><a href="http://cbmland.com/post/678/illacrimo-plus-theme.html"  title="illacrimo Plus Theme">illacrimo Plus Theme</a> - 75,168 views</li><li><a href="http://cbmland.com/post/15/windows-xp-media-center-edition-2005.html"  title="Windows.XP.Media.Center.Edition 2005 试玩">Windows.XP.Media.Center.Edition 2005 试玩</a> - 72,813 views</li><li><a href="http://cbmland.com/post/376/transparent-png-in-ie6-utility.html"  title="透明PNG在IE6下的官方解决方案">透明PNG在IE6下的官方解决方案</a> - 72,770 views</li><li><a href="http://cbmland.com/post/927/adobe-cs5-cracked-amtlib-dll.html"  title="Adobe CS5 系列免注册 amtlib.dll 文件">Adobe CS5 系列免注册 amtlib.dll 文件</a> - 71,138 views</li><li><a href="http://cbmland.com/post/192/perfect-sql-syntax.html"  title="精妙的SQL语句">精妙的SQL语句</a> - 67,459 views</li>		
+		</ul>
+</div>
+<!-- End most_viewed -->
+
+
+</div>
+</div>
+<div id="sidebarR">
+<h3>Pages</h3>		<ul>
+			<li class="page_item page-item-473"><a href="http://cbmland.com/search">Google 搜索</a></li>
+<li class="page_item page-item-442"><a href="http://cbmland.com/guestbook">Guest Book</a></li>
+		</ul>
+		<h3>Friends</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.cssforest.org/blog/" title="做有中国特色的WEB标准" target="_blank">CSS森林</a></li>
+<li><a href="http://www.dengjie.com/" title="Danger&#8217;s Flash Blog" target="_blank">Danger</a></li>
+<li><a href="http://www.chouyu.com.cn/" title="臭鱼的交互设计" target="_blank">eugene</a></li>
+<li><a href="http://www.pufen.net/" rel="external nofollow" target="_blank">Pufen.net</a></li>
+<li><a href="http://www.pjhome.net/">PuterJam</a></li>
+<li><a href="http://www.misuisui.com/" rel="external nofollow" title="[米随随] s5s5" target="_blank">s5s5</a></li>
+<li><a href="http://riaoo.com/" title="Y.Boy&#8217; blog" target="_blank">Y.Boy</a></li>
+<li><a href="http://youyee.org/" rel="external nofollow" target="_blank">YouYee</a></li>
+
+	</ul>
+
+<h3>Shortcut</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://labs.adobe.com/" rel="external nofollow" target="_blank">Adobe Labs</a></li>
+<li><a href="http://www.box.net/shared/rol7ac9p47" rel="external nofollow" title="shared Box " target="_blank">box.net</a></li>
+<li><a href="http://json.org/" rel="external nofollow" title="a lightweight data-interchange format" target="_blank">Json.org</a></li>
+<li><a href="http://kuler.adobe.com/" rel="external nofollow" target="_blank">Kuler</a></li>
+<li><a href="http://aqicn.org/" target="_blank">空气质量</a></li>
+
+	</ul>
+
+<h3>Archives</h3>		<ul>
+			<li><a href='http://cbmland.com/post/date/2016/04'>2016年四月</a></li>
+	<li><a href='http://cbmland.com/post/date/2014/12'>2014年十二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2014/09'>2014年九月</a></li>
+	<li><a href='http://cbmland.com/post/date/2014/03'>2014年三月</a></li>
+	<li><a href='http://cbmland.com/post/date/2014/01'>2014年一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2013/12'>2013年十二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2013/11'>2013年十一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2013/01'>2013年一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2012/11'>2012年十一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2012/10'>2012年十月</a></li>
+	<li><a href='http://cbmland.com/post/date/2012/09'>2012年九月</a></li>
+	<li><a href='http://cbmland.com/post/date/2012/08'>2012年八月</a></li>
+	<li><a href='http://cbmland.com/post/date/2012/06'>2012年六月</a></li>
+	<li><a href='http://cbmland.com/post/date/2012/04'>2012年四月</a></li>
+	<li><a href='http://cbmland.com/post/date/2012/03'>2012年三月</a></li>
+	<li><a href='http://cbmland.com/post/date/2012/02'>2012年二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2012/01'>2012年一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2011/12'>2011年十二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2011/08'>2011年八月</a></li>
+	<li><a href='http://cbmland.com/post/date/2011/04'>2011年四月</a></li>
+	<li><a href='http://cbmland.com/post/date/2011/03'>2011年三月</a></li>
+	<li><a href='http://cbmland.com/post/date/2010/12'>2010年十二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2010/07'>2010年七月</a></li>
+	<li><a href='http://cbmland.com/post/date/2010/06'>2010年六月</a></li>
+	<li><a href='http://cbmland.com/post/date/2010/05'>2010年五月</a></li>
+	<li><a href='http://cbmland.com/post/date/2010/02'>2010年二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2010/01'>2010年一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2009/12'>2009年十二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2009/10'>2009年十月</a></li>
+	<li><a href='http://cbmland.com/post/date/2009/09'>2009年九月</a></li>
+	<li><a href='http://cbmland.com/post/date/2009/07'>2009年七月</a></li>
+	<li><a href='http://cbmland.com/post/date/2009/06'>2009年六月</a></li>
+	<li><a href='http://cbmland.com/post/date/2009/05'>2009年五月</a></li>
+	<li><a href='http://cbmland.com/post/date/2009/04'>2009年四月</a></li>
+	<li><a href='http://cbmland.com/post/date/2009/03'>2009年三月</a></li>
+	<li><a href='http://cbmland.com/post/date/2009/02'>2009年二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2009/01'>2009年一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/12'>2008年十二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/11'>2008年十一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/10'>2008年十月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/09'>2008年九月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/08'>2008年八月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/07'>2008年七月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/06'>2008年六月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/05'>2008年五月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/04'>2008年四月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/03'>2008年三月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/02'>2008年二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2008/01'>2008年一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2007/12'>2007年十二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2007/11'>2007年十一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2007/10'>2007年十月</a></li>
+	<li><a href='http://cbmland.com/post/date/2007/09'>2007年九月</a></li>
+	<li><a href='http://cbmland.com/post/date/2007/08'>2007年八月</a></li>
+	<li><a href='http://cbmland.com/post/date/2007/07'>2007年七月</a></li>
+	<li><a href='http://cbmland.com/post/date/2007/06'>2007年六月</a></li>
+	<li><a href='http://cbmland.com/post/date/2007/04'>2007年四月</a></li>
+	<li><a href='http://cbmland.com/post/date/2007/03'>2007年三月</a></li>
+	<li><a href='http://cbmland.com/post/date/2007/02'>2007年二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2007/01'>2007年一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2006/12'>2006年十二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2006/11'>2006年十一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2006/10'>2006年十月</a></li>
+	<li><a href='http://cbmland.com/post/date/2006/09'>2006年九月</a></li>
+	<li><a href='http://cbmland.com/post/date/2006/08'>2006年八月</a></li>
+	<li><a href='http://cbmland.com/post/date/2006/07'>2006年七月</a></li>
+	<li><a href='http://cbmland.com/post/date/2006/06'>2006年六月</a></li>
+	<li><a href='http://cbmland.com/post/date/2006/03'>2006年三月</a></li>
+	<li><a href='http://cbmland.com/post/date/2006/02'>2006年二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2005/12'>2005年十二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2005/11'>2005年十一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2005/10'>2005年十月</a></li>
+	<li><a href='http://cbmland.com/post/date/2005/09'>2005年九月</a></li>
+	<li><a href='http://cbmland.com/post/date/2005/08'>2005年八月</a></li>
+	<li><a href='http://cbmland.com/post/date/2005/04'>2005年四月</a></li>
+	<li><a href='http://cbmland.com/post/date/2005/03'>2005年三月</a></li>
+	<li><a href='http://cbmland.com/post/date/2005/02'>2005年二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2004/12'>2004年十二月</a></li>
+	<li><a href='http://cbmland.com/post/date/2004/11'>2004年十一月</a></li>
+	<li><a href='http://cbmland.com/post/date/2004/10'>2004年十月</a></li>
+	<li><a href='http://cbmland.com/post/date/2004/08'>2004年八月</a></li>
+		</ul>
+  
+
+<h3>Meta</h3>
+<ul>
+<li><a href="http://cbmland.com/wp-login.php?action=register">注册</a></li><li><a href="http://cbmland.com/wp-login.php">登录</a></li>
+<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+
+</ul>
+
+</div>
+
+</div><!--cos-html-cache-safe-tag--><div id="st-tag-cloud">
+<!-- Generated by Simple Tags 2.3.2 - http://wordpress.org/extend/plugins/simple-tags -->
+	<div class="st-tag-cloud">
+	<a href="http://cbmland.com/tags/oem" title="7 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">OEM</a>
+<a href="http://cbmland.com/tags/Google" title="16 个主题" rel="tag" style="font-size:8.89pt; color:#1ea3dd; visibility:hidden;">Google</a>
+<a href="http://cbmland.com/tags/adsl" title="4 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">ADSL</a>
+<a href="http://cbmland.com/tags/air" title="25 个主题" rel="tag" style="font-size:12.67pt; color:#56bad9; visibility:hidden;">AIR</a>
+<a href="http://cbmland.com/tags/mylife" title="45 个主题" rel="tag" style="font-size:18.33pt; color:#abdcd2; visibility:hidden;">mylife</a>
+<a href="http://cbmland.com/tags/sql" title="4 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">SQL</a>
+<a href="http://cbmland.com/tags/windows" title="11 个主题" rel="tag" style="font-size:8.89pt; color:#1ea3dd; visibility:hidden;">Windows</a>
+<a href="http://cbmland.com/tags/apple" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Apple</a>
+<a href="http://cbmland.com/tags/wordpress" title="24 个主题" rel="tag" style="font-size:12.67pt; color:#56bad9; visibility:hidden;">WordPress</a>
+<a href="http://cbmland.com/tags/project" title="12 个主题" rel="tag" style="font-size:8.89pt; color:#1ea3dd; visibility:hidden;">Project</a>
+<a href="http://cbmland.com/tags/apollo" title="7 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Apollo</a>
+<a href="http://cbmland.com/tags/Flash" title="49 个主题" rel="tag" style="font-size:20.22pt; color:#c7e8d0; visibility:hidden;">Flash</a>
+<a href="http://cbmland.com/tags/share" title="24 个主题" rel="tag" style="font-size:12.67pt; color:#56bad9; visibility:hidden;">share</a>
+<a href="http://cbmland.com/tags/experience" title="8 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">eXperience</a>
+<a href="http://cbmland.com/tags/silverlight" title="4 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">SilverLight</a>
+<a href="http://cbmland.com/tags/ria" title="6 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">RIA</a>
+<a href="http://cbmland.com/tags/Adobe" title="55 个主题" rel="tag" style="font-size:22.11pt; color:#e3f3ce; visibility:hidden;">Adobe</a>
+<a href="http://cbmland.com/tags/sercurity" title="18 个主题" rel="tag" style="font-size:10.78pt; color:#3aaedb; visibility:hidden;">Sercurity</a>
+<a href="http://cbmland.com/tags/xp" title="10 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">XP</a>
+<a href="http://cbmland.com/tags/flex-builder" title="9 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Flex Builder</a>
+<a href="http://cbmland.com/tags/hardware" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">hardware</a>
+<a href="http://cbmland.com/tags/wifi" title="6 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">WiFi</a>
+<a href="http://cbmland.com/tags/problem" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Problem</a>
+<a href="http://cbmland.com/tags/Flex" title="61 个主题" rel="tag" style="font-size:24pt; color:#ffffcc; visibility:hidden;">Flex</a>
+<a href="http://cbmland.com/tags/vmware" title="10 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">VMware</a>
+<a href="http://cbmland.com/tags/article" title="8 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Article</a>
+<a href="http://cbmland.com/tags/boler" title="4 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Boler</a>
+<a href="http://cbmland.com/tags/Mobile" title="9 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Mobile</a>
+<a href="http://cbmland.com/tags/Linux" title="10 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Linux</a>
+<a href="http://cbmland.com/tags/action-script" title="9 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Action Script</a>
+<a href="http://cbmland.com/tags/Vista" title="10 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Vista</a>
+<a href="http://cbmland.com/tags/cs3" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">CS3</a>
+<a href="http://cbmland.com/tags/tencent" title="6 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Tencent</a>
+<a href="http://cbmland.com/tags/amfphp" title="4 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">AMFPHP</a>
+<a href="http://cbmland.com/tags/Flash-Player" title="48 个主题" rel="tag" style="font-size:18.33pt; color:#abdcd2; visibility:hidden;">Flash Player</a>
+<a href="http://cbmland.com/tags/windows-7" title="7 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Windows 7</a>
+<a href="http://cbmland.com/tags/acer" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Acer</a>
+<a href="http://cbmland.com/tags/FireFox" title="11 个主题" rel="tag" style="font-size:8.89pt; color:#1ea3dd; visibility:hidden;">FireFox</a>
+<a href="http://cbmland.com/tags/IE" title="9 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">IE</a>
+<a href="http://cbmland.com/tags/IM" title="7 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">IM</a>
+<a href="http://cbmland.com/tags/php" title="15 个主题" rel="tag" style="font-size:8.89pt; color:#1ea3dd; visibility:hidden;">php</a>
+<a href="http://cbmland.com/tags/ios" title="6 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">iOS</a>
+<a href="http://cbmland.com/tags/Microsoft" title="28 个主题" rel="tag" style="font-size:12.67pt; color:#56bad9; visibility:hidden;">Microsoft</a>
+<a href="http://cbmland.com/tags/Javascript" title="5 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Javascript</a>
+<a href="http://cbmland.com/tags/motherfucker" title="7 个主题" rel="tag" style="font-size:7pt; color:#0398e0; visibility:hidden;">Motherfucker</a></div>
+
+</div>
+
+<div id="footer">
+	<div id="copying">
+		<p><strong>Copyright &copy; 2008 - cbm&#039;s land - is proudly powered by <a rel="external nofollow" href="http://www.wordpress.com/">WordPress</a></strong>.<br />
+		<span title="Version 2.0.5 Build 20090110">Illacrimo Plus Theme</span> is created by: <a rel="external nofollow" href="http://www.designdisease.com/">Design Disease</a> and improved by: <a rel="external nofollow" href="http://cbmland.com">cbm</a>.</p>
+	</div>
+	<div id="logos">
+	</div>
+</div>
+
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+var _gat;
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+-->
+</script>
+
+<script type="text/javascript">
+    /*120*270，创建于2012-9-27*/
+    var cpro_id = "u1073880";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>
+	
+</body>
+</html>
+<!-- 48 queries in 0.873 seconds.    --><!--this is a real static html file created at 2016-05-25 09:32:13 by cos-html-cache 2.7.3 -->
