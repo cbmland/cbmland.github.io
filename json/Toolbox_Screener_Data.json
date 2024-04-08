@@ -1,104 +1,6 @@
 {
-    "updated": "2024-04-09 02:05:51",
+    "updated": "2024-04-09 02:20:16",
     "groups": [
-        {
-            "name": "重点ETF",
-            "list": [
-                {
-                    "symbol": "",
-                    "name": "SPX"
-                },
-                {
-                    "symbol": "SPY",
-                    "name": "标普500ETF"
-                },
-                {
-                    "symbol": "QQQ",
-                    "name": "纳指100ETF"
-                },
-                {
-                    "symbol": "DIA",
-                    "name": "道琼斯ETF"
-                },
-                {
-                    "symbol": "SMH",
-                    "name": "半导体指数ETF-HOLDRs"
-                },
-                {
-                    "symbol": "UVXY",
-                    "name": "1"
-                },
-                {
-                    "symbol": "IWM",
-                    "name": "罗素2000指数ETF"
-                },
-                {
-                    "symbol": "XBI",
-                    "name": "SPDR S&P Biotech ETF"
-                },
-                {
-                    "symbol": "NUGT",
-                    "name": "二倍做多黄金矿业指数ETF-Direxion"
-                },
-                {
-                    "symbol": "SLV",
-                    "name": "白银ETF(iShares)"
-                },
-                {
-                    "symbol": "RSP",
-                    "name": "平均加权指数ETF-Rydex S&P"
-                },
-                {
-                    "symbol": "BITO",
-                    "name": "ProShares Bitcoin Strategy ETF"
-                }
-            ]
-        },
-        {
-            "name": "FANG",
-            "list": [
-                {
-                    "symbol": "SPY",
-                    "name": "标普500ETF"
-                },
-                {
-                    "symbol": "QQQ",
-                    "name": "纳指100ETF"
-                },
-                {
-                    "symbol": "AAPL",
-                    "name": "苹果"
-                },
-                {
-                    "symbol": "AMZN",
-                    "name": "亚马逊"
-                },
-                {
-                    "symbol": "META",
-                    "name": "Meta Platforms"
-                },
-                {
-                    "symbol": "NVDA",
-                    "name": "英伟达"
-                },
-                {
-                    "symbol": "TSLA",
-                    "name": "特斯拉"
-                },
-                {
-                    "symbol": "MSFT",
-                    "name": "微软"
-                },
-                {
-                    "symbol": "GOOGL",
-                    "name": "谷歌A"
-                },
-                {
-                    "symbol": "NFLX",
-                    "name": "奈飞"
-                }
-            ]
-        },
         {
             "name": "特别关注",
             "list": [
@@ -329,6 +231,104 @@
                 {
                     "symbol": "AXP",
                     "name": "美国运通"
+                }
+            ]
+        },
+        {
+            "name": "重点ETF",
+            "list": [
+                {
+                    "symbol": "",
+                    "name": "SPX"
+                },
+                {
+                    "symbol": "SPY",
+                    "name": "标普500ETF"
+                },
+                {
+                    "symbol": "QQQ",
+                    "name": "纳指100ETF"
+                },
+                {
+                    "symbol": "DIA",
+                    "name": "道琼斯ETF"
+                },
+                {
+                    "symbol": "SMH",
+                    "name": "半导体指数ETF-HOLDRs"
+                },
+                {
+                    "symbol": "UVXY",
+                    "name": "1"
+                },
+                {
+                    "symbol": "IWM",
+                    "name": "罗素2000指数ETF"
+                },
+                {
+                    "symbol": "XBI",
+                    "name": "SPDR S&P Biotech ETF"
+                },
+                {
+                    "symbol": "NUGT",
+                    "name": "二倍做多黄金矿业指数ETF-Direxion"
+                },
+                {
+                    "symbol": "SLV",
+                    "name": "白银ETF(iShares)"
+                },
+                {
+                    "symbol": "RSP",
+                    "name": "平均加权指数ETF-Rydex S&P"
+                },
+                {
+                    "symbol": "BITO",
+                    "name": "ProShares Bitcoin Strategy ETF"
+                }
+            ]
+        },
+        {
+            "name": "FANG",
+            "list": [
+                {
+                    "symbol": "SPY",
+                    "name": "标普500ETF"
+                },
+                {
+                    "symbol": "QQQ",
+                    "name": "纳指100ETF"
+                },
+                {
+                    "symbol": "AAPL",
+                    "name": "苹果"
+                },
+                {
+                    "symbol": "AMZN",
+                    "name": "亚马逊"
+                },
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms"
+                },
+                {
+                    "symbol": "NVDA",
+                    "name": "英伟达"
+                },
+                {
+                    "symbol": "TSLA",
+                    "name": "特斯拉"
+                },
+                {
+                    "symbol": "MSFT",
+                    "name": "微软"
+                },
+                {
+                    "symbol": "GOOGL",
+                    "name": "谷歌A"
+                },
+                {
+                    "symbol": "NFLX",
+                    "name": "奈飞"
                 }
             ]
         },
