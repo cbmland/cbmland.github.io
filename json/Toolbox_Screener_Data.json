@@ -1,5 +1,5 @@
 {
-    "updated": "2024-04-09 02:20:16",
+    "updated": "2024-04-09 02:29:37",
     "groups": [
         {
             "name": "特别关注",
@@ -406,99 +406,6 @@
             ]
         },
         {
-            "name": "AAA",
-            "list": [
-                {
-                    "symbol": "AAPL",
-                    "name": "苹果"
-                },
-                {
-                    "symbol": "AMZN",
-                    "name": "亚马逊"
-                },
-                {
-                    "symbol": "MSFT",
-                    "name": "微软"
-                },
-                {
-                    "symbol": "TSLA",
-                    "name": "特斯拉"
-                },
-                {
-                    "symbol": "GOOGL",
-                    "name": "谷歌A"
-                },
-                {
-                    "symbol": "NVDA",
-                    "name": "英伟达"
-                },
-                {
-                    "symbol": "AMD",
-                    "name": "美国超微公司"
-                },
-                {
-                    "symbol": "NFLX",
-                    "name": "奈飞"
-                },
-                {
-                    "symbol": "ASML",
-                    "name": "阿斯麦"
-                },
-                {
-                    "symbol": "ADBE",
-                    "name": "Adobe"
-                },
-                {
-                    "symbol": "SNAP",
-                    "name": "Snap Inc"
-                },
-                {
-                    "symbol": "DD",
-                    "name": "杜邦"
-                },
-                {
-                    "symbol": "GS",
-                    "name": "高盛"
-                },
-                {
-                    "symbol": "PFE",
-                    "name": "辉瑞"
-                },
-                {
-                    "symbol": "WMT",
-                    "name": "沃尔玛"
-                },
-                {
-                    "symbol": "MCD",
-                    "name": "麦当劳"
-                },
-                {
-                    "symbol": "SHOP",
-                    "name": "Shopify Inc"
-                },
-                {
-                    "symbol": "LMT",
-                    "name": "洛克希德马丁"
-                },
-                {
-                    "symbol": "SQ",
-                    "name": "Block"
-                },
-                {
-                    "symbol": "KO",
-                    "name": "可口可乐"
-                },
-                {
-                    "symbol": "BA",
-                    "name": "波音"
-                },
-                {
-                    "symbol": "MU",
-                    "name": "美光科技"
-                }
-            ]
-        },
-        {
             "name": "金融",
             "list": [
                 {
@@ -665,31 +572,6 @@
                 {
                     "symbol": "CYBR",
                     "name": "Cyber-Ark Software"
-                }
-            ]
-        },
-        {
-            "name": "AA",
-            "list": [
-                {
-                    "symbol": "TEAM",
-                    "name": "Atlassian Corporation PLC"
-                },
-                {
-                    "symbol": "FANG",
-                    "name": "Diamondback Energy"
-                },
-                {
-                    "symbol": "JBL",
-                    "name": "捷普科技"
-                },
-                {
-                    "symbol": "MELI",
-                    "name": "MercadoLibre"
-                },
-                {
-                    "symbol": "ETN",
-                    "name": "伊顿"
                 }
             ]
         },
@@ -1229,6 +1111,124 @@
                 {
                     "symbol": "NVDA",
                     "name": "英伟达"
+                }
+            ]
+        },
+        {
+            "name": "AAA",
+            "list": [
+                {
+                    "symbol": "AAPL",
+                    "name": "苹果"
+                },
+                {
+                    "symbol": "AMZN",
+                    "name": "亚马逊"
+                },
+                {
+                    "symbol": "MSFT",
+                    "name": "微软"
+                },
+                {
+                    "symbol": "TSLA",
+                    "name": "特斯拉"
+                },
+                {
+                    "symbol": "GOOGL",
+                    "name": "谷歌A"
+                },
+                {
+                    "symbol": "NVDA",
+                    "name": "英伟达"
+                },
+                {
+                    "symbol": "AMD",
+                    "name": "美国超微公司"
+                },
+                {
+                    "symbol": "NFLX",
+                    "name": "奈飞"
+                },
+                {
+                    "symbol": "ASML",
+                    "name": "阿斯麦"
+                },
+                {
+                    "symbol": "ADBE",
+                    "name": "Adobe"
+                },
+                {
+                    "symbol": "SNAP",
+                    "name": "Snap Inc"
+                },
+                {
+                    "symbol": "DD",
+                    "name": "杜邦"
+                },
+                {
+                    "symbol": "GS",
+                    "name": "高盛"
+                },
+                {
+                    "symbol": "PFE",
+                    "name": "辉瑞"
+                },
+                {
+                    "symbol": "WMT",
+                    "name": "沃尔玛"
+                },
+                {
+                    "symbol": "MCD",
+                    "name": "麦当劳"
+                },
+                {
+                    "symbol": "SHOP",
+                    "name": "Shopify Inc"
+                },
+                {
+                    "symbol": "LMT",
+                    "name": "洛克希德马丁"
+                },
+                {
+                    "symbol": "SQ",
+                    "name": "Block"
+                },
+                {
+                    "symbol": "KO",
+                    "name": "可口可乐"
+                },
+                {
+                    "symbol": "BA",
+                    "name": "波音"
+                },
+                {
+                    "symbol": "MU",
+                    "name": "美光科技"
+                }
+            ]
+        },
+        {
+            "name": "AA",
+            "list": [
+                {
+                    "symbol": "TEAM",
+                    "name": "Atlassian Corporation PLC"
+                },
+                {
+                    "symbol": "FANG",
+                    "name": "Diamondback Energy"
+                },
+                {
+                    "symbol": "JBL",
+                    "name": "捷普科技"
+                },
+                {
+                    "symbol": "MELI",
+                    "name": "MercadoLibre"
+                },
+                {
+                    "symbol": "ETN",
+                    "name": "伊顿"
                 }
             ]
         },
