@@ -1,5 +1,5 @@
 {
-    "updated": "2024-04-09 02:29:37",
+    "updated": "2024-04-09 02:36:19",
     "groups": [
         {
             "name": "特别关注",
@@ -1025,6 +1025,81 @@
             ]
         },
         {
+            "name": "发现",
+            "list": [
+                {
+                    "symbol": "FSLY",
+                    "name": "Fastly, Inc"
+                },
+                {
+                    "symbol": "TWLO",
+                    "name": "Twilio Inc"
+                },
+                {
+                    "symbol": "URA",
+                    "name": "Global X Uranium ETF"
+                }
+            ]
+        },
+        {
+            "name": "能源",
+            "list": [
+                {
+                    "symbol": "DQ",
+                    "name": "大全新能源"
+                },
+                {
+                    "symbol": "BP",
+                    "name": "英国石油"
+                },
+                {
+                    "symbol": "OXY",
+                    "name": "西方石油"
+                },
+                {
+                    "symbol": "FANG",
+                    "name": "Diamondback Energy"
+                },
+                {
+                    "symbol": "TAN",
+                    "name": "太阳能ETF-Guggenheim"
+                },
+                {
+                    "symbol": "XLE",
+                    "name": "SPDR能源指数ETF"
+                },
+                {
+                    "symbol": "SPWR",
+                    "name": "SunPower"
+                },
+                {
+                    "symbol": "PLUG",
+                    "name": "普拉格能源"
+                }
+            ]
+        },
+        {
+            "name": "教育",
+            "list": [
+                {
+                    "symbol": "DUOL",
+                    "name": "多邻国"
+                },
+                {
+                    "symbol": "GOTU",
+                    "name": "高途"
+                },
+                {
+                    "symbol": "EDU",
+                    "name": "新东方"
+                },
+                {
+                    "symbol": "TAL",
+                    "name": "好未来"
+                }
+            ]
+        },
+        {
             "name": "高价",
             "list": [
                 {
@@ -1399,81 +1474,6 @@
                 {
                     "symbol": "HD",
                     "name": "家得宝"
-                }
-            ]
-        },
-        {
-            "name": "发现",
-            "list": [
-                {
-                    "symbol": "FSLY",
-                    "name": "Fastly, Inc"
-                },
-                {
-                    "symbol": "TWLO",
-                    "name": "Twilio Inc"
-                },
-                {
-                    "symbol": "URA",
-                    "name": "Global X Uranium ETF"
-                }
-            ]
-        },
-        {
-            "name": "能源",
-            "list": [
-                {
-                    "symbol": "DQ",
-                    "name": "大全新能源"
-                },
-                {
-                    "symbol": "BP",
-                    "name": "英国石油"
-                },
-                {
-                    "symbol": "OXY",
-                    "name": "西方石油"
-                },
-                {
-                    "symbol": "FANG",
-                    "name": "Diamondback Energy"
-                },
-                {
-                    "symbol": "TAN",
-                    "name": "太阳能ETF-Guggenheim"
-                },
-                {
-                    "symbol": "XLE",
-                    "name": "SPDR能源指数ETF"
-                },
-                {
-                    "symbol": "SPWR",
-                    "name": "SunPower"
-                },
-                {
-                    "symbol": "PLUG",
-                    "name": "普拉格能源"
-                }
-            ]
-        },
-        {
-            "name": "教育",
-            "list": [
-                {
-                    "symbol": "DUOL",
-                    "name": "多邻国"
-                },
-                {
-                    "symbol": "GOTU",
-                    "name": "高途"
-                },
-                {
-                    "symbol": "EDU",
-                    "name": "新东方"
-                },
-                {
-                    "symbol": "TAL",
-                    "name": "好未来"
                 }
             ]
         }
