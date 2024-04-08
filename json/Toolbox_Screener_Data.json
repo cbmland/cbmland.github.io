@@ -1,5 +1,5 @@
 {
-    "updated": "2024-04-09 02:36:19",
+    "updated": "2024-04-09 02:48:15",
     "groups": [
         {
             "name": "特别关注",
@@ -231,6 +231,115 @@
                 {
                     "symbol": "AXP",
                     "name": "美国运通"
+                }
+            ]
+        },
+        {
+            "name": "持有",
+            "list": [
+                {
+                    "symbol": "LULU",
+                    "name": "lululemon athletica"
+                },
+                {
+                    "symbol": "AMD",
+                    "name": "美国超微公司"
+                },
+                {
+                    "symbol": "MSTR",
+                    "name": "MicroStrategy Incorporated"
+                },
+                {
+                    "symbol": "SMCI",
+                    "name": "超微电脑"
+                },
+                {
+                    "symbol": "NVDA",
+                    "name": "英伟达"
+                },
+                {
+                    "symbol": "GOOGL",
+                    "name": "谷歌A"
+                },
+                {
+                    "symbol": "AAOI",
+                    "name": "Applied Optoelectronics Inc"
+                },
+                {
+                    "symbol": "QCOM",
+                    "name": "高通"
+                },
+                {
+                    "symbol": "SKX",
+                    "name": "斯凯奇"
+                },
+                {
+                    "symbol": "MS",
+                    "name": "摩根士丹利"
+                },
+                {
+                    "symbol": "AAPL",
+                    "name": "苹果"
+                },
+                {
+                    "symbol": "SPY",
+                    "name": "标普500ETF"
+                },
+                {
+                    "symbol": "QQQ",
+                    "name": "纳指100ETF"
+                },
+                {
+                    "symbol": "SOXL",
+                    "name": "三倍做多半导体ETF-Direxion Daily"
+                },
+                {
+                    "symbol": "TSLA",
+                    "name": "特斯拉"
+                },
+                {
+                    "symbol": "MSFT",
+                    "name": "微软"
+                },
+                {
+                    "symbol": "ADBE",
+                    "name": "Adobe"
+                },
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms"
+                },
+                {
+                    "symbol": "SHOP",
+                    "name": "Shopify Inc"
+                },
+                {
+                    "symbol": "NET",
+                    "name": "Cloudflare, Inc"
+                },
+                {
+                    "symbol": "IWM",
+                    "name": "罗素2000指数ETF"
+                },
+                {
+                    "symbol": "BX",
+                    "name": "黑石"
+                },
+                {
+                    "symbol": "DIS",
+                    "name": "迪士尼"
+                },
+                {
+                    "symbol": "BA",
+                    "name": "波音"
+                },
+                {
+                    "symbol": "WFC",
+                    "name": "富国银行"
+                },
+                {
+                    "symbol": "TCEHY",
+                    "name": "腾讯控股ADR"
                 }
             ]
         },
