@@ -1,1 +1,1 @@
-[]
+[{"symbol": "AXP", "frame": "60", "strategy": "Vivid2", "mode": "", "realized": 1078.88, "change": 123.37, "unrealized": -71.63, "unrealizedValueChange": -0.72, "realizedValueChange": 10.79, "marketValueChange": 10.07, "tradeNum": 36, "fromDate": "2023-10-12 23:30", "toDate": "2024-04-11 22:30", "regTime": "2024-04-09 01:34", "upTime": "2024-04-11 23:01", "extend": "", "positionSize": 18, "positionPrice": 220.38, "startingCash": 10000.0, "cash": 7112.05, "arguments": "(BollBot x BollTop Cash 10K)"}]
