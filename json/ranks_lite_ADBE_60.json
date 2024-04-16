@@ -1,1 +1,1 @@
-[]
+[{"symbol": "ADBE", "frame": "60", "strategy": "Stoch2", "mode": "", "realized": 1437.02, "change": 131.88, "unrealized": -415.14, "unrealizedValueChange": -4.15, "realizedValueChange": 14.37, "marketValueChange": 10.22, "tradeNum": 71, "fromDate": "2023-10-17 23:30", "toDate": "2024-04-16 22:30", "regTime": "2024-04-09 01:19", "upTime": "2024-04-16 22:33", "extend": "", "positionSize": 22, "positionPrice": 491.0, "startingCash": 10000.0, "cash": 635.02, "arguments": "(BollBot x BollTop Cash 10K)"}]
