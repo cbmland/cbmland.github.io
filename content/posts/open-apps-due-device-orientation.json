@@ -1,0 +1,16 @@
+{
+  "frontmatter": {
+    "title": "iPhone 依据场景打开多种 Apps",
+    "date": "2023-10-13T05:00:00.000Z",
+    "image": "/images/posts/shortcuts-action-button.jpg",
+    "categories": [
+      "iphone",
+      "ios",
+      "share"
+    ],
+    "featured": true,
+    "draft": false
+  },
+  "slug": "open-apps-due-device-orientation",
+  "content": "\n\n\n> 新款iPhone 15 Pro 将震动拨片换成了一个Action Button，这个按钮可以关联捷径来实现相关的指令，类似电脑键盘上的自定义功能键，但按钮仅仅一个，想要关联的功能太多要如何完成呢？\n\n\n\n一个具有创意的办法，就是依据你拿手机的角度场景来打开不同的 Apps\n\n比如超市出具付款码的时候，你的手机几乎是平放角度，扫码支付时是竖直的角度，那么是不是可以依据手机空间角度来区分场景，做到智能打开对应的 Apps。\n\n其实在【捷径】里并没有相关获取手机朝向的API，需要借助第三方应用来获取这些信息。\n\n找到一款叫 [actions 应用](https://apps.apple.com/us/app/actions/id1586435171)，提供在捷径中获取设备朝向的API，可以去应用商店下载。\n\n安装完后我们在捷径中可以看到他提供的全部api\n\n![actions-apis](/images/posts/shortcuts-actions-apis.jpeg)\n\n接下来，熟悉捷径编程的就很容易了。\n\n我设置了一个比较常见的应用程序调用捷径代码，默认运行设定：\n\n1.竖直方向，微信扫一扫\n2.平放方向：支付宝付款码\n3.左侧横向：视频拍摄模式\n4.右侧横向：开始录音\n5.竖向倒立：相机拍摄模式\n\n你也可以从[这里](https://www.icloud.com/shortcuts/10cb4e4a768a4caca01cadb399b3fe39)获取【神奇的朝向】捷径代码，或者扫下面的二位码打开。\n\n![shortcuts-orientation-open-apps](/images/posts/shortcuts-orientation-open-apps.png)\n\n\n\n安装到捷径里后，简单的点击运行可以测试一下效果：\n\n![shortcuts-orientation-list](/images/posts/shortcuts-orientation-list.jpeg)\n\n\n\n接下来就是设置到Action Button的按钮功能上就可以直接使用了\n\n\n\n ### 无Action Button的iPhone的设置\n\n可以在设置里 【辅助功能->触控->背面轻点两下】关联操作，设置界面如下\n\n![shortcuts-settings-1.jpeg](/images/posts/shortcuts-settings-1.jpeg)\n\n![shortcuts-settings-2.jpeg](/images/posts/shortcuts-settings-2.jpeg)\n\n\n\n这样，你就可以快速的轻敲手机背面来启动不同的功能。\n\n"
+}
