@@ -1,1 +1,1 @@
-[]
+[{"symbol": "ETN", "frame": "60", "strategy": "Revival2", "mode": "", "realized": 1012.03, "change": 109.12, "unrealized": -7.7, "unrealizedValueChange": -0.08, "realizedValueChange": 10.12, "marketValueChange": 10.04, "tradeNum": 35, "fromDate": "2023-10-18 00:30", "toDate": "2024-04-16 23:30", "regTime": "2024-04-09 01:30", "upTime": "2024-04-16 23:30", "extend": "", "positionSize": 4, "positionPrice": 315.31, "startingCash": 10000.0, "cash": 9750.77, "arguments": "(BUY:SMA30 SELL:BollTop Cash 10K)"}]
