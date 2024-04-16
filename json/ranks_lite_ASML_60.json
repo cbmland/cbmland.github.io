@@ -1,1 +1,1 @@
-[{"symbol": "ASML", "frame": "60", "strategy": "Revival2", "mode": "", "realized": 1077.29, "change": 127.64, "unrealized": -66.52, "unrealizedValueChange": -0.67, "realizedValueChange": 10.77, "marketValueChange": 10.11, "tradeNum": 39, "fromDate": "2023-10-17 21:30", "toDate": "2024-04-16 03:30", "regTime": "2024-04-09 01:30", "upTime": "2024-04-16 05:01", "extend": "", "positionSize": 5, "positionPrice": 968.12, "startingCash": 10000.0, "cash": 6236.68, "arguments": "(BUY:SMA30 SELL:BollTop Cash 10K)"}]
+[]
