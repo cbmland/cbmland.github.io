@@ -1,9 +1,17 @@
 {
-    "updated": "2024-04-09 02:48:15",
+    "updated": "2024-04-17 19:44:05",
     "groups": [
         {
             "name": "特别关注",
             "list": [
+                {
+                    "symbol": "TDW",
+                    "name": "潮水公司"
+                },
+                {
+                    "symbol": "VRT",
+                    "name": "Vertiv Holdings LLC"
+                },
                 {
                     "symbol": "ETN",
                     "name": "伊顿"
@@ -50,7 +58,7 @@
                 },
                 {
                     "symbol": "GGLL",
-                    "name": "DIREXION DAILY GOOGL BULL 1"
+                    "name": "2倍做多GOOGL-Direxion"
                 },
                 {
                     "symbol": "SQ",
@@ -237,6 +245,10 @@
         {
             "name": "持有",
             "list": [
+                {
+                    "symbol": "COST",
+                    "name": "好市多"
+                },
                 {
                     "symbol": "LULU",
                     "name": "lululemon athletica"
@@ -1429,7 +1441,7 @@
                 },
                 {
                     "symbol": "UNG",
-                    "name": "天然气ETF-United States"
+                    "name": "美国天然气基金"
                 },
                 {
                     "symbol": "SPY",
@@ -1485,7 +1497,7 @@
                 },
                 {
                     "symbol": "GDX",
-                    "name": "黄金矿业ETF(Market Vectors)"
+                    "name": "黄金矿业ETF-VanEck"
                 },
                 {
                     "symbol": "AGQ",
@@ -1529,7 +1541,7 @@
                 },
                 {
                     "symbol": "XLI",
-                    "name": "工业ETF"
+                    "name": "工业指数ETF-SPDR"
                 },
                 {
                     "symbol": "XLU",
