@@ -1,1 +1,1 @@
-[{"symbol": "UPRO", "frame": "60", "strategy": "Stoch2", "mode": "", "realized": 1485.69, "change": 173.78, "unrealized": -467.39, "unrealizedValueChange": -4.67, "realizedValueChange": 14.86, "marketValueChange": 10.18, "tradeNum": 45, "fromDate": "2023-10-20 01:30", "toDate": "2024-04-19 00:30", "regTime": "2024-04-09 01:19", "upTime": "2024-04-19 00:31", "extend": "", "positionSize": 171, "positionPrice": 64.66, "startingCash": 10000.0, "cash": 428.27, "arguments": "(BollBot x BollTop Cash 10K)"}]
+[]
