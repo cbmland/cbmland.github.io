@@ -1,5 +1,5 @@
 
-git pull
+#git pull
 #git reset --hard origin/master
 git add .
 current_datetime=$(date "+%Y-%m-%d %H:%M:%S")
