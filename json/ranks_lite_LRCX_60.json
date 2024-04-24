@@ -1,1 +1,1 @@
-[{"symbol": "LRCX", "frame": "60", "strategy": "Stoch2", "mode": "", "realized": 1236.61, "change": 140.62, "unrealized": -227.76, "unrealizedValueChange": -2.28, "realizedValueChange": 12.37, "marketValueChange": 10.09, "tradeNum": 63, "fromDate": "2023-10-26 02:30", "toDate": "2024-04-25 01:30", "regTime": "2024-04-09 01:19", "upTime": "2024-04-25 02:01", "extend": "", "positionSize": 11, "positionPrice": 913.75, "startingCash": 10000.0, "cash": 1185.41, "arguments": "(BollBot x BollTop Cash 10K)"}]
+[]
