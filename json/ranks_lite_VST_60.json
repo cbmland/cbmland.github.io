@@ -1,1 +1,1 @@
-[{"symbol": "VST", "frame": "60", "strategy": "Stoch2", "mode": "", "realized": 700.58, "change": 76.79, "unrealized": 391.74, "unrealizedValueChange": 3.92, "realizedValueChange": 7.01, "marketValueChange": 10.92, "tradeNum": 31, "fromDate": "2023-10-26 21:30", "toDate": "2024-04-25 03:30", "regTime": "2024-04-09 01:18", "upTime": "2024-04-25 05:01", "extend": "", "positionSize": 90, "positionPrice": 66.11, "startingCash": 10000.0, "cash": 4750.92, "arguments": "(BollBot x BollTop Cash 10K)"}]
+[]
