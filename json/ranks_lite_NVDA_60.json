@@ -1,1 +1,1 @@
-[]
+[{"symbol": "NVDA", "frame": "60", "strategy": "Stoch2", "mode": "", "realized": 980.07, "change": 122.88, "unrealized": 26.21, "unrealizedValueChange": 0.26, "realizedValueChange": 9.8, "marketValueChange": 10.06, "tradeNum": 54, "fromDate": "2023-11-02 03:30", "toDate": "2024-05-02 02:30", "regTime": "2024-04-09 01:19", "upTime": "2024-05-02 03:01", "extend": "", "positionSize": 2, "positionPrice": 844.89, "startingCash": 10000.0, "cash": 9290.28, "arguments": "(BollBot x BollTop Cash 10K)"}]
