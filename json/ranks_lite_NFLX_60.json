@@ -1,1 +1,1 @@
-[]
+[{"symbol": "NFLX", "frame": "60", "strategy": "Stoch2", "mode": "", "realized": 808.31, "change": 81.88, "unrealized": 318.13, "unrealizedValueChange": 3.18, "realizedValueChange": 8.08, "marketValueChange": 11.26, "tradeNum": 42, "fromDate": "2023-11-03 23:30", "toDate": "2024-05-03 22:30", "regTime": "2024-04-09 01:19", "upTime": "2024-05-03 22:31", "extend": "", "positionSize": 12, "positionPrice": 548.06, "startingCash": 10000.0, "cash": 4231.56, "arguments": "(BollBot x BollTop Cash 10K)"}]
