@@ -1,1 +1,310 @@
-{"AAPL": {"symbol": "AAPL", "name": "\u82f9\u679c", "market": "US", "price": 182.31, "preClose": 182.4}, "ABNB": {"symbol": "ABNB", "name": "\u7231\u5f7c\u8fce", "market": "US", "price": 157.87, "preClose": 159.81}, "ADBE": {"symbol": "ADBE", "name": "Adobe", "market": "US", "price": 494.5, "preClose": 492.27}, "AMZN": {"symbol": "AMZN", "name": "\u4e9a\u9a6c\u900a", "market": "US", "price": 187.72, "preClose": 188.76}, "APP": {"symbol": "APP", "name": "AppLovin Corporation", "market": "US", "price": 74.48, "preClose": 77.09}, "ASML": {"symbol": "ASML", "name": "\u963f\u65af\u9ea6", "market": "US", "price": 908.92, "preClose": 908.22}, "AXP": {"symbol": "AXP", "name": "\u7f8e\u56fd\u8fd0\u901a", "market": "US", "price": 234.71, "preClose": 234.66}, "BX": {"symbol": "BX", "name": "\u9ed1\u77f3", "market": "US", "price": 119.43, "preClose": 121.5}, "CELH": {"symbol": "CELH", "name": "Celsius Holdings, Inc.", "market": "US", "price": 73.01, "preClose": 76.95}, "COST": {"symbol": "COST", "name": "\u597d\u5e02\u591a", "market": "US", "price": 766.39, "preClose": 771.31}, "CRM": {"symbol": "CRM", "name": "\u8d5b\u5bcc\u65f6", "market": "US", "price": 278.92, "preClose": 277.18}, "DIA": {"symbol": "DIA", "name": "\u9053\u743c\u65afETF", "market": "US", "price": 389.62, "preClose": 388.74}, "EDU": {"symbol": "EDU", "name": "\u65b0\u4e1c\u65b9", "market": "US", "price": 83.32, "preClose": 81.64}, "ETN": {"symbol": "ETN", "name": "\u4f0a\u987f", "market": "US", "price": 331.82, "preClose": 327.43}, "GOOGL": {"symbol": "GOOGL", "name": "\u8c37\u6b4cA", "market": "US", "price": 169.98, "preClose": 171.25}, "GS": {"symbol": "GS", "name": "\u9ad8\u76db", "market": "US", "price": 444.38, "preClose": 443.8}, "HOOD": {"symbol": "HOOD", "name": "Robinhood", "market": "US", "price": 17.85, "preClose": 17.99}, "IWM": {"symbol": "IWM", "name": "\u7f57\u7d202000\u6307\u6570ETF", "market": "US", "price": 203.64, "preClose": 204.97}, "KO": {"symbol": "KO", "name": "\u53ef\u53e3\u53ef\u4e50", "market": "US", "price": 62.73, "preClose": 62.62}, "LRCX": {"symbol": "LRCX", "name": "\u62c9\u59c6\u7814\u7a76", "market": "US", "price": 900.87, "preClose": 914.91}, "LULU": {"symbol": "LULU", "name": "lululemon athletica", "market": "US", "price": 348.0, "preClose": 349.85}, "META": {"symbol": "META", "name": "Meta Platforms", "market": "US", "price": 472.7, "preClose": 468.24}, "MNST": {"symbol": "MNST", "name": "\u602a\u7269\u996e\u6599", "market": "US", "price": 54.34, "preClose": 54.67}, "MSFT": {"symbol": "MSFT", "name": "\u5fae\u8f6f", "market": "US", "price": 412.09, "preClose": 409.34}, "MU": {"symbol": "MU", "name": "\u7f8e\u5149\u79d1\u6280", "market": "US", "price": 119.03, "preClose": 119.21}, "NET": {"symbol": "NET", "name": "Cloudflare, Inc.", "market": "US", "price": 72.39, "preClose": 74.13}, "NFLX": {"symbol": "NFLX", "name": "\u5948\u98de", "market": "US", "price": 615.0, "preClose": 606.0}, "NKE": {"symbol": "NKE", "name": "\u8010\u514b", "market": "US", "price": 93.38, "preClose": 93.78}, "NUGT": {"symbol": "NUGT", "name": "\u4e8c\u500d\u505a\u591a\u9ec4\u91d1\u77ff\u4e1a\u6307\u6570ETF-Direxion", "market": "US", "price": 39.92, "preClose": 39.4}, "NVDA": {"symbol": "NVDA", "name": "\u82f1\u4f1f\u8fbe", "market": "US", "price": 899.14, "preClose": 905.54}, "PEP": {"symbol": "PEP", "name": "\u767e\u4e8b\u53ef\u4e50", "market": "US", "price": 178.31, "preClose": 178.02}, "PYPL": {"symbol": "PYPL", "name": "PayPal", "market": "US", "price": 64.45, "preClose": 65.92}, "QCOM": {"symbol": "QCOM", "name": "\u9ad8\u901a", "market": "US", "price": 179.57, "preClose": 180.15}, "QQQ": {"symbol": "QQQ", "name": "\u7eb3\u6307100ETF", "market": "US", "price": 440.06, "preClose": 440.32}, "SMCI": {"symbol": "SMCI", "name": "\u8d85\u5fae\u7535\u8111", "market": "US", "price": 827.32, "preClose": 819.29}, "SOXL": {"symbol": "SOXL", "name": "\u4e09\u500d\u505a\u591a\u534a\u5bfc\u4f53ETF-Direxion Daily", "market": "US", "price": 39.33, "preClose": 40.36}, "SQ": {"symbol": "SQ", "name": "Block", "market": "US", "price": 71.22, "preClose": 71.6}, "SSO": {"symbol": "SSO", "name": "\u4e24\u500d\u505a\u591a\u6807\u666e500ETF", "market": "US", "price": 75.04, "preClose": 75.1}, "TCEHY": {"symbol": "TCEHY", "name": "\u817e\u8baf\u63a7\u80a1ADR", "market": "US", "price": 46.16, "preClose": 46.8}, "TQQQ": {"symbol": "TQQQ", "name": "\u7eb3\u6307\u4e09\u500d\u505a\u591aETF", "market": "US", "price": 58.46, "preClose": 58.56}, "TSLA": {"symbol": "TSLA", "name": "\u7279\u65af\u62c9", "market": "US", "price": 175.0, "preClose": 177.81}, "UBER": {"symbol": "UBER", "name": "\u4f18\u6b65", "market": "US", "price": 64.46, "preClose": 70.43}, "UPRO": {"symbol": "UPRO", "name": "\u4e09\u500d\u505a\u591a\u6807\u666e500ETF", "market": "US", "price": 66.79, "preClose": 66.89}, "VST": {"symbol": "VST", "name": "Vistra Energy Corp.", "market": "US", "price": 87.29, "preClose": 81.74}}
+{
+    "AAPL": {
+        "symbol": "AAPL",
+        "name": "苹果",
+        "market": "US",
+        "price": 182.74,
+        "preClose": 182.4
+    },
+    "ABNB": {
+        "symbol": "ABNB",
+        "name": "爱彼迎",
+        "market": "US",
+        "price": 157.9,
+        "preClose": 159.81
+    },
+    "ADBE": {
+        "symbol": "ADBE",
+        "name": "Adobe",
+        "market": "US",
+        "price": 488.1,
+        "preClose": 492.27
+    },
+    "AMZN": {
+        "symbol": "AMZN",
+        "name": "亚马逊",
+        "market": "US",
+        "price": 188.0,
+        "preClose": 188.76
+    },
+    "APP": {
+        "symbol": "APP",
+        "name": "AppLovin Corporation",
+        "market": "US",
+        "price": 74.0,
+        "preClose": 77.09
+    },
+    "ASML": {
+        "symbol": "ASML",
+        "name": "阿斯麦",
+        "market": "US",
+        "price": 911.47,
+        "preClose": 908.22
+    },
+    "AXP": {
+        "symbol": "AXP",
+        "name": "美国运通",
+        "market": "US",
+        "price": 236.24,
+        "preClose": 234.66
+    },
+    "BX": {
+        "symbol": "BX",
+        "name": "黑石",
+        "market": "US",
+        "price": 119.8,
+        "preClose": 121.5
+    },
+    "CELH": {
+        "symbol": "CELH",
+        "name": "Celsius Holdings, Inc.",
+        "market": "US",
+        "price": 77.13,
+        "preClose": 76.95
+    },
+    "COST": {
+        "symbol": "COST",
+        "name": "好市多",
+        "market": "US",
+        "price": 763.41,
+        "preClose": 771.31
+    },
+    "CRM": {
+        "symbol": "CRM",
+        "name": "赛富时",
+        "market": "US",
+        "price": 278.97,
+        "preClose": 277.18
+    },
+    "DIA": {
+        "symbol": "DIA",
+        "name": "道琼斯ETF",
+        "market": "US",
+        "price": 390.48,
+        "preClose": 388.74
+    },
+    "EDU": {
+        "symbol": "EDU",
+        "name": "新东方",
+        "market": "US",
+        "price": 82.32,
+        "preClose": 81.64
+    },
+    "ETN": {
+        "symbol": "ETN",
+        "name": "伊顿",
+        "market": "US",
+        "price": 330.4,
+        "preClose": 327.43
+    },
+    "GOOGL": {
+        "symbol": "GOOGL",
+        "name": "谷歌A",
+        "market": "US",
+        "price": 169.38,
+        "preClose": 171.25
+    },
+    "GS": {
+        "symbol": "GS",
+        "name": "高盛",
+        "market": "US",
+        "price": 446.95,
+        "preClose": 443.8
+    },
+    "HOOD": {
+        "symbol": "HOOD",
+        "name": "Robinhood",
+        "market": "US",
+        "price": 17.85,
+        "preClose": 17.99
+    },
+    "IWM": {
+        "symbol": "IWM",
+        "name": "罗素2000指数ETF",
+        "market": "US",
+        "price": 203.78,
+        "preClose": 204.97
+    },
+    "KO": {
+        "symbol": "KO",
+        "name": "可口可乐",
+        "market": "US",
+        "price": 62.85,
+        "preClose": 62.62
+    },
+    "LRCX": {
+        "symbol": "LRCX",
+        "name": "拉姆研究",
+        "market": "US",
+        "price": 913.28,
+        "preClose": 914.91
+    },
+    "LULU": {
+        "symbol": "LULU",
+        "name": "lululemon athletica",
+        "market": "US",
+        "price": 345.61,
+        "preClose": 349.85
+    },
+    "META": {
+        "symbol": "META",
+        "name": "Meta Platforms",
+        "market": "US",
+        "price": 472.6,
+        "preClose": 468.24
+    },
+    "MNST": {
+        "symbol": "MNST",
+        "name": "怪物饮料",
+        "market": "US",
+        "price": 54.3,
+        "preClose": 54.67
+    },
+    "MSFT": {
+        "symbol": "MSFT",
+        "name": "微软",
+        "market": "US",
+        "price": 410.54,
+        "preClose": 409.34
+    },
+    "MU": {
+        "symbol": "MU",
+        "name": "美光科技",
+        "market": "US",
+        "price": 119.32,
+        "preClose": 119.21
+    },
+    "NET": {
+        "symbol": "NET",
+        "name": "Cloudflare, Inc.",
+        "market": "US",
+        "price": 72.45,
+        "preClose": 74.13
+    },
+    "NFLX": {
+        "symbol": "NFLX",
+        "name": "奈飞",
+        "market": "US",
+        "price": 609.47,
+        "preClose": 606.0
+    },
+    "NKE": {
+        "symbol": "NKE",
+        "name": "耐克",
+        "market": "US",
+        "price": 93.59,
+        "preClose": 93.78
+    },
+    "NUGT": {
+        "symbol": "NUGT",
+        "name": "二倍做多黄金矿业指数ETF-Direxion",
+        "market": "US",
+        "price": 39.45,
+        "preClose": 39.4
+    },
+    "NVDA": {
+        "symbol": "NVDA",
+        "name": "英伟达",
+        "market": "US",
+        "price": 904.12,
+        "preClose": 905.54
+    },
+    "PEP": {
+        "symbol": "PEP",
+        "name": "百事可乐",
+        "market": "US",
+        "price": 177.41,
+        "preClose": 178.02
+    },
+    "PYPL": {
+        "symbol": "PYPL",
+        "name": "PayPal",
+        "market": "US",
+        "price": 63.81,
+        "preClose": 65.92
+    },
+    "QCOM": {
+        "symbol": "QCOM",
+        "name": "高通",
+        "market": "US",
+        "price": 180.55,
+        "preClose": 180.15
+    },
+    "QQQ": {
+        "symbol": "QQQ",
+        "name": "纳指100ETF",
+        "market": "US",
+        "price": 440.06,
+        "preClose": 440.32
+    },
+    "SMCI": {
+        "symbol": "SMCI",
+        "name": "超微电脑",
+        "market": "US",
+        "price": 822.64,
+        "preClose": 819.29
+    },
+    "SOXL": {
+        "symbol": "SOXL",
+        "name": "三倍做多半导体ETF-Direxion Daily",
+        "market": "US",
+        "price": 40.41,
+        "preClose": 40.36
+    },
+    "SQ": {
+        "symbol": "SQ",
+        "name": "Block",
+        "market": "US",
+        "price": 71.14,
+        "preClose": 71.6
+    },
+    "SSO": {
+        "symbol": "SSO",
+        "name": "两倍做多标普500ETF",
+        "market": "US",
+        "price": 75.11,
+        "preClose": 75.1
+    },
+    "TCEHY": {
+        "symbol": "TCEHY",
+        "name": "腾讯控股ADR",
+        "market": "US",
+        "price": 46.26,
+        "preClose": 46.8
+    },
+    "TQQQ": {
+        "symbol": "TQQQ",
+        "name": "纳指三倍做多ETF",
+        "market": "US",
+        "price": 58.45,
+        "preClose": 58.56
+    },
+    "TSLA": {
+        "symbol": "TSLA",
+        "name": "特斯拉",
+        "market": "US",
+        "price": 174.72,
+        "preClose": 177.81
+    },
+    "UBER": {
+        "symbol": "UBER",
+        "name": "优步",
+        "market": "US",
+        "price": 66.4,
+        "preClose": 70.43
+    },
+    "UPRO": {
+        "symbol": "UPRO",
+        "name": "三倍做多标普500ETF",
+        "market": "US",
+        "price": 66.86,
+        "preClose": 66.89
+    },
+    "VST": {
+        "symbol": "VST",
+        "name": "Vistra Energy Corp.",
+        "market": "US",
+        "price": 89.2,
+        "preClose": 81.74
+    }
+}

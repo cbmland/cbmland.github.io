@@ -1,1 +1,25 @@
-{"symbol": "LULU", "frame": "60", "strategy": "Vivid2", "mode": "", "realized": -147.99, "change": -12.16, "unrealized": -249.64, "unrealizedValueChange": -2.5, "realizedValueChange": -1.48, "marketValue": 9602, "marketValueChange": -3.98, "tradeNum": 44, "gainNum": 10, "loseNum": 10, "fromDate": "2023-11-09 00:30", "toDate": "2024-05-08 23:30", "regTime": "2024-05-08 23:31", "extend": "", "positionSize": 11, "positionPrice": 370.7, "startingCash": 10000.0, "cash": 5774.32, "arguments": "(BollBot x BollTop Cash 10K)"}
+{
+    "symbol": "LULU",
+    "frame": "60",
+    "strategy": "Vivid2",
+    "mode": "",
+    "realized": -147.99,
+    "change": -12.16,
+    "unrealized": -275.98,
+    "unrealizedValueChange": -2.75981,
+    "realizedValueChange": -1.48,
+    "marketValue": 9576.03,
+    "marketValueChange": -4.24,
+    "tradeNum": 44,
+    "gainNum": 10,
+    "loseNum": 10,
+    "fromDate": "2023-11-09 22:30",
+    "toDate": "2024-05-09 03:30",
+    "regTime": "2024-05-09 14:12",
+    "extend": "",
+    "positionSize": 11,
+    "positionPrice": 370.7,
+    "startingCash": 10000.0,
+    "cash": 5774.32,
+    "arguments": "(BollBot x BollTop Cash 10K)"
+}

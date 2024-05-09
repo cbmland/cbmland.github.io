@@ -1,1 +1,25 @@
-{"symbol": "SOXL", "frame": "60", "strategy": "Vivid2", "mode": "", "realized": 2886.83, "change": 321.39, "unrealized": 43.72, "unrealizedValueChange": 0.44, "realizedValueChange": 28.87, "marketValue": 12931, "marketValueChange": 29.31, "tradeNum": 55, "gainNum": 27, "loseNum": 4, "fromDate": "2023-11-09 00:30", "toDate": "2024-05-08 23:30", "regTime": "2024-05-08 23:31", "extend": "", "positionSize": 19, "positionPrice": 37.0, "startingCash": 10000.0, "cash": 12183.84, "arguments": "(BollBot x BollTop Cash 10K)"}
+{
+    "symbol": "SOXL",
+    "frame": "60",
+    "strategy": "Vivid2",
+    "mode": "",
+    "realized": 2886.83,
+    "change": 321.39,
+    "unrealized": 64.81,
+    "unrealizedValueChange": 0.648075,
+    "realizedValueChange": 28.87,
+    "marketValue": 12951.6,
+    "marketValueChange": 29.52,
+    "tradeNum": 55,
+    "gainNum": 27,
+    "loseNum": 4,
+    "fromDate": "2023-11-09 22:30",
+    "toDate": "2024-05-09 03:30",
+    "regTime": "2024-05-09 14:12",
+    "extend": "",
+    "positionSize": 19,
+    "positionPrice": 37.0,
+    "startingCash": 10000.0,
+    "cash": 12183.84,
+    "arguments": "(BollBot x BollTop Cash 10K)"
+}

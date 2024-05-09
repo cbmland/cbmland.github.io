@@ -1,1 +1,25 @@
-{"symbol": "NKE", "frame": "60", "strategy": "Stoch2", "mode": "", "realized": -348.28, "change": -34.16, "unrealized": 38.4, "unrealizedValueChange": 0.38, "realizedValueChange": -3.48, "marketValue": 9690, "marketValueChange": -3.1, "tradeNum": 64, "gainNum": 22, "loseNum": 11, "fromDate": "2023-11-09 00:30", "toDate": "2024-05-08 23:30", "regTime": "2024-05-08 23:31", "extend": "", "positionSize": 45, "positionPrice": 92.53, "startingCash": 10000.0, "cash": 5487.96, "arguments": "(BollBot x BollTop Cash 10K)"}
+{
+    "symbol": "NKE",
+    "frame": "60",
+    "strategy": "Stoch2",
+    "mode": "",
+    "realized": -400.51,
+    "change": -37.96,
+    "unrealized": 53.94,
+    "unrealizedValueChange": 0.539446,
+    "realizedValueChange": -4.01,
+    "marketValue": 9653.43,
+    "marketValueChange": -3.47,
+    "tradeNum": 60,
+    "gainNum": 20,
+    "loseNum": 11,
+    "fromDate": "2023-11-09 22:30",
+    "toDate": "2024-05-09 03:30",
+    "regTime": "2024-05-09 14:13",
+    "extend": "",
+    "positionSize": 41,
+    "positionPrice": 92.27,
+    "startingCash": 10000.0,
+    "cash": 5816.24,
+    "arguments": "(BollBot x BollTop Cash 10K)"
+}

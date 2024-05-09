@@ -1,1 +1,25 @@
-{"symbol": "LULU", "frame": "60", "strategy": "Revival2", "mode": "", "realized": -488.37, "change": -56.97, "unrealized": -496.56, "unrealizedValueChange": -4.97, "realizedValueChange": -4.88, "marketValue": 9015, "marketValueChange": -9.85, "tradeNum": 29, "gainNum": 3, "loseNum": 9, "fromDate": "2023-11-09 00:30", "toDate": "2024-05-08 23:30", "regTime": "2024-05-08 23:30", "extend": "", "positionSize": 15, "positionPrice": 381.11, "startingCash": 10000.0, "cash": 3795.0, "arguments": "(BUY:SMA30 SELL:BollTop Cash 10K)"}
+{
+    "symbol": "LULU",
+    "frame": "60",
+    "strategy": "Revival2",
+    "mode": "",
+    "realized": -488.37,
+    "change": -56.97,
+    "unrealized": -531.98,
+    "unrealizedValueChange": -5.31976,
+    "realizedValueChange": -4.88,
+    "marketValue": 8979.66,
+    "marketValueChange": -10.2,
+    "tradeNum": 29,
+    "gainNum": 3,
+    "loseNum": 9,
+    "fromDate": "2023-11-09 22:30",
+    "toDate": "2024-05-09 03:30",
+    "regTime": "2024-05-09 14:12",
+    "extend": "",
+    "positionSize": 15,
+    "positionPrice": 381.08,
+    "startingCash": 10000.0,
+    "cash": 3795.51,
+    "arguments": "(BUY:SMA30 SELL:BollTop Cash 10K)"
+}

@@ -1,1 +1,25 @@
-{"symbol": "QCOM", "frame": "60", "strategy": "Stoch2", "mode": "", "realized": 616.0, "change": 67.56, "unrealized": 259.79, "unrealizedValueChange": 2.6, "realizedValueChange": 6.16, "marketValue": 10876, "marketValueChange": 8.76, "tradeNum": 55, "gainNum": 24, "loseNum": 5, "fromDate": "2023-11-09 00:30", "toDate": "2024-05-08 23:30", "regTime": "2024-05-08 23:31", "extend": "", "positionSize": 20, "positionPrice": 166.5, "startingCash": 10000.0, "cash": 7285.98, "arguments": "(BollBot x BollTop Cash 10K)"}
+{
+    "symbol": "QCOM",
+    "frame": "60",
+    "strategy": "Stoch2",
+    "mode": "",
+    "realized": 616.0,
+    "change": 67.56,
+    "unrealized": 280.99,
+    "unrealizedValueChange": 2.80987,
+    "realizedValueChange": 6.16,
+    "marketValue": 10897.0,
+    "marketValueChange": 8.97,
+    "tradeNum": 55,
+    "gainNum": 24,
+    "loseNum": 5,
+    "fromDate": "2023-11-09 22:30",
+    "toDate": "2024-05-09 03:30",
+    "regTime": "2024-05-09 14:12",
+    "extend": "",
+    "positionSize": 20,
+    "positionPrice": 166.5,
+    "startingCash": 10000.0,
+    "cash": 7285.98,
+    "arguments": "(BollBot x BollTop Cash 10K)"
+}

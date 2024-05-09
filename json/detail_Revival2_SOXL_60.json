@@ -1,1 +1,25 @@
-{"symbol": "SOXL", "frame": "60", "strategy": "Revival2", "mode": "", "realized": 3351.92, "change": 330.38, "unrealized": -495.35, "unrealizedValueChange": -4.95, "realizedValueChange": 33.52, "marketValue": 12857, "marketValueChange": 28.57, "tradeNum": 45, "gainNum": 19, "loseNum": 3, "fromDate": "2023-11-09 00:30", "toDate": "2024-05-08 23:30", "regTime": "2024-05-08 23:30", "extend": "", "positionSize": 258, "positionPrice": 41.22, "startingCash": 10000.0, "cash": 2717.17, "arguments": "(BUY:SMA30 SELL:BollTop Cash 10K)"}
+{
+    "symbol": "SOXL",
+    "frame": "60",
+    "strategy": "Revival2",
+    "mode": "",
+    "realized": 3351.92,
+    "change": 330.38,
+    "unrealized": -208.97,
+    "unrealizedValueChange": -2.08966,
+    "realizedValueChange": 33.52,
+    "marketValue": 13143.0,
+    "marketValueChange": 31.43,
+    "tradeNum": 45,
+    "gainNum": 19,
+    "loseNum": 3,
+    "fromDate": "2023-11-09 22:30",
+    "toDate": "2024-05-09 03:30",
+    "regTime": "2024-05-09 14:12",
+    "extend": "",
+    "positionSize": 258,
+    "positionPrice": 41.22,
+    "startingCash": 10000.0,
+    "cash": 2717.17,
+    "arguments": "(BUY:SMA30 SELL:BollTop Cash 10K)"
+}

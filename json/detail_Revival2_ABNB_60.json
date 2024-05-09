@@ -1,1 +1,25 @@
-{"symbol": "ABNB", "frame": "60", "strategy": "Revival2", "mode": "", "realized": 1391.88, "change": 137.84, "unrealized": -55.13, "unrealizedValueChange": -0.55, "realizedValueChange": 13.92, "marketValue": 11337, "marketValueChange": 13.37, "tradeNum": 46, "gainNum": 22, "loseNum": 0, "fromDate": "2023-11-09 00:30", "toDate": "2024-05-08 23:30", "regTime": "2024-05-08 23:30", "extend": "", "positionSize": 48, "positionPrice": 159.05, "startingCash": 10000.0, "cash": 3757.55, "arguments": "(BUY:SMA30 SELL:BollTop Cash 10K)"}
+{
+    "symbol": "ABNB",
+    "frame": "60",
+    "strategy": "Revival2",
+    "mode": "",
+    "realized": 1391.88,
+    "change": 137.84,
+    "unrealized": -55.13,
+    "unrealizedValueChange": -0.551288,
+    "realizedValueChange": 13.92,
+    "marketValue": 11336.7,
+    "marketValueChange": 13.37,
+    "tradeNum": 46,
+    "gainNum": 22,
+    "loseNum": 0,
+    "fromDate": "2023-11-09 22:30",
+    "toDate": "2024-05-09 03:30",
+    "regTime": "2024-05-09 14:12",
+    "extend": "",
+    "positionSize": 48,
+    "positionPrice": 159.05,
+    "startingCash": 10000.0,
+    "cash": 3757.55,
+    "arguments": "(BUY:SMA30 SELL:BollTop Cash 10K)"
+}

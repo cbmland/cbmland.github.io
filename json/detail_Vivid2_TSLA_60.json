@@ -1,1 +1,25 @@
-{"symbol": "TSLA", "frame": "60", "strategy": "Vivid2", "mode": "", "realized": -575.04, "change": -37.85, "unrealized": 185.75, "unrealizedValueChange": 1.86, "realizedValueChange": -5.75, "marketValue": 9611, "marketValueChange": -3.89, "tradeNum": 48, "gainNum": 9, "loseNum": 14, "fromDate": "2023-11-09 00:30", "toDate": "2024-05-08 23:30", "regTime": "2024-05-08 23:31", "extend": "", "positionSize": 34, "positionPrice": 169.48, "startingCash": 10000.0, "cash": 3662.49, "arguments": "(BollBot x BollTop Cash 10K)"}
+{
+    "symbol": "TSLA",
+    "frame": "60",
+    "strategy": "Vivid2",
+    "mode": "",
+    "realized": -575.04,
+    "change": -37.85,
+    "unrealized": 178.01,
+    "unrealizedValueChange": 1.78013,
+    "realizedValueChange": -5.75,
+    "marketValue": 9602.97,
+    "marketValueChange": -3.97,
+    "tradeNum": 48,
+    "gainNum": 9,
+    "loseNum": 14,
+    "fromDate": "2023-11-09 22:30",
+    "toDate": "2024-05-09 03:30",
+    "regTime": "2024-05-09 14:12",
+    "extend": "",
+    "positionSize": 34,
+    "positionPrice": 169.48,
+    "startingCash": 10000.0,
+    "cash": 3662.49,
+    "arguments": "(BollBot x BollTop Cash 10K)"
+}
