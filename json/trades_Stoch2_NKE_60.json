@@ -11,7 +11,7 @@
         "barTime": "2024-05-11 01:30",
         "content": "CREATE BUY@90.38 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
@@ -25,21 +25,21 @@
         "barTime": "2024-05-07 00:30",
         "content": "EXPIRED BUY@89.44 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-05-06 21:30",
         "content": "SOLD@92.70 Size:-10 Gain:0.47%",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-05-04 03:30",
         "content": "CREATE SELL@92.15 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
@@ -53,49 +53,49 @@
         "barTime": "2024-05-02 03:30",
         "content": "CREATE BUY@89.44 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-05-02 02:30",
         "content": "CREATE BUY@90.40 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-05-02 01:30",
         "content": "CREATE BUY@89.78 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-05-02 00:30",
         "content": "CREATE BUY@89.41 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-05-01 23:30",
         "content": "CREATE BUY@89.65 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-05-01 21:30",
         "content": "BOUGHT@91.58 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-05-01 03:30",
         "content": "BOUGHT@92.26 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
@@ -109,14 +109,14 @@
         "barTime": "2024-04-30 23:30",
         "content": "CREATE BUY@92.26 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-30 22:30",
         "content": "CREATE BUY@92.04 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
@@ -130,545 +130,545 @@
         "barTime": "2024-04-25 21:30",
         "content": "BOUGHT@93.80 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-23 00:30",
         "content": "CREATE BUY@93.80 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-19 00:30",
         "content": "SOLD@95.23 Size:-10 Gain:-4.33%",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-18 23:30",
         "content": "CREATE SELL@95.23 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-15 22:30",
         "content": "SOLD@93.24 Size:-10 Gain:-6.33%",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-15 21:30",
         "content": "CREATE SELL@93.24 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-13 03:30",
         "content": "CREATE SELL@92.00 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-13 02:30",
         "content": "CREATE SELL@91.67 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-13 01:30",
         "content": "CREATE SELL@91.94 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-13 00:30",
         "content": "CREATE SELL@91.80 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-12 23:30",
         "content": "CREATE SELL@92.43 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-12 22:30",
         "content": "CREATE SELL@92.28 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-12 21:30",
         "content": "CREATE SELL@92.13 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-11 03:30",
         "content": "CREATE BUY@88.11 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-05 21:30",
         "content": "CREATE BUY@88.64 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-05 00:30",
         "content": "CREATE BUY@89.39 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-04 23:30",
         "content": "CREATE BUY@89.56 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-03 22:30",
         "content": "CREATE BUY@89.97 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-03 21:30",
         "content": "CREATE BUY@89.72 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-03 03:30",
         "content": "CREATE BUY@90.04 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-03 02:30",
         "content": "CREATE BUY@90.21 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-04-02 01:30",
         "content": "CREATE BUY@91.40 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-27 22:30",
         "content": "CREATE BUY@92.18 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-27 21:30",
         "content": "CREATE BUY@91.61 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-26 02:30",
         "content": "CREATE BUY@92.69 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-26 00:30",
         "content": "CREATE BUY@92.52 Size:13",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-22 21:30",
         "content": "BOUGHT@93.92 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-18 21:30",
         "content": "CREATE BUY@98.36 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-16 03:30",
         "content": "CREATE BUY@98.64 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-16 02:30",
         "content": "CREATE BUY@98.96 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-12 23:30",
         "content": "SOLD@101.12 Size:-10 Gain:0.06%",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-12 22:30",
         "content": "CREATE SELL@101.12 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-12 21:30",
         "content": "CREATE SELL@101.07 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-12 03:30",
         "content": "CREATE SELL@101.08 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-12 02:30",
         "content": "CREATE SELL@101.45 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-07 22:30",
         "content": "CREATE BUY@97.02 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-07 04:30",
         "content": "CREATE BUY@96.65 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-07 02:30",
         "content": "CREATE BUY@96.38 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-07 01:30",
         "content": "CREATE BUY@96.87 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-07 00:30",
         "content": "CREATE BUY@97.01 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-06 23:30",
         "content": "CREATE BUY@96.90 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-06 22:30",
         "content": "CREATE BUY@97.24 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-05 22:30",
         "content": "BOUGHT@98.93 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-05 04:30",
         "content": "CREATE BUY@98.54 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-05 03:30",
         "content": "CREATE BUY@98.84 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-05 02:30",
         "content": "CREATE BUY@98.93 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-05 00:30",
         "content": "CREATE BUY@98.84 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-04 22:30",
         "content": "BOUGHT@101.54 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-02 02:30",
         "content": "CREATE BUY@101.54 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-02 01:30",
         "content": "CREATE BUY@101.57 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-02 00:30",
         "content": "CREATE BUY@101.45 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-01 23:30",
         "content": "CREATE BUY@101.21 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-03-01 22:30",
         "content": "CREATE BUY@101.47 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-28 02:30",
         "content": "CREATE BUY@103.47 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-22 23:30",
         "content": "SOLD@104.80 Size:-8 Gain:3.79%",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-22 22:30",
         "content": "CREATE SELL@104.80 Size:8",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-08 23:30",
         "content": "SOLD@104.50 Size:-10 Gain:3.50%",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-08 22:30",
         "content": "CREATE SELL@104.50 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-08 04:30",
         "content": "CREATE SELL@103.79 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-08 03:30",
         "content": "CREATE SELL@103.83 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-08 01:30",
         "content": "SOLD@103.66 Size:-10 Gain:2.67%",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-08 00:30",
         "content": "CREATE SELL@103.66 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-02 22:30",
         "content": "BOUGHT@100.60 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-02 03:30",
         "content": "CREATE BUY@100.60 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-02 02:30",
         "content": "CREATE BUY@100.10 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-01 23:30",
         "content": "BOUGHT@100.98 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-02-01 22:30",
         "content": "CREATE BUY@100.98 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-01-31 00:30",
         "content": "EXPIRED BUY@99.48 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-01-30 23:30",
         "content": "SOLD@103.90 Size:-10 Gain:1.68%",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-01-30 22:30",
         "content": "CREATE SELL@103.89 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-01-30 01:30",
         "content": "SOLD@102.57 Size:-10 Gain:0.38%",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-01-30 00:30",
         "content": "CREATE SELL@102.56 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-01-29 22:30",
         "content": "SOLD@103.00 Size:-10 Gain:0.80%",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-01-27 04:30",
         "content": "CREATE SELL@102.75 Size:10",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-01-26 03:30",
         "content": "CREATE BUY@99.48 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-01-24 00:30",
         "content": "EXPIRED BUY@99.48 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-01-23 00:30",
         "content": "EXPIRED BUY@99.32 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     },
     {
         "symbol": "NKE",
         "barTime": "2024-01-22 22:30",
         "content": "EXPIRED BUY@99.47 Size:12",
         "strategy": "Stoch2",
-        "upTime": "2024-05-11 03:31"
+        "upTime": "2024-05-11 04:03"
     }
 ]
