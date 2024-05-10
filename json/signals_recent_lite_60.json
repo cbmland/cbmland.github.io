@@ -3,31 +3,42 @@
         {
             "symbol": "TCEHY",
             "barTime": "2024-05-11 01:30",
-            "content": "CREATE SELL@47.37 Size:0",
+            "content": "CREATE SELL@47.39 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
             "key": 0,
             "winner_rate": 1.0,
             "marketValueChange": 29.43
         },
         {
+            "symbol": "APP",
+            "barTime": "2024-05-11 01:30",
+            "content": "CREATE SELL@86.50 Size:0",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 02:01",
+            "frame": "60",
+            "key": 9,
+            "winner_rate": 1.0,
+            "marketValueChange": 30.61
+        },
+        {
             "symbol": "HOOD",
             "barTime": "2024-05-11 01:30",
-            "content": "CREATE BUY@16.38 Size:88",
+            "content": "CREATE BUY@16.36 Size:88",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 01:30",
+            "upTime": "2024-05-11 02:00",
             "frame": "60",
-            "key": 16,
+            "key": 15,
             "winner_rate": 0.8461538461538461,
-            "marketValueChange": 16.32
+            "marketValueChange": 16.24
         },
         {
             "symbol": "CELH",
             "barTime": "2024-05-11 00:30",
             "content": "CREATE SELL@83.20 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
             "key": 22,
             "winner_rate": 0.86,
@@ -38,31 +49,31 @@
             "barTime": "2024-05-11 00:30",
             "content": "SOLD@40.91 Size:-32 Gain:5.72%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 23,
+            "key": 24,
             "winner_rate": 0.875,
-            "marketValueChange": 30.15
+            "marketValueChange": 30.18
         },
         {
             "symbol": "MU",
             "barTime": "2024-05-11 00:30",
             "content": "SOLD@119.90 Size:-10 Gain:4.33%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 01:30",
+            "upTime": "2024-05-11 02:00",
             "frame": "60",
-            "key": 24,
+            "key": 25,
             "winner_rate": 0.8846153846153846,
-            "marketValueChange": 16.12
+            "marketValueChange": 16.14
         },
         {
             "symbol": "VST",
             "barTime": "2024-05-10 23:30",
             "content": "CREATE SELL@93.77 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 31,
+            "key": 32,
             "winner_rate": 0.9473684210526315,
             "marketValueChange": 14.79
         },
@@ -71,97 +82,97 @@
             "barTime": "2024-05-10 23:30",
             "content": "SOLD@68.09 Size:-17 Gain:8.57%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 35,
+            "key": 36,
             "winner_rate": 0.9583333333333334,
-            "marketValueChange": 13.51
+            "marketValueChange": 13.65
         },
         {
             "symbol": "SOXL",
             "barTime": "2024-05-10 21:30",
             "content": "CREATE BUY@40.40 Size:41",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 01:30",
+            "upTime": "2024-05-11 02:00",
             "frame": "60",
-            "key": 54,
+            "key": 55,
             "winner_rate": 0.8636363636363636,
-            "marketValueChange": 33.03
+            "marketValueChange": 33.33
         },
         {
             "symbol": "GS",
             "barTime": "2024-05-10 21:30",
             "content": "SOLD@456.77 Size:-2 Gain:15.24%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 01:30",
+            "upTime": "2024-05-11 02:00",
             "frame": "60",
             "key": 56,
             "winner_rate": 0.95,
-            "marketValueChange": 17.85
+            "marketValueChange": 17.91
         },
         {
             "symbol": "AMZN",
             "barTime": "2024-05-10 02:30",
             "content": "SOLD@190.63 Size:-6 Gain:9.97%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 01:30",
+            "upTime": "2024-05-11 02:00",
             "frame": "60",
             "key": 67,
             "winner_rate": 1.0,
-            "marketValueChange": 22.18
+            "marketValueChange": 22.29
         },
         {
             "symbol": "CELH",
             "barTime": "2024-05-10 02:30",
             "content": "SOLD@83.75 Size:-17 Gain:13.63%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 01:30",
+            "upTime": "2024-05-11 02:00",
             "frame": "60",
             "key": 69,
             "winner_rate": 0.9130434782608695,
-            "marketValueChange": 42.8
+            "marketValueChange": 42.73
         },
         {
             "symbol": "APP",
             "barTime": "2024-05-10 01:30",
             "content": "SOLD@84.97 Size:-14 Gain:-0.92%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 01:30",
+            "upTime": "2024-05-11 02:00",
             "frame": "60",
             "key": 74,
             "winner_rate": 0.8695652173913043,
-            "marketValueChange": 15.62
+            "marketValueChange": 15.61
         },
         {
             "symbol": "NET",
             "barTime": "2024-05-09 03:30",
             "content": "CREATE BUY@71.73 Size:19",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 89,
+            "key": 88,
             "winner_rate": 0.8181818181818182,
-            "marketValueChange": 11.43
+            "marketValueChange": 11.24
         },
         {
             "symbol": "VST",
             "barTime": "2024-05-09 03:30",
             "content": "SOLD@90.05 Size:-13 Gain:27.90%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 01:30",
+            "upTime": "2024-05-11 02:00",
             "frame": "60",
-            "key": 90,
+            "key": 89,
             "winner_rate": 0.9473684210526315,
-            "marketValueChange": 14.87
+            "marketValueChange": 14.94
         },
         {
             "symbol": "NFLX",
             "barTime": "2024-05-09 02:30",
             "content": "CREATE SELL@611.20 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 91,
+            "key": 90,
             "winner_rate": 0.9583333333333334,
             "marketValueChange": 12.61
         },
@@ -170,20 +181,20 @@
             "barTime": "2024-05-09 02:30",
             "content": "CREATE BUY@898.07 Size:1",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 92,
+            "key": 91,
             "winner_rate": 0.967741935483871,
-            "marketValueChange": 12.28
+            "marketValueChange": 12.33
         },
         {
             "symbol": "GOOGL",
             "barTime": "2024-05-08 21:30",
             "content": "CREATE SELL@170.00 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 103,
+            "key": 102,
             "winner_rate": 0.8717948717948718,
             "marketValueChange": 14.48
         },
@@ -192,9 +203,9 @@
             "barTime": "2024-05-08 03:30",
             "content": "CREATE SELL@119.21 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 109,
+            "key": 108,
             "winner_rate": 0.925,
             "marketValueChange": 23.43
         },
@@ -203,42 +214,31 @@
             "barTime": "2024-05-08 03:30",
             "content": "CREATE SELL@819.29 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 110,
+            "key": 109,
             "winner_rate": 0.9803921568627451,
             "marketValueChange": 125.35
-        },
-        {
-            "symbol": "APP",
-            "barTime": "2024-05-08 02:30",
-            "content": "CREATE SELL@77.62 Size:0",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
-            "frame": "60",
-            "key": 111,
-            "winner_rate": 1.0,
-            "marketValueChange": 30.61
         },
         {
             "symbol": "EDU",
             "barTime": "2024-05-08 01:30",
             "content": "CREATE BUY@80.45 Size:17",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 112,
+            "key": 110,
             "winner_rate": 1.0,
-            "marketValueChange": 13.75
+            "marketValueChange": 13.73
         },
         {
             "symbol": "EDU",
             "barTime": "2024-05-08 00:30",
             "content": "CREATE BUY@80.52 Size:17",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 118,
+            "key": 116,
             "winner_rate": 0.9230769230769231,
             "marketValueChange": 13.24
         },
@@ -247,9 +247,9 @@
             "barTime": "2024-05-06 22:30",
             "content": "SOLD@913.07 Size:-1 Gain:8.07%",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 127,
+            "key": 125,
             "winner_rate": 0.8571428571428571,
             "marketValueChange": 10.97
         },
@@ -258,24 +258,24 @@
             "barTime": "2024-05-04 02:30",
             "content": "SOLD@56.85 Size:-20 Gain:3.47%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 01:31",
+            "upTime": "2024-05-11 02:01",
             "frame": "60",
-            "key": 128,
+            "key": 127,
             "winner_rate": 0.84,
-            "marketValueChange": 14.48
+            "marketValueChange": 14.65
         },
         {
             "symbol": "TQQQ",
             "barTime": "2024-05-04 01:30",
             "content": "SOLD@56.60 Size:-20 Gain:0.62%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 01:30",
+            "upTime": "2024-05-11 02:00",
             "frame": "60",
-            "key": 130,
+            "key": 129,
             "winner_rate": 0.9333333333333333,
-            "marketValueChange": 18.73
+            "marketValueChange": 19.05
         }
     ],
-    "updated": "2024-05-11 01:31:41",
+    "updated": "2024-05-11 02:01:40",
     "timeframe": "60"
 }
