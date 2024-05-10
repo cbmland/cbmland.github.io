@@ -1,1037 +1,1037 @@
 {
     "items": [
         {
-            "symbol": "TCEHY",
-            "barTime": "2024-05-11 02:30",
-            "content": "CREATE SELL@47.42 Size:0",
+            "symbol": "EDU",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE SELL@83.98 Size:14",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
             "key": 0
         },
         {
-            "symbol": "AAPL",
-            "barTime": "2024-05-11 02:30",
-            "content": "CREATE BUY@181.03 Size:7",
+            "symbol": "TCEHY",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE SELL@47.47 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
             "key": 1
         },
         {
-            "symbol": "AMZN",
-            "barTime": "2024-05-11 02:30",
-            "content": "CREATE BUY@185.81 Size:7",
+            "symbol": "TSLA",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE BUY@167.49 Size:6",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
             "key": 2
+        },
+        {
+            "symbol": "AMZN",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE BUY@185.98 Size:7",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 3
+        },
+        {
+            "symbol": "PEP",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE SELL@179.98 Size:0",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 4
+        },
+        {
+            "symbol": "MNST",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE SELL@55.59 Size:17",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 5
+        },
+        {
+            "symbol": "NUGT",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE SELL@41.97 Size:0",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 6
+        },
+        {
+            "symbol": "ABNB",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE BUY@144.36 Size:9",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 7
+        },
+        {
+            "symbol": "SQ",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE BUY@70.55 Size:21",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 8
+        },
+        {
+            "symbol": "PYPL",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE BUY@62.41 Size:21",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 9
+        },
+        {
+            "symbol": "HOOD",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE BUY@16.38 Size:82",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 10
+        },
+        {
+            "symbol": "APP",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE SELL@86.99 Size:0",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 11
+        },
+        {
+            "symbol": "VST",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE SELL@93.20 Size:0",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 12
+        },
+        {
+            "symbol": "MSFT",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE SELL@414.83 Size:2",
+            "strategy": "Vivid2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 13
+        },
+        {
+            "symbol": "PEP",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE SELL@179.98 Size:0",
+            "strategy": "Vivid2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 14
+        },
+        {
+            "symbol": "NKE",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE BUY@90.07 Size:13",
+            "strategy": "Vivid2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 15
+        },
+        {
+            "symbol": "MU",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE SELL@120.89 Size:10",
+            "strategy": "Vivid2",
+            "upTime": "2024-05-11 03:30",
+            "frame": "60",
+            "key": 16
+        },
+        {
+            "symbol": "PYPL",
+            "barTime": "2024-05-11 03:30",
+            "content": "CREATE BUY@62.41 Size:20",
+            "strategy": "Vivid2",
+            "upTime": "2024-05-11 03:30",
+            "frame": "60",
+            "key": 17
+        },
+        {
+            "symbol": "PEP",
+            "barTime": "2024-05-11 03:30",
+            "content": "SOLD@179.96 Size:-6 Gain:5.59%",
+            "strategy": "Revival2",
+            "upTime": "2024-05-11 03:30",
+            "frame": "60",
+            "key": 18
+        },
+        {
+            "symbol": "MU",
+            "barTime": "2024-05-11 03:30",
+            "content": "SOLD@120.87 Size:-10 Gain:5.44%",
+            "strategy": "Revival2",
+            "upTime": "2024-05-11 03:30",
+            "frame": "60",
+            "key": 19
+        },
+        {
+            "symbol": "AAPL",
+            "barTime": "2024-05-11 02:30",
+            "content": "CREATE BUY@181.11 Size:7",
+            "strategy": "Stoch2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 20
         },
         {
             "symbol": "DIA",
             "barTime": "2024-05-11 02:30",
             "content": "SOLD@394.85 Size:-2 Gain:2.55%",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 3
-        },
-        {
-            "symbol": "PEP",
-            "barTime": "2024-05-11 02:30",
-            "content": "CREATE SELL@179.88 Size:0",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 4
+            "key": 21
         },
         {
             "symbol": "ASML",
             "barTime": "2024-05-11 02:30",
-            "content": "CREATE SELL@930.01 Size:1",
+            "content": "SOLD@930.50 Size:-1 Gain:1.93%",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 5
-        },
-        {
-            "symbol": "MNST",
-            "barTime": "2024-05-11 02:30",
-            "content": "CREATE SELL@55.57 Size:17",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 6
-        },
-        {
-            "symbol": "NUGT",
-            "barTime": "2024-05-11 02:30",
-            "content": "CREATE SELL@42.12 Size:0",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 7
+            "key": 22
         },
         {
             "symbol": "GS",
             "barTime": "2024-05-11 02:30",
-            "content": "CREATE SELL@455.41 Size:0",
+            "content": "CREATE SELL@455.95 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 8
-        },
-        {
-            "symbol": "ABNB",
-            "barTime": "2024-05-11 02:30",
-            "content": "CREATE BUY@144.36 Size:9",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 9
-        },
-        {
-            "symbol": "APP",
-            "barTime": "2024-05-11 02:30",
-            "content": "CREATE SELL@86.59 Size:0",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 10
-        },
-        {
-            "symbol": "AXP",
-            "barTime": "2024-05-11 02:30",
-            "content": "CREATE SELL@241.18 Size:0",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 11
+            "key": 23
         },
         {
             "symbol": "HOOD",
             "barTime": "2024-05-11 02:30",
-            "content": "CREATE BUY@16.24 Size:89",
+            "content": "CREATE BUY@16.36 Size:88",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 12
-        },
-        {
-            "symbol": "PEP",
-            "barTime": "2024-05-11 02:30",
-            "content": "CREATE SELL@179.88 Size:6",
-            "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
-            "frame": "60",
-            "key": 13
+            "key": 24
         },
         {
             "symbol": "NKE",
             "barTime": "2024-05-11 01:30",
             "content": "CREATE BUY@90.38 Size:13",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 14
+            "key": 25
         },
         {
             "symbol": "SSO",
             "barTime": "2024-05-11 01:30",
             "content": "CREATE SELL@76.03 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 15
+            "key": 26
         },
         {
             "symbol": "UPRO",
             "barTime": "2024-05-11 01:30",
             "content": "CREATE SELL@68.14 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 16
+            "key": 27
         },
         {
             "symbol": "BX",
             "barTime": "2024-05-11 01:30",
             "content": "SOLD@123.08 Size:-8 Gain:3.59%",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 17
+            "key": 28
         },
         {
-            "symbol": "PYPL",
+            "symbol": "AXP",
             "barTime": "2024-05-11 01:30",
-            "content": "BOUGHT@63.12 Size:21",
+            "content": "CREATE SELL@241.29 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 18
+            "key": 29
         },
         {
             "symbol": "TSLA",
             "barTime": "2024-05-11 01:30",
             "content": "CREATE BUY@166.86 Size:7",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 19
+            "key": 30
         },
         {
             "symbol": "GOOGL",
             "barTime": "2024-05-11 01:30",
             "content": "CREATE BUY@166.83 Size:8",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 20
+            "key": 31
         },
         {
             "symbol": "KO",
             "barTime": "2024-05-11 01:30",
             "content": "CREATE SELL@63.22 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 21
+            "key": 32
         },
         {
             "symbol": "ASML",
             "barTime": "2024-05-11 01:30",
             "content": "SOLD@928.02 Size:-1 Gain:-1.90%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 22
+            "key": 33
         },
         {
             "symbol": "MNST",
             "barTime": "2024-05-11 01:30",
             "content": "SOLD@55.55 Size:-18 Gain:0.12%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 23
+            "key": 34
         },
         {
             "symbol": "AAPL",
             "barTime": "2024-05-11 01:30",
             "content": "CREATE BUY@180.91 Size:6",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 24
-        },
-        {
-            "symbol": "LRCX",
-            "barTime": "2024-05-11 01:30",
-            "content": "CREATE BUY@906.05 Size:1",
-            "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
-            "frame": "60",
-            "key": 25
+            "key": 35
         },
         {
             "symbol": "ASML",
             "barTime": "2024-05-11 01:30",
             "content": "SOLD@928.02 Size:-1 Gain:-2.20%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 26
+            "key": 36
+        },
+        {
+            "symbol": "LRCX",
+            "barTime": "2024-05-11 01:30",
+            "content": "CREATE BUY@906.05 Size:1",
+            "strategy": "Revival2",
+            "upTime": "2024-05-11 03:30",
+            "frame": "60",
+            "key": 37
         },
         {
             "symbol": "COST",
             "barTime": "2024-05-11 00:30",
             "content": "CREATE SELL@782.72 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 27
+            "key": 38
         },
         {
             "symbol": "UBER",
             "barTime": "2024-05-11 00:30",
             "content": "SOLD@67.02 Size:-15 Gain:-11.06%",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 28
+            "key": 39
         },
         {
             "symbol": "CELH",
             "barTime": "2024-05-11 00:30",
             "content": "CREATE SELL@83.20 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 29
+            "key": 40
         },
         {
             "symbol": "SOXL",
             "barTime": "2024-05-11 00:30",
             "content": "SOLD@40.91 Size:-32 Gain:5.72%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 30
-        },
-        {
-            "symbol": "MU",
-            "barTime": "2024-05-11 00:30",
-            "content": "SOLD@119.90 Size:-10 Gain:4.33%",
-            "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
-            "frame": "60",
-            "key": 31
+            "key": 41
         },
         {
             "symbol": "AXP",
             "barTime": "2024-05-11 00:30",
             "content": "CREATE SELL@240.81 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 32
+            "key": 42
         },
         {
             "symbol": "MSFT",
             "barTime": "2024-05-11 00:30",
             "content": "SOLD@413.81 Size:-2 Gain:0.54%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 33
+            "key": 43
         },
         {
             "symbol": "KO",
             "barTime": "2024-05-11 00:30",
             "content": "EXPIRED BUY@61.37 Size:20",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 34
+            "key": 44
         },
         {
             "symbol": "AXP",
             "barTime": "2024-05-11 00:30",
             "content": "SOLD@241.06 Size:-4 Gain:6.57%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 35
+            "key": 45
         },
         {
             "symbol": "ADBE",
             "barTime": "2024-05-10 23:30",
             "content": "CREATE BUY@479.49 Size:2",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 36
+            "key": 46
         },
         {
             "symbol": "QCOM",
             "barTime": "2024-05-10 23:30",
             "content": "SOLD@182.28 Size:-6 Gain:9.48%",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 37
-        },
-        {
-            "symbol": "VST",
-            "barTime": "2024-05-10 23:30",
-            "content": "CREATE SELL@93.77 Size:0",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 38
+            "key": 47
         },
         {
             "symbol": "QQQ",
             "barTime": "2024-05-10 23:30",
             "content": "CREATE SELL@441.61 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 39
+            "key": 48
         },
         {
             "symbol": "COST",
             "barTime": "2024-05-10 23:30",
             "content": "CREATE SELL@781.99 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 40
+            "key": 49
         },
         {
             "symbol": "LRCX",
             "barTime": "2024-05-10 23:30",
             "content": "CREATE SELL@915.75 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 41
-        },
-        {
-            "symbol": "UPRO",
-            "barTime": "2024-05-10 23:30",
-            "content": "SOLD@68.09 Size:-17 Gain:8.57%",
-            "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 42
+            "key": 50
         },
         {
             "symbol": "SSO",
             "barTime": "2024-05-10 23:30",
             "content": "SOLD@76.02 Size:-14 Gain:5.75%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 43
+            "key": 51
+        },
+        {
+            "symbol": "UPRO",
+            "barTime": "2024-05-10 23:30",
+            "content": "SOLD@68.09 Size:-17 Gain:8.57%",
+            "strategy": "Vivid2",
+            "upTime": "2024-05-11 03:31",
+            "frame": "60",
+            "key": 52
         },
         {
             "symbol": "QCOM",
             "barTime": "2024-05-10 23:30",
             "content": "CREATE SELL@181.91 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 44
+            "key": 53
         },
         {
             "symbol": "DIA",
             "barTime": "2024-05-10 23:30",
             "content": "SOLD@394.63 Size:-3 Gain:4.07%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 45
-        },
-        {
-            "symbol": "SSO",
-            "barTime": "2024-05-10 23:30",
-            "content": "SOLD@76.02 Size:-13 Gain:1.76%",
-            "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
-            "frame": "60",
-            "key": 46
+            "key": 54
         },
         {
             "symbol": "UPRO",
             "barTime": "2024-05-10 23:30",
             "content": "SOLD@68.09 Size:-15 Gain:1.65%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 47
+            "key": 55
+        },
+        {
+            "symbol": "SSO",
+            "barTime": "2024-05-10 23:30",
+            "content": "SOLD@76.02 Size:-13 Gain:1.76%",
+            "strategy": "Revival2",
+            "upTime": "2024-05-11 03:30",
+            "frame": "60",
+            "key": 56
         },
         {
             "symbol": "MNST",
             "barTime": "2024-05-10 23:30",
             "content": "SOLD@55.51 Size:-18 Gain:-1.83%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 48
+            "key": 57
         },
         {
             "symbol": "CRM",
             "barTime": "2024-05-10 23:30",
             "content": "BOUGHT@274.98 Size:4",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 49
+            "key": 58
         },
         {
             "symbol": "AAPL",
             "barTime": "2024-05-10 22:30",
             "content": "SOLD@183.21 Size:-5 Gain:4.17%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 50
+            "key": 59
         },
         {
             "symbol": "DIA",
             "barTime": "2024-05-10 22:30",
             "content": "CREATE SELL@394.63 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 51
+            "key": 60
         },
         {
             "symbol": "GS",
             "barTime": "2024-05-10 22:30",
             "content": "CREATE SELL@456.24 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 52
+            "key": 61
         },
         {
             "symbol": "SQ",
             "barTime": "2024-05-10 22:30",
             "content": "SOLD@72.17 Size:-15 Gain:-0.79%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 53
+            "key": 62
         },
         {
             "symbol": "LULU",
             "barTime": "2024-05-10 22:30",
             "content": "CREATE BUY@347.34 Size:3",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 54
+            "key": 63
         },
         {
             "symbol": "KO",
             "barTime": "2024-05-10 21:30",
             "content": "CREATE SELL@63.32 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 55
-        },
-        {
-            "symbol": "SQ",
-            "barTime": "2024-05-10 21:30",
-            "content": "SOLD@73.59 Size:-17 Gain:5.08%",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 56
-        },
-        {
-            "symbol": "HOOD",
-            "barTime": "2024-05-10 21:30",
-            "content": "BOUGHT@17.13 Size:79",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 57
+            "key": 64
         },
         {
             "symbol": "LULU",
             "barTime": "2024-05-10 21:30",
             "content": "SOLD@352.92 Size:-3 Gain:-4.80%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 58
+            "key": 65
         },
         {
             "symbol": "ABNB",
             "barTime": "2024-05-10 21:30",
             "content": "BOUGHT@146.02 Size:9",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 59
+            "key": 66
         },
         {
             "symbol": "SOXL",
             "barTime": "2024-05-10 21:30",
             "content": "CREATE BUY@40.40 Size:41",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 60
+            "key": 67
         },
         {
             "symbol": "GS",
             "barTime": "2024-05-10 21:30",
             "content": "SOLD@456.77 Size:-2 Gain:15.24%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 61
-        },
-        {
-            "symbol": "MU",
-            "barTime": "2024-05-10 21:30",
-            "content": "CREATE BUY@118.44 Size:12",
-            "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
-            "frame": "60",
-            "key": 62
+            "key": 68
         },
         {
             "symbol": "QCOM",
             "barTime": "2024-05-10 21:30",
             "content": "CREATE BUY@180.28 Size:7",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 63
+            "key": 69
         },
         {
             "symbol": "TCEHY",
             "barTime": "2024-05-10 02:30",
             "content": "SOLD@47.67 Size:-23 Gain:3.63%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 64
+            "key": 70
         },
         {
             "symbol": "NVDA",
             "barTime": "2024-05-10 02:30",
             "content": "BOUGHT@886.46 Size:1",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 65
-        },
-        {
-            "symbol": "NKE",
-            "barTime": "2024-05-10 02:30",
-            "content": "SOLD@93.62 Size:-5 Gain:0.63%",
-            "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 66
+            "key": 71
         },
         {
             "symbol": "NUGT",
             "barTime": "2024-05-10 02:30",
             "content": "CREATE SELL@41.85 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 67
+            "key": 72
         },
         {
             "symbol": "ADBE",
             "barTime": "2024-05-10 02:30",
             "content": "CREATE BUY@478.38 Size:2",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 68
+            "key": 73
         },
         {
             "symbol": "SMCI",
             "barTime": "2024-05-10 02:30",
             "content": "CREATE BUY@791.23 Size:1",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 69
+            "key": 74
         },
         {
             "symbol": "AMZN",
             "barTime": "2024-05-10 02:30",
-            "content": "SOLD@190.63 Size:-6 Gain:9.97%",
+            "content": "SOLD@190.63 Size:-6 Gain:8.55%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 70
+            "key": 75
         },
         {
             "symbol": "COST",
             "barTime": "2024-05-10 02:30",
             "content": "CREATE SELL@778.89 Size:0",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 71
+            "key": 76
         },
         {
             "symbol": "CELH",
             "barTime": "2024-05-10 02:30",
             "content": "SOLD@83.75 Size:-17 Gain:13.63%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 72
+            "key": 77
         },
         {
             "symbol": "AMZN",
             "barTime": "2024-05-10 01:30",
             "content": "CREATE SELL@190.63 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 73
+            "key": 78
         },
         {
             "symbol": "CELH",
             "barTime": "2024-05-10 01:30",
             "content": "CREATE SELL@83.75 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 74
+            "key": 79
         },
         {
             "symbol": "APP",
             "barTime": "2024-05-10 01:30",
             "content": "SOLD@84.97 Size:-14 Gain:20.06%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 75
+            "key": 80
         },
         {
             "symbol": "NUGT",
             "barTime": "2024-05-10 01:30",
             "content": "SOLD@41.29 Size:-34 Gain:18.03%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 76
+            "key": 81
         },
         {
             "symbol": "APP",
             "barTime": "2024-05-10 01:30",
             "content": "SOLD@84.97 Size:-14 Gain:-0.92%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 77
+            "key": 82
         },
         {
             "symbol": "CRM",
             "barTime": "2024-05-10 00:30",
             "content": "CREATE BUY@271.66 Size:4",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 78
+            "key": 83
         },
         {
             "symbol": "SMCI",
             "barTime": "2024-05-09 23:30",
             "content": "BOUGHT@805.21 Size:1",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 79
-        },
-        {
-            "symbol": "TSLA",
-            "barTime": "2024-05-09 22:30",
-            "content": "BOUGHT@172.35 Size:6",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 80
-        },
-        {
-            "symbol": "VST",
-            "barTime": "2024-05-09 22:30",
-            "content": "CREATE SELL@92.15 Size:0",
-            "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
-            "frame": "60",
-            "key": 81
+            "key": 84
         },
         {
             "symbol": "EDU",
             "barTime": "2024-05-09 22:30",
             "content": "CREATE BUY@83.00 Size:15",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 82
+            "key": 85
+        },
+        {
+            "symbol": "VST",
+            "barTime": "2024-05-09 22:30",
+            "content": "CREATE SELL@92.15 Size:0",
+            "strategy": "Vivid2",
+            "upTime": "2024-05-11 03:30",
+            "frame": "60",
+            "key": 86
         },
         {
             "symbol": "ADBE",
             "barTime": "2024-05-09 22:30",
             "content": "BOUGHT@484.11 Size:2",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 83
+            "key": 87
         },
         {
             "symbol": "HOOD",
             "barTime": "2024-05-09 22:30",
             "content": "BOUGHT@17.82 Size:78",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 84
+            "key": 88
         },
         {
             "symbol": "NET",
             "barTime": "2024-05-09 22:30",
             "content": "CREATE BUY@73.46 Size:15",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 85
+            "key": 89
         },
         {
             "symbol": "LULU",
             "barTime": "2024-05-09 21:30",
             "content": "CREATE BUY@345.37 Size:3",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 86
-        },
-        {
-            "symbol": "PYPL",
-            "barTime": "2024-05-09 21:30",
-            "content": "BOUGHT@63.52 Size:20",
-            "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
-            "frame": "60",
-            "key": 87
+            "key": 90
         },
         {
             "symbol": "TCEHY",
             "barTime": "2024-05-09 21:30",
             "content": "CREATE BUY@47.10 Size:28",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 88
+            "key": 91
         },
         {
             "symbol": "BX",
             "barTime": "2024-05-09 21:30",
             "content": "CREATE BUY@120.14 Size:10",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 89
+            "key": 92
         },
         {
             "symbol": "SQ",
             "barTime": "2024-05-09 21:30",
             "content": "CREATE BUY@70.97 Size:18",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 90
+            "key": 93
         },
         {
             "symbol": "NET",
             "barTime": "2024-05-09 03:30",
             "content": "CREATE BUY@71.73 Size:19",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 91
+            "key": 94
         },
         {
             "symbol": "VST",
             "barTime": "2024-05-09 03:30",
             "content": "SOLD@90.05 Size:-13 Gain:27.90%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 92
+            "key": 95
         },
         {
             "symbol": "NFLX",
             "barTime": "2024-05-09 02:30",
             "content": "CREATE SELL@611.20 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 93
+            "key": 96
         },
         {
             "symbol": "LRCX",
             "barTime": "2024-05-09 02:30",
             "content": "CREATE BUY@898.07 Size:1",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 94
+            "key": 97
         },
         {
             "symbol": "ETN",
             "barTime": "2024-05-09 01:30",
             "content": "CREATE SELL@331.44 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 95
+            "key": 98
         },
         {
             "symbol": "IWM",
             "barTime": "2024-05-09 01:30",
             "content": "CREATE BUY@201.65 Size:6",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 96
+            "key": 99
         },
         {
             "symbol": "UBER",
             "barTime": "2024-05-09 01:30",
             "content": "CREATE BUY@63.91 Size:19",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 97
+            "key": 100
         },
         {
             "symbol": "NET",
             "barTime": "2024-05-09 01:30",
             "content": "CREATE BUY@71.54 Size:17",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 98
+            "key": 101
         },
         {
             "symbol": "ETN",
             "barTime": "2024-05-09 01:30",
             "content": "SOLD@331.44 Size:-3 Gain:6.24%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 99
+            "key": 102
         },
         {
             "symbol": "NFLX",
             "barTime": "2024-05-09 00:30",
             "content": "CREATE SELL@612.53 Size:0",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 100
+            "key": 103
         },
         {
             "symbol": "NKE",
             "barTime": "2024-05-09 00:30",
             "content": "EXPIRED BUY@91.42 Size:13",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 101
-        },
-        {
-            "symbol": "PEP",
-            "barTime": "2024-05-08 23:30",
-            "content": "SOLD@178.31 Size:-2 Gain:4.17%",
-            "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 102
+            "key": 104
         },
         {
             "symbol": "ETN",
             "barTime": "2024-05-08 23:30",
             "content": "SOLD@331.82 Size:-3 Gain:5.25%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 103
+            "key": 105
         },
         {
             "symbol": "GOOGL",
             "barTime": "2024-05-08 21:30",
             "content": "CREATE SELL@170.00 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 104
+            "key": 106
         },
         {
             "symbol": "META",
             "barTime": "2024-05-08 21:30",
             "content": "SOLD@463.63 Size:-2 Gain:-6.03%",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 105
+            "key": 107
         },
         {
             "symbol": "PYPL",
             "barTime": "2024-05-08 21:30",
             "content": "BOUGHT@65.46 Size:21",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 106
+            "key": 108
         },
         {
             "symbol": "IWM",
             "barTime": "2024-05-08 03:30",
             "content": "CREATE SELL@204.97 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 107
+            "key": 109
         },
         {
             "symbol": "QQQ",
             "barTime": "2024-05-08 03:30",
             "content": "CREATE SELL@440.32 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 108
+            "key": 110
         },
         {
             "symbol": "TQQQ",
             "barTime": "2024-05-08 03:30",
             "content": "CREATE SELL@58.56 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 109
+            "key": 111
         },
         {
             "symbol": "MU",
             "barTime": "2024-05-08 03:30",
             "content": "CREATE SELL@119.21 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 110
+            "key": 112
         },
         {
             "symbol": "SMCI",
             "barTime": "2024-05-08 03:30",
             "content": "CREATE SELL@819.29 Size:0",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 111
-        },
-        {
-            "symbol": "EDU",
-            "barTime": "2024-05-08 01:30",
-            "content": "CREATE BUY@80.45 Size:17",
-            "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 112
+            "key": 113
         },
         {
             "symbol": "MSFT",
             "barTime": "2024-05-08 01:30",
             "content": "SOLD@412.26 Size:-2 Gain:0.80%",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 113
-        },
-        {
-            "symbol": "BX",
-            "barTime": "2024-05-08 01:30",
-            "content": "SOLD@122.70 Size:-9 Gain:1.21%",
-            "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
             "key": 114
         },
@@ -1040,115 +1040,115 @@
             "barTime": "2024-05-08 01:30",
             "content": "SOLD@468.31 Size:-2 Gain:-2.29%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
             "key": 115
+        },
+        {
+            "symbol": "BX",
+            "barTime": "2024-05-08 01:30",
+            "content": "SOLD@122.70 Size:-9 Gain:1.21%",
+            "strategy": "Vivid2",
+            "upTime": "2024-05-11 03:30",
+            "frame": "60",
+            "key": 116
         },
         {
             "symbol": "GOOGL",
             "barTime": "2024-05-08 01:30",
             "content": "SOLD@171.19 Size:-6 Gain:5.48%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 116
+            "key": 117
         },
         {
             "symbol": "SOXL",
             "barTime": "2024-05-08 00:30",
             "content": "SOLD@41.79 Size:-32 Gain:14.28%",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 117
+            "key": 118
         },
         {
             "symbol": "EDU",
             "barTime": "2024-05-08 00:30",
             "content": "CREATE BUY@80.52 Size:17",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 118
+            "key": 119
         },
         {
             "symbol": "NVDA",
             "barTime": "2024-05-08 00:30",
             "content": "EXPIRED BUY@869.83 Size:1",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 119
+            "key": 120
         },
         {
             "symbol": "QQQ",
             "barTime": "2024-05-08 00:30",
             "content": "EXPIRED BUY@429.70 Size:2",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 120
+            "key": 121
         },
         {
             "symbol": "TSLA",
             "barTime": "2024-05-07 03:30",
             "content": "SOLD@183.64 Size:-5 Gain:-1.38%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 121
+            "key": 122
         },
         {
             "symbol": "UBER",
             "barTime": "2024-05-07 01:30",
             "content": "SOLD@71.73 Size:-14 Gain:-3.34%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 122
+            "key": 123
         },
         {
             "symbol": "CRM",
             "barTime": "2024-05-07 00:30",
             "content": "EXPIRED BUY@265.88 Size:4",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
-            "key": 123
+            "key": 124
         },
         {
             "symbol": "IWM",
             "barTime": "2024-05-07 00:30",
             "content": "EXPIRED BUY@196.38 Size:6",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 124
+            "key": 125
         },
         {
             "symbol": "META",
             "barTime": "2024-05-07 00:30",
             "content": "SOLD@458.62 Size:-2 Gain:-5.39%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
-            "key": 125
+            "key": 126
         },
         {
             "symbol": "NVDA",
             "barTime": "2024-05-06 22:30",
             "content": "SOLD@913.07 Size:-1 Gain:8.07%",
             "strategy": "Stoch2",
-            "upTime": "2024-05-11 03:01",
-            "frame": "60",
-            "key": 126
-        },
-        {
-            "symbol": "MSFT",
-            "barTime": "2024-05-06 21:30",
-            "content": "EXPIRED BUY@389.69 Size:3",
-            "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
             "key": 127
         },
@@ -1157,7 +1157,7 @@
             "barTime": "2024-05-04 02:30",
             "content": "SOLD@56.85 Size:-20 Gain:3.47%",
             "strategy": "Vivid2",
-            "upTime": "2024-05-11 03:01",
+            "upTime": "2024-05-11 03:31",
             "frame": "60",
             "key": 128
         },
@@ -1166,7 +1166,7 @@
             "barTime": "2024-05-04 01:30",
             "content": "SOLD@578.45 Size:-2 Gain:-3.02%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
             "key": 129
         },
@@ -1175,7 +1175,7 @@
             "barTime": "2024-05-04 01:30",
             "content": "SOLD@56.60 Size:-20 Gain:0.62%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
             "key": 130
         },
@@ -1184,11 +1184,11 @@
             "barTime": "2024-05-03 23:30",
             "content": "SOLD@161.31 Size:-7 Gain:1.42%",
             "strategy": "Revival2",
-            "upTime": "2024-05-11 03:00",
+            "upTime": "2024-05-11 03:30",
             "frame": "60",
             "key": 131
         }
     ],
-    "updated": "2024-05-11 03:01:37",
+    "updated": "2024-05-11 03:31:41",
     "timeframe": "60"
 }
